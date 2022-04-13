@@ -1,0 +1,12 @@
+I" <h4> Estimators </h4>
+<p>| Package | Description
+|<a href="https://github.com/ppg2bp/">Meta-Analysis</a>|
+|<a href="https://github.com/ppg2bp/">PPG2BP Package</a>| Benchmarks for Deep Learning, Classical ML and Physiological Models for MIMIC, University of Queensland and PPG-BP datasets
+|<a href="https://github.com/brianhill11/ABPImputation">ABPImputation</a> | Code from <a href="https://www.nature.com/articles/s41598-021-94913-y">Hill et al., 2021</a>
+|<a href="https://github.com/gslapnicar/bp-estimation-mimic3">bp-estimation-mimic3</a>| Code from <a href="https://www.mdpi.com/1424-8220/19/15/3420">Slapniƒçar et al., 2019</a>, containing scripts to download data, clean data and build model.</p>
+
+<h4> Tools </h4>
+<p>| Package | Description
+|<a href="https://physionet.org/content/wfdb-matlab/0.10.0/">Waveform Database Software Package (WFDB) for MATLAB and Octave</a> | large collection of software for processing and analyzing physiological waveforms from PhysioNet
+|(Signal Quality Evaluation, Filtering)[https://github.com/fwolling/PPGraw] | Code from <a href="https://dl.acm.org/doi/10.1145/3419016.3431485">Wolling et al., 2020</a>, that applies decision metrics to characterize unfiltered and raw signals</p>
+:ET

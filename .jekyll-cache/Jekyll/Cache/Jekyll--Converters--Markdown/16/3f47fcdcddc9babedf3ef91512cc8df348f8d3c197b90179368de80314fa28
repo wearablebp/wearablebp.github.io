@@ -1,0 +1,24 @@
+I"¡<h4> Meta-Analysis Dataset </h4>
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo1QIHqqKwKTCgCUDeA-4ihiCVt9sAVi2nUnUhXJqH6L8BmleY_RY-1GQcnv981fDb-Tv_vubDpg4B/pubhtml?gid=2123644980&amp;single=true&amp;headers=false" style="width:100%;height:100%;"></iframe>
+
+<h4> Publicaly Available Datasets </h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Description</th>
+      <th>Limitations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://physionet.org/content/mimic3wdb/1.0/">MIMIC-III Waveform Database</a> <br /> <br /> <a href="https://physionet.org/content/mimic3wdb-matched/1.0/">MIMIC-III Waveform Database Matched Subset</a></td>
+      <td><ul><li> Collected in a largely automated fashion, from all of the bedside monitors in certain adult and neonatal ICUs. </li> <li> Recorded waveforms and numerics vary depending on choices made by the ICU staff. </li> <li> Almost always include one or more ECG signals, and often include continuous arterial blood pressure (ABP) waveforms, fingertip photoplethysmogram (PPG) signals, and respiration, with additional waveforms (up to 8 simultaneously) as available, including heart and respiration rates, SpO2, and systolic, mean, and diastolic blood pressure. </li> </ul></td>
+      <td><ul> <li> Occasionally, technical limitations of the data acquisition system make it possible to create a physiologic waveform record but not a numerics record, or vice versa. </li> <li>Records vary in length; some are several weeks in duration. Common for the physiologic signals to be interrupted or changed occasionally during recordings of such long duration. </li> </ul></td>
+    </tr>
+  </tbody>
+</table>
+
+:ET

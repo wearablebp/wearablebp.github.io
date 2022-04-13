@@ -1,0 +1,15 @@
+I"i<div style="text-align: center"><img src="/images/summary.png" style="width: 100%; height: 100%" /></div>
+<p><br /></p>
+<center> <i> Summary Statistics for studies (n=___) included in Systematic Review and Meta-analysis </i> </center>
+<p><br /></p>
+
+<p><a href="https://www.nature.com/natbiomedeng/">Cheung, Matt Y, and Ashok Veeraraghavan. “Photoplethysmography in Non-Invasive, Continuous, and Cuff-Less Blood Pressure Monitoring: A Systematic Review and Meta-Analysis.” Nature Biomedical Engineering, 13 Apr. 2022.</a></p>
+
+<p>Non-invasive, continuous, and 24/7 wearable cuff-less Blood Pressure (BP) monitoring will allow for prevention, early detection, and treatment of hypertension. Despite the accuracy of established methods, they all fall short in one or more dimensions. On the other hand, Photoplethysmography (PPG) promises continuous monitoring and has established itself in measuring heart rate and oxygen saturation, yet its role in measuring 24/7 continuous BP is still an open problem. Due to the large number of studies and the large variation in study datasets, protocols and results, a systematic review with a meta-analysis is warranted to qualify the best design considerations and areas for improvement. The objective of this website is to curate and meta-analyze a list of references, datasets, code base to help identify best practices, promising devices, and robust algorithms for non-invasive, continuous, and 24/7 wearable cuff-less BP monitoring.</p>
+
+<div style="text-align: center"><img src="/images/mechanism.png" style="width: 100%; height: 100%" /></div>
+<center> <i> Mechanisms linking Photoplethysmography measurements to Blood Pressure </i> </center>
+<p><br /></p>
+
+<p><b>How to cite</b>: We grant permission to use and publish all images and numerical results on this website. However, we request that you cite our paper “Cheung, “ (insert link)</p>
+:ET

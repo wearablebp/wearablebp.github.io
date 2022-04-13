@@ -1,0 +1,66 @@
+I"w
+<h4> Dataset Level Analysis </h4>
+<div style="text-align: center"><img src="/images/dla1.png" style="width: 100%; height: 100%" /></div>
+<div style="text-align: center"><img src="/images/dla2.png" style="width: 100%; height: 100%" /></div>
+<p><br /></p>
+
+<h4> Algorithmic Level Analysis </h4>
+<div style="text-align: center"><img src="/images/ala1.png" style="width: 100%; height: 100%" /></div>
+<div style="text-align: center"><img src="/images/ala2.png" style="width: 100%; height: 100%" /></div>
+<p><br /></p>
+
+<h4> Device Level Analysis </h4>
+<div style="text-align: center"><img src="/images/dela1.png" style="width: 100%; height: 100%" /></div>
+
+<h4> Extracted Parameters </h4>
+
+<p>Parameter | Description
+———- | ———
+Problem | 
+Key Devices and Measurements | Sensor Data (i.e. PPG, ECG+PPG) and some features
+Calibration Technique | See table below
+Algorithm | Deep Learning: models that involve using neural networks (i.e. CNN, LSTM, Transformers) <br /> 
+Classical ML: models that involve using hand-crafted features (i.e. heart rate, pulse-transit time, entropy) and classical mathematical algorithms (i.e. linear regression, decision trees) <br />
+Physiological Model: models that involve using physiologically derived equations (i.e. Moens–Korteweg equation)
+Dataset | Name of dataset; ground truth device; other 
+Number of Subjects | 
+Subject Characteristics	Study Characteristics | 
+BP Distribution Type | 
+BP Distribution	Evaluation Metric | 
+Reported Result | 
+Notes | 
+Number of calibrations | 
+Number of tests | 
+Time between Calibration and Test | 
+Time of Test | 
+Time of Calibration |</p>
+
+<h4> Calibration Techniques </h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Calibration Technique</th>
+      <th>Description</th>
+      <th>Use case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Record level split without personalization</td>
+      <td>allow data leakage and use the same subjects in the training and testing sets</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Subject level split (population level calibration)</td>
+      <td>use different subjects in training and testing sets</td>
+      <td>When device accuracy does not wane over time and want to generalize across population of interest</td>
+    </tr>
+    <tr>
+      <td>Personalization (individual level calibration)</td>
+      <td>Subset of record level split with a temporal constraint, in which training data is selected as the first portion of records and testing data is selected as the latter portion with no overlap.</td>
+      <td>No generalization across subjects. Device accuracy wanes over time due to physiological changes.</td>
+    </tr>
+  </tbody>
+</table>
+:ET
