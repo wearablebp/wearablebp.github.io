@@ -4,6 +4,8 @@ title: Meta
 permalink: /meta/
 ---
 
+[Cheung, Matt Y, and Ashok Veeraraghavan. “Photoplethysmography in Non-Invasive, Continuous, and Cuff-Less Blood Pressure Monitoring: A Systematic Review and Meta-Analysis.” Nature Biomedical Engineering, 13 Apr. 2022.](https://www.nature.com/natbiomedeng/)
+
 <h4> Summary Statistics </h4>
 <div style="text-align: center"><img src="/images/summary.png" style="width: 100%; height: 100%"/></div> 
 <br>
