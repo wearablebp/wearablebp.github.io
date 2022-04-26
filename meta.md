@@ -23,6 +23,10 @@ Data Collection Process: Independent extraction of n=___ unique articles by a si
 <h2> Data Items </h2> 
 Information from each included approach (hardware/software, regression/classification), key devices and features (i.e. device=PPG, measurement = whole based features), calibration technique (record level split without personalization, subject level split, personalization, and some details), algorithm (i.e. physiological model using Moens– Korteweg equation, classical machine learning using decision trees, deep learning using convolutional neural networks), dataset(s), number of subjects, subject characteristics (i.e. ICU patients, healthy males), study characteristics (observational or interventional), evaluation metric (i.e. MAE, ME±STD, MSE, % accuracy), and reported numerical results. For studies that performed personalization, additional fields included number of calibrations, number of tests, time between calibration and test, time of test, time of calibration, time of test and errors. For studies that included both MAE and ME±STD, the ME±STD was recorded. If studies included multiple reported values for the same experimental setup, the smallest error was reported.
 
+<h4> Meta-Analysis Dataset</h4>
+A summarized table of studies. [Download Dataset](https://docs.google.com/spreadsheets/d/e/2PACX-1vTo1QIHqqKwKTCgCUDeA-4ihiCVt9sAVi2nUnUhXJqH6L8BmleY_RY-1GQcnv981fDb-Tv_vubDpg4B/pub?gid=2123644980&single=true&output=csv)
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo1QIHqqKwKTCgCUDeA-4ihiCVt9sAVi2nUnUhXJqH6L8BmleY_RY-1GQcnv981fDb-Tv_vubDpg4B/pubhtml?gid=2123644980&amp;single=true&amp;headers=false"  frameborder="0" scrolling="no" seamless="seamless" style="display:block; width:100%; height:50vh;"></iframe>
+
 <h4> Extracted Parameters </h4>
 
 Parameter | Description
@@ -152,8 +156,3 @@ Similarly, to investigate whether this phenomenon exists in a publicly available
 <div style="text-align: center"><img src="/images/delta_bp.png" style="width: 100%; height: 100%"/></div>
 
 From fig , we can see that in an observational experiment, the change in BP is small. Furthermore, from Fig, we observe that the average MAE was 3.35mmHg, which comfortably satisfies all standards. However, the MAE distribution across different changes in BP demonstrates a significantly higher error for larger changes and low error for values closer to zero change. This is a result of data imbalance towards a change in BP of zero. If we apply inverse probability weighting to weight each BP change equally, the MAE increases to 13mmHg. From this experiment, we see that it is imperative to demonstrate accuracy for a wide range of BP changes.
-
-
-<h4> Meta-Analysis Dataset</h4>
-A summarized table of studies. [Download Dataset](https://docs.google.com/spreadsheets/d/e/2PACX-1vTo1QIHqqKwKTCgCUDeA-4ihiCVt9sAVi2nUnUhXJqH6L8BmleY_RY-1GQcnv981fDb-Tv_vubDpg4B/pub?gid=2123644980&single=true&output=csv)
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo1QIHqqKwKTCgCUDeA-4ihiCVt9sAVi2nUnUhXJqH6L8BmleY_RY-1GQcnv981fDb-Tv_vubDpg4B/pubhtml?gid=2123644980&amp;single=true&amp;headers=false"  frameborder="0" scrolling="no" seamless="seamless" style="display:block; width:100%; height:50vh;"></iframe>
