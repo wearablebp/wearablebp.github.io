@@ -1,9 +1,0 @@
-I"J<p><a href="https://physionet.org/content/mimic3wdb-matched/1.0/">MIMIC-III Waveform Database Matched Subset</a>
-<a href="https://physionet.org/content/mimic3wdb/1.0/">MIMIC-III Waveform Database</a>
-Dataset description:
-collected in a largely automated fashion, from all of the bedside monitors in certain adult and neonatal ICUs 
-Recorded waveforms and numerics vary depending on choices made by the ICU staff. almost always include one or more ECG signals, and often include continuous arterial blood pressure (ABP) waveforms, fingertip photoplethysmogram (PPG) signals, and respiration, with additional waveforms (up to 8 simultaneously) as available, including heart and respiration rates, SpO2, and systolic, mean, and diastolic blood pressure.
-Occasionally, technical limitations of the data acquisition system make it possible to create a physiologic waveform record but not a numerics record, or vice versa.
-Records vary in length; some are several weeks in duration
-Common for the physiologic signals to be interrupted or changed occasionally during recordings of such long duration.</p>
-:ET
