@@ -22,6 +22,26 @@ Eligibility criteria: Studies published in the English language that use PPG (bo
 Data Collection Process: Independent extraction of n=___ unique articles by a single author using predefined data fields. For studies that had multiple protocols and reported multiple results, the multiple entries were made in the compiled database. 
 <h2> Data Items </h2> 
 Information from each included approach (hardware/software, regression/classification), key devices and features (i.e. device=PPG, measurement = whole based features), calibration technique (record level split without personalization, subject level split, personalization, and some details), algorithm (i.e. physiological model using Moens– Korteweg equation, classical machine learning using decision trees, deep learning using convolutional neural networks), dataset(s), number of subjects, subject characteristics (i.e. ICU patients, healthy males), study characteristics (observational or interventional), evaluation metric (i.e. MAE, ME±STD, MSE, % accuracy), and reported numerical results. For studies that performed personalization, additional fields included number of calibrations, number of tests, time between calibration and test, time of test, time of calibration, time of test and errors. For studies that included both MAE and ME±STD, the ME±STD was recorded. If studies included multiple reported values for the same experimental setup, the smallest error was reported.
+
+<h4> Extracted Parameters </h4>
+
+Parameter | Description
+---------- | ---------
+Problem | Regression or Classification problem. Novelty in software or hardware or software+hardware
+Key Devices and Measurements | Sensor Data (i.e. PPG, ECG+PPG) and some features
+Calibration Technique | Record Split without personalization or Subject Level Split or Personalization (see table below)
+Algorithm | Deep Learning: models that involve using neural networks (i.e. CNN, LSTM, Transformers) <br> Classical ML: models that involve using hand-crafted features (i.e. heart rate, pulse-transit time, entropy) and classical mathematical algorithms (i.e. linear regression, decision trees) <br> Physiological Model: models that involve using physiologically derived equations (i.e. Moens–Korteweg equation)
+Dataset | Name of dataset; ground truth device; other 
+Number of Subjects | Number of Subjects used in both training and testing
+Subject Characteristics | healthy: no disclosed health conditions <br> diseased: subjects with medical conditions, including hypertensive subjects, ICU patients and surgical patients
+Evaluation Metric | Reported evaluation metric (i.e. Mean Absolute Error (MAE), Mean Error ± Standard Deviation (ME±STD), regression coefficient (r))
+Reported Result | Numerical result
+Number of calibrations | Number of calibrations performed for each subject
+Number of tests | Number of tests performed on each subject after calibration
+Time between Calibration and Test | Time between calibration time and test time: s=seconds, m=minutes, h=hours, mon=months
+Time of Calibration | Calibration segment length for each subject: s=seconds, m=minutes, h=hours, mon=months
+Time of Test | Testing segment length for each subject: s=seconds, m=minutes, h=hours, mon=months
+
 <h2> Risk of bias in individual studies </h2> 
 Because one author summarized all studies, there could have been bias in extracting the results. To alleviate this bias and to reduce error, the studies were summarized twice.
 <h2> Summary measures </h2> 
@@ -137,23 +157,3 @@ From fig , we can see that in an observational experiment, the change in BP is s
 <h4> Meta-Analysis Dataset</h4>
 A summarized table of studies. [Download Dataset](https://docs.google.com/spreadsheets/d/e/2PACX-1vTo1QIHqqKwKTCgCUDeA-4ihiCVt9sAVi2nUnUhXJqH6L8BmleY_RY-1GQcnv981fDb-Tv_vubDpg4B/pub?gid=2123644980&single=true&output=csv)
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo1QIHqqKwKTCgCUDeA-4ihiCVt9sAVi2nUnUhXJqH6L8BmleY_RY-1GQcnv981fDb-Tv_vubDpg4B/pubhtml?gid=2123644980&amp;single=true&amp;headers=false"  frameborder="0" scrolling="no" seamless="seamless" style="display:block; width:100%; height:50vh;"></iframe>
-
-
-<h4> Extracted Parameters </h4>
-
-Parameter | Description
----------- | ---------
-Problem | Regression or Classification problem. Novelty in software or hardware or software+hardware
-Key Devices and Measurements | Sensor Data (i.e. PPG, ECG+PPG) and some features
-Calibration Technique | Record Split without personalization or Subject Level Split or Personalization (see table below)
-Algorithm | Deep Learning: models that involve using neural networks (i.e. CNN, LSTM, Transformers) <br> Classical ML: models that involve using hand-crafted features (i.e. heart rate, pulse-transit time, entropy) and classical mathematical algorithms (i.e. linear regression, decision trees) <br> Physiological Model: models that involve using physiologically derived equations (i.e. Moens–Korteweg equation)
-Dataset | Name of dataset; ground truth device; other 
-Number of Subjects | Number of Subjects used in both training and testing
-Subject Characteristics | healthy: no disclosed health conditions <br> diseased: subjects with medical conditions, including hypertensive subjects, ICU patients and surgical patients
-Evaluation Metric | Reported evaluation metric (i.e. Mean Absolute Error (MAE), Mean Error ± Standard Deviation (ME±STD), regression coefficient (r))
-Reported Result | Numerical result
-Number of calibrations | Number of calibrations performed for each subject
-Number of tests | Number of tests performed on each subject after calibration
-Time between Calibration and Test | Time between calibration time and test time: s=seconds, m=minutes, h=hours, mon=months
-Time of Calibration | Calibration segment length for each subject: s=seconds, m=minutes, h=hours, mon=months
-Time of Test | Testing segment length for each subject: s=seconds, m=minutes, h=hours, mon=months
