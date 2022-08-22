@@ -4,6 +4,15 @@ title: Standards
 permalink: /standards/
 ---
 
+<h2> Estimating required Explained Deviation from Universal Standards </h2>
+To estimate the ED that satisfies the Universal Standards [4], we use an existing dataset from [30]. AAMI/ANSI/ISO specify that a device that for the general population should:
+
+* Have n=85 subjects, should include ≥30% males and ≥30% females
+* Have ≥5% of the reference SBP readings ≤100 mm Hg, ≥5% with ≥160 mmHg, and ≥20% with ≥140 mmHg
+* Have ≥5% of reference DBP readings ≤60 mmHg, ≥5% with ≥100 mmHg, and ≥20% with ≥85 mm Hg
+
+Currently, there are no publicly available datasets that satisfy these demographics. However, the dataset in [30] satisfies the requirements if subsampled. To determine a subsample that satisfied the Universal Standards, we performed weighted sampling of subjects, where the weights were determined using Iterative Proportional Fitting (IPF) marginalized on the requirements. We repeat this process 1000 times and determine the minimum variance of the subsampled datasets. Then, we took the maximum standard deviation allowed by [4], 8mmHg, and computed the ED explained in <a href="{{site.baseurl}}/meta/">Meta</a>. This yielded a required SBP and DBP standard deviation of at least 19.34 mmHg and 11.67 mmHg respectively. The minimum ED for SBP and DBP was computed to be 2.42 and 1.46. The implementation can be found at ____.
+
 | | [Universal Standard](https://journals.lww.com/jhypertension/Abstract/2018/03000/A_universal_standard_for_the_validation_of_blood.4.aspx) | [IEEE Standard](https://ieeexplore.ieee.org/document/6882122)
 Procedure (Static) | 3 pairs of measurements for each subject | 3 pairs of measurements for each subject OR the mean of all beats over a 20 s period for beat-to-beat devices
 | Procedure (Test with BP change from calibration point) | Not specified | Dataset must include SBP changes of: -30 to -15 (13.6%), -15 to 0 (34.1%), 0-15 (34.1%), 15-30 (13.6%), and DBP changes of: -20 to -10 (13.6%), -10 to 0 (34.1%), 0-10 (34.1%), 10-20 (13.6%) 

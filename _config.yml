@@ -1,11 +1,9 @@
-title: Continuous and Wearable BP Monitoring
+title: Wearable Blood Pressure Monitoring
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: WearableBP
+  email: wearablebp@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ A Systematic Review and Meta-Analysis of Wearable BP papers.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -16,8 +14,7 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
+    github:  wearablebp
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
@@ -58,3 +55,11 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+header_pages:
+ - meta.md
+ - search.md
+ - standards.md
+ - datasets.md
+ - benchmarks.md
+ - key.md

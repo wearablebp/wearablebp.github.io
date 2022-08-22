@@ -4,18 +4,16 @@
 
 layout: home
 classes: wide
+datatable: true
 ---
 
-<div style="text-align: center"><img src="/images/wearable.jpg" style="width: 100%; height: 100%"/></div> <br>
+Welcome to the <b>wearablebp.github.io</b> ! This website accompanies our Systematic Review on Wearable Blood Pressure Monitoring. The goal of this website is not only to highlight individual state-of-the-art techniques, but also to provide a more comprehensive picture of devices, dataset, calibration techniques, and algorithm choices that show promise. Here, you can find:
 
-Non-invasive, continuous, and wearable cuff-less Blood Pressure (BP) monitoring will allow for prevention, early detection, and treatment of hypertension. Despite the accuracy of established methods, they all fall short in one or more dimensions. On the other hand, Photoplethysmography (PPG) promises continuous monitoring and has established itself in measuring heart rate and oxygen saturation, yet its role in measuring continuous BP is still an open problem. Due to the large number of studies and the large variation in study datasets, protocols and results, a systematic review with a meta-analysis is warranted to qualify the best design considerations and areas for improvement. 
-
-<h2> How to use</h2>
-
-The objective of this website is to curate and meta-analyze a list of references, datasets, code base to help identify best practices, promising devices, and robust algorithms for non-invasive, continuous, and wearable cuff-less BP monitoring. Please start on the [Meta](/meta/) page.
-
-<h2>How to cite</h2>
-
-We grant permission to use and publish all images and numerical results on this website. However, we request that you cite our paper "Cheung, " (insert link)
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo1QIHqqKwKTCgCUDeA-4ihiCVt9sAVi2nUnUhXJqH6L8BmleY_RY-1GQcnv981fDb-Tv_vubDpg4B/pubhtml?gid=536421654&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0" scrolling="no" seamless="seamless" style="display:block; width:100%; height:50vh;"></iframe>
+<ul>
+	<li> <a href="{{site.baseurl}}/meta/">Meta</a>: systematic review methodology and main results from meta-analysis </li>
+	<li> <a href="{{site.baseurl}}/search/">Search</a>: search tool for studies included in systematic review </li>
+	<li> <a href="{{site.baseurl}}/standards/">Standards</a>: a statistical comparison between different Blood Pressure device standards and the relationship between them </li>
+	<li> <a href="{{site.baseurl}}/data/">Data</a>: a comprehensive list of and a comparison between Blood Pressure Estimation datasets </li>
+	<li> <a href="{{site.baseurl}}/benchmarks/">Benchmarks</a>: implementations of highest performing algorithms on datasets </li>
+	<li> <a href="{{site.baseurl}}/key/">Key</a>: description of performance metrics and extracted data from systematic review </li>
+</ul>

@@ -3,27 +3,27 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Standards | Continuous and Wearable BP Monitoring</title>
+<title>Standards | Wearable Blood Pressure Monitoring</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Standards" />
-<meta name="author" content="GitHub User" />
+<meta name="author" content="WearableBP" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta name="description" content="A Systematic Review and Meta-Analysis of Wearable BP papers." />
+<meta property="og:description" content="A Systematic Review and Meta-Analysis of Wearable BP papers." />
 <link rel="canonical" href="http://localhost:4000/standards/" />
 <meta property="og:url" content="http://localhost:4000/standards/" />
-<meta property="og:site_name" content="Continuous and Wearable BP Monitoring" />
+<meta property="og:site_name" content="Wearable Blood Pressure Monitoring" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Standards" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"GitHub User"},"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Standards","url":"http://localhost:4000/standards/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"WearableBP"},"description":"A Systematic Review and Meta-Analysis of Wearable BP papers.","headline":"Standards","url":"http://localhost:4000/standards/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Continuous and Wearable BP Monitoring" />
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Wearable Blood Pressure Monitoring" />
 </head>
 <body><header class="site-header">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Continuous and Wearable BP Monitoring</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Wearable Blood Pressure Monitoring</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -33,7 +33,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/code/">Code</a><a class="page-link" href="/data/">Data</a><a class="page-link" href="/meta/">Meta</a><a class="page-link" href="/standards/">Standards</a></div>
+        <div class="trigger"><a class="page-link" href="/meta/">Meta</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/standards/">Standards</a><a class="page-link" href="/datasets/">Datasets</a><a class="page-link" href="/benchmarks/">Benchmarks</a><a class="page-link" href="/key/">Key</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -46,7 +46,18 @@
 
   <div class="post-content">
   	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <table>
+    <h2> Estimating required Explained Deviation from Universal Standards </h2>
+<p>To estimate the ED that satisfies the Universal Standards [4], we use an existing dataset from [30]. AAMI/ANSI/ISO specify that a device that for the general population should:</p>
+
+<ul>
+  <li>Have n=85 subjects, should include ≥30% males and ≥30% females</li>
+  <li>Have ≥5% of the reference SBP readings ≤100 mm Hg, ≥5% with ≥160 mmHg, and ≥20% with ≥140 mmHg</li>
+  <li>Have ≥5% of reference DBP readings ≤60 mmHg, ≥5% with ≥100 mmHg, and ≥20% with ≥85 mm Hg</li>
+</ul>
+
+<p>Currently, there are no publicly available datasets that satisfy these demographics. However, the dataset in [30] satisfies the requirements if subsampled. To determine a subsample that satisfied the Universal Standards, we performed weighted sampling of subjects, where the weights were determined using Iterative Proportional Fitting (IPF) marginalized on the requirements. We repeat this process 1000 times and determine the minimum variance of the subsampled datasets. Then, we took the maximum standard deviation allowed by [4], 8mmHg, and computed the ED explained in <a href="/meta/">Meta</a>. This yielded a required SBP and DBP standard deviation of at least 19.34 mmHg and 11.67 mmHg respectively. The minimum ED for SBP and DBP was computed to be 2.42 and 1.46. The implementation can be found at <em>__</em>.</p>
+
+<table>
   <tbody>
     <tr>
       <td> </td>
@@ -105,11 +116,11 @@
     </tr>
     <tr>
       <td>Procedure (Static)</td>
-      <td>3 pairs of measurements for each subject	3 pairs of measurements for each subject OR the mean of all beats over a 20 s period for beat-to-beat devices</td>
+      <td>3 pairs of measurements for each subject</td>
+      <td>3 pairs of measurements for each subject OR the mean of all beats over a 20 s period for beat-to-beat devices</td>
       <td>Continuous beat-to-beat BP from arterial line</td>
       <td>Continuous beat-to-beat BP from arterial line</td>
       <td>3 pairs of measurements for each subject</td>
-      <td> </td>
     </tr>
     <tr>
       <td>Procedure (Test with BP change from calibration point)</td>
@@ -166,17 +177,17 @@
           </a>
         </p>
         <ul class="contact-list">
-          <li class="p-name">GitHub User</li>
-          <li><a class="u-email" href="mailto:your-email@domain.com">your-email@domain.com</a></li>
+          <li class="p-name">WearableBP</li>
+          <li><a class="u-email" href="mailto:wearablebp@gmail.com">wearablebp@gmail.com</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+        <p>A Systematic Review and Meta-Analysis of Wearable BP papers.
 </p>
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/jekyll" target="_blank" title="jekyll"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/jekyllrb" target="_blank" title="jekyllrb"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/wearablebp" target="_blank" title="wearablebp"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
 </div>
 
   </div>
