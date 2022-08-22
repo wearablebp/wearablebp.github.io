@@ -4,17 +4,57 @@ title: Datasets
 permalink: /datasets/
 ---
 
-<h2> (in progress) </h2>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<h4> How to use </h4>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/searchbuilder/1.3.4/js/dataTables.searchBuilder.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/searchbuilder/1.3.4/js/searchBuilder.bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/datetime/1.1.2/js/dataTables.dateTime.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/scroller/2.0.7/js/dataTables.scroller.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/datetime/1.1.2/css/dataTables.dateTime.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/searchbuilder/1.3.4/css/searchBuilder.bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.7/css/scroller.dataTables.min.css">
 
 <br>
-<h4> Publicly Available Datasets </h4>
+<h2> Publicly Available Datasets </h2>
 
-| Dataset | Description | Disclosed Limitations 
-|----- | ------ 
-| [MIMIC](https://www.nature.com/articles/sdata201635): [MIMIC-III Waveform Database](https://physionet.org/content/mimic3wdb/1.0/) (~30000 ICU patients) <br> <br> Subsets: [MIMIC-III Waveform Database Matched Subset](https://physionet.org/content/mimic3wdb-matched/1.0/) (Subjects matched with MIMIC database), [Kauchee et al., 2015](https://archive.ics.uci.edu/ml/datasets/Cuff-Less+Blood+Pressure+Estimation) (12000 records)| {::nomarkdown}<ul><li> Collected in automated fashion from all of the bedside monitors in certain adult and neonatal ICUs. </li> <li> Recorded waveforms and numerics vary depending on choices made by the ICU staff. </li> <li> One or more signals (up to 8 simultaneously), including ECG, continuous arterial blood pressure (ABP) waveforms, fingertip PPG, respiration, SpO2. </li> <li> Records vary in length; some are several weeks in duration. </li> </ul>{:/} | {::nomarkdown}<ul> <li> Common for the physiologic signals to be interrupted or changed occasionally during recordings of such long duration. </li> <li>Single record could contain data from data from multiple patients </li> <li> Unspecified/unknown filtering delays and/or unknown inter-channel delays, which may not be constant in a given record. </li> <li> ECGs are time-aligned with each other, but there may be a changing delay of up to 500ms between any of the other waveforms in the data. So PTT measured between different waveforms may be unreliable (either in absolute or relative terms). </li> <li> Due to downsampling of ECG signals, intervals vary between 2 and 14 ms (averaging 8 ms). Although ECGs reconstructed in this way can be readily interpreted visually, they are unsuitable as input for certain algorithms for ECG analysis, particularly those that are sensitive to frequency-domain features of the signal.</li> </ul>{:/}
-| [University of Queensland Vital Signs Dataset](https://journals.lww.com/anesthesia-analgesia/Fulltext/2012/03000/University_of_Queensland_Vital_Signs_Dataset_.15.aspx) (32 surgical cases: 25 general anesthetics, 3 spinal anesthetics, 4 sedations) | {::nomarkdown}<ul><li>Monitoring data ranging in duration from 13 minutes to 5 hours (median 105 min) </li> <li> physical state of intensive care patients is dissimilar to those undergoing surgery, more frequent and marked changes to cardiovascular and respiratory variables are seen in operating room patients, and additional and highly relevant information to anesthesia (e.g., end-tidal agent monitoring, etc.) is omitted from these intensive care databases. </li> </ul>{:/} | {::nomarkdown}<ul><li> MP30 monitor’s sample line became occluded from excess moisture during longer cases and resulted in the temporary loss of monitoring data until manual purging by the experimenter </li> <li> Temporary losses of monitoring data of approximately 40 to 400 milliseconds duration in each instance occurred due to a software configuration error, and appeared to affect approximately 1% of the waveform data. </li></ul>{:/}
-| [PPG-BP Dataset](https://www.nature.com/articles/sdata201820) (21–86 years, including subjects with CVDs | {::nomarkdown}<ul><li>includes three  2.1s measurements of PPG within 3 mins of cuff reference and follows the procedures specified by the universal standards/IEEE standards. Suitable for the general population. </li> <li> All 3 segments for each participant went through a signal quality evaluation, and a robust signal quality index (SQI) method was applied in order to achieve this step. </li> <li> Controlled, quite environment with minimal interferences </li> </ul> {:/}
+<font size="3.5">  We provide a table of results for publicly available datasets. We embeded a search function that allows multiple keyword search by placing a " " in between keywords, a custom search builder that allows multiple conditional search, and an export tool that allows copying and downloading data in csv format. Moreover, clicking the "green +" button allows you to view additional extracted and computed information of the article. For a key of exclusion reasons, see <a href="{{site.baseurl}}/key/">Key</a>.
+</font>
+
+{% include dataset_table.html %}
+
+<script type="text/javascript">
+	$(".className").attr("style","");
+	$(document).ready(function() {
+	    var table = $('#dtable').DataTable({
+	    	dom: 'Bfrtip',
+	    	pageLength: 25,
+	        searchBuilder: true,
+	        responsive: true,
+	        columnDefs: [{ responsivePriority: 1, targets: 0 }],
+	        buttons: ['copy', 'csv'],
+			order: [[2, 'desc']],
+	        scrollCollapse: false,
+        	// scroller: true
+	    });
+	    table.searchBuilder.container().prependTo(table.table().container());
+	});
+</script>
 
 
