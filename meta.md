@@ -34,7 +34,7 @@ Moreover, we compute the 95% Margin of Error ($$E_{95}$$) and power ($$P$$) to d
 <h2> Results </h2>
 
 <h4> Study selection </h4> 
-We identified a total of 2510 articles from our database search and 29 articles from other sources. For inclusion in this analysis. After adjusting for duplicates by code, 2177 remained remained. We inspected the full articles and excluded 2007 unique articles and 36 additional studies (from articles that report multiple studies) based on the inclusion criteria. Likewise, we included 174 unique articles and 68 additional studies. From the 242 studies, we determined 94 studies performed subject level split and 148 studies performed personalization. Upon further examination, we identified the (change in) BP distribution of 61 and 16 studies for subject level split and personalization respecitvely. Ultimately, we included 77 studies in the meta-analysis. We provide a flow chart and statistics for extracted parameters in Fig. and Fig. respectively. See <a href="{{site.baseurl}}/search/">Search</a> for a complete list of studies and extracted parameters.
+We identified a total of 2510 articles from our database search and 29 articles from other sources. For inclusion in this analysis. After adjusting for duplicates by code, 2177 remained remained. We inspected the full articles and excluded 2008 unique articles and 36 additional studies (from articles that report multiple studies) based on the inclusion criteria. Likewise, we included 173 unique articles and 68 additional studies. From the 241 studies, we determined 94 studies performed subject level split and 147 studies performed personalization. Upon further examination, we identified the (change in) BP distribution of 61 and 9 studies for subject level split and personalization respecitvely. Ultimately, we included 70 studies in the meta-analysis. We provide a flow chart and statistics for extracted parameters in Fig. and Fig. respectively. See <a href="{{site.baseurl}}/search/">Search</a> for a complete list of studies and extracted parameters.
 
 <br>
 <div style="text-align: center"><img src="/images/graphviz.png" style="width: 100%"/></div>
@@ -48,14 +48,14 @@ We identified a total of 2510 articles from our database search and 29 articles 
 
 From Fig. ,for sensor data, we observe that the most common sensor data configuration used for BP estimation is photoplethysmography and photoplethysmography with electrocardiography. For algorithm, we observe that the most common class of algorithm used is classical machine learning, often in conjuntion with hand-crafted features. For subject characteristics, overall, we observe that there is a similar split between using healthy, diseased and a mix of healthy and diseased subjects in the study. However, it is notable that there were significantly less studies that used diseased subjects for personalization. For datasets used, we observe that an overwheming number of studies used databases collected internally that are not avaialble for the public and the most common publically available database used is Medical Information Mart for Intensive Care (MIMIC). For study characteristics, we observe that the majority of subject level split studies were observational. On the other hand, we observe that the personalization studies were split similarly between observational and interventional studies. For the quantitative metrics, notably, the standard devation of the BP distribution for SBP is larger than that for DBP and the standard deviation of the BP distribution of subject level split studies is greater than that of personalization studies.
 
-<h2> Meta-Analysis </h2>
+<h2> Meta-Analysis (in progress) </h2>
 
 Using our proposed metric to evaluate estimation accuracy, we plot the ED of SBP versus ED of DBP for subject level split and personalization studies. We indicate the size of points using the power of the study and also report important study information using a hover tool. Moreover, we delineate in green the minimum ED computed from the AAMI/ANSI/ISO Standards for SBP and DBP, which were 2.42 and 1.46 respectively. See <a href="{{site.baseurl}}/standards/">Standards</a> for more information about the calculation. <br> <br>
 
 {% include scatter.html %} <br> 
 <center> <i> Fig. . A scatter plot of Explained Deviation for SBP versus Explained Deviation for DBP color coded by sensor device configuration. The size represent the power of the study. The tabs above allow to switch between Calibration Technique (subject level split or personalization). Hovering over the scatter points displays important parameter information related to the study. Clicking the legend allows to show or hide particular sensor data configurations. Finally, panning, zooming, tapping, resetting, and hovering tools are included on the right hand side of the legend. See <a href="{{site.baseurl}}/key/">Key</a> for a description of extracted parameters. </i> </center> <br>
 
-We observe that there are 20 subject level split studies and 4 personalization studies that exceed the minimum determined ED.
+We observe that there are 20 subject level split studies and 0 personalization studies that exceed the minimum determined ED.
 
 {% include metadata_stats_meetspecs.html %}
 
@@ -64,7 +64,7 @@ We observe that there are 20 subject level split studies and 4 personalization s
 
 It is notable that less than 10% of the personalization studies include information about the change in BP distribution. Even though there are studies that report the initial BP distribution of subjects, this is not sufficient, as some experiments do not allow sufficient variation in BP. As a consequence, allowing the intial calibrated BP values to be the estimator can lead to small errors. In a similar vein, the number of observational studies and interventional type studies for personalization studies were almost equal. However, observational studies may not allow sufficient BP variation, leading to lower ED. Due to the lack of longitudinal personalization studies that have high ED, we suspect that longitudinal studies demonstrate device estimation accuracy no more than stable BP over the test period. 
 
-<h4> Insight 2: Pulse Arrival Time is not a strong indicator of BP change </h4>
+<h4> Insight 2: No evidence to suggest Pulse Arrival Time is a strong indicator of BP change </h4>
 
 Pulse Arrival Time (PAT) and Pulse Transit Time (PTT) are considered considered as well-established features, yet there are no studies that demonstrate an ED that are greater or equal to the computed ED of the requirements. In fact, all of the PAT/PTT studies cluster around the 1, with some that are below the error boundaries established by the standards. 
 
