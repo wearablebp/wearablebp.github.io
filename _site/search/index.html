@@ -98,7 +98,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.7/css/scroller.dataTables.min.css" />
 
 <h2> Include Table </h2>
-<table id="mtable" border="1" class="dataframe">
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th>Title</th>
@@ -118,6 +118,8 @@
       <th>BP Distribution DBP STD</th>
       <th>Explained Deviation SBP</th>
       <th>Explained Deviation DBP</th>
+      <th>Explained Deviation SBP 95% MOE</th>
+      <th>Explained Deviation DBP 95% MOE</th>
       <th>Time between Calibration and Test</th>
       <th>Keywords</th>
     </tr>
@@ -131,7 +133,7 @@
       <td>ME</td>
       <td>0.434±10.0 / 0.562±7.60</td>
       <td>PPG</td>
-      <td>AuroraBP</td>
+      <td>Aurora-BP</td>
       <td>Classical ML</td>
       <td>100</td>
       <td>healthy+diseased</td>
@@ -141,8 +143,10 @@
       <td>8.12</td>
       <td>1.03</td>
       <td>1.07</td>
+      <td>0.205404</td>
+      <td>0.213066</td>
       <td>24h</td>
-      <td>Comparison, Wearable, Tonometry, Photoplethysmography, Electrocardiography, Cuffless, Measurement, Blood, Pressure, Ambulatory, Setting, PPG, time-domain, features, R-PTT, personalization, AuroraBP, cuff, ausculatatory, PPG, time-domain, features, R-PTT, study, ML, ridge, regression</td>
+      <td>Comparison, Wearable, Tonometry, Photoplethysmography, Electrocardiography, Cuffless, Measurement, Blood, Pressure, Ambulatory, Setting, PPG, time-domain, features, R-PTT, personalization, Aurora-BP, cuff, ausculatatory, PPG, time-domain, features, R-PTT, study, ML, ridge, regression</td>
     </tr>
     <tr>
       <td><a href="https://ieeexplore.ieee.org/irrelevant; abstract/document/9721156/" rel="noopener noreferrer" target="_blank">A Comparison of Wearable Tonometry, Photoplethysmography, and Electrocardiography for Cuffless Measurement of Blood Pressure in an Ambulatory Setting (Mieloszyk et al., 2022)</a></td>
@@ -152,7 +156,7 @@
       <td>ME</td>
       <td>0.417±10.1 / 0.548±7.66</td>
       <td>ECG+PPG</td>
-      <td>AuroraBP</td>
+      <td>Aurora-BP</td>
       <td>Classical ML</td>
       <td>100</td>
       <td>healthy+diseased</td>
@@ -162,8 +166,10 @@
       <td>8.12</td>
       <td>1.02</td>
       <td>1.06</td>
+      <td>0.203370</td>
+      <td>0.211397</td>
       <td>24h</td>
-      <td>Comparison, Wearable, Tonometry, Photoplethysmography, Electrocardiography, Cuffless, Measurement, Blood, Pressure, Ambulatory, Setting, ECG+PPG, PAT, personalization, AuroraBP, cuff, ausculatatory, ECG+PPG, PAT, study, ML, ridge, regression</td>
+      <td>Comparison, Wearable, Tonometry, Photoplethysmography, Electrocardiography, Cuffless, Measurement, Blood, Pressure, Ambulatory, Setting, ECG+PPG, PAT, personalization, Aurora-BP, cuff, ausculatatory, ECG+PPG, PAT, study, ML, ridge, regression</td>
     </tr>
     <tr>
       <td><a href="https://ieeexplore.ieee.org/irrelevant; abstract/document/9630063/" rel="noopener noreferrer" target="_blank">An investigation of the individualized, two-point calibration method for cuffless blood pressure estimation using pulse arrival time: an historical perspective using the … (Louka et al., 2021)</a></td>
@@ -183,6 +189,8 @@
       <td>2.0</td>
       <td>0.15</td>
       <td>0.09</td>
+      <td>0.070614</td>
+      <td>0.045514</td>
       <td>NaN</td>
       <td>investigation, calibration, method, cuffless, blood, pressure, estimation, time, perspective, …, ECG+PPG, PAT, personalization, Internal, cuff, ECG+PPG, PAT, study</td>
     </tr>
@@ -204,6 +212,8 @@
       <td>6.4</td>
       <td>1.15</td>
       <td>0.98</td>
+      <td>0.419813</td>
+      <td>0.360672</td>
       <td>NaN</td>
       <td>Photoplethysmography, time, intervals, features, measurement, blood, pressure, changes, humans, ECG+PPG, PAT, personalization, cross, validation, Internal, cuff, ECG+PPG, PAT, study, model, mmHg</td>
     </tr>
@@ -225,6 +235,8 @@
       <td>1.83</td>
       <td>0.81</td>
       <td>0.48</td>
+      <td>0.465565</td>
+      <td>0.276050</td>
       <td>0s</td>
       <td>Progress, development, MediWatch, ambulatory, blood, pressure, monitor, devices, tonometer, MediWatch, personalization, Internal, catheterization, tonometer, MediWatch, study, patients</td>
     </tr>
@@ -246,6 +258,8 @@
       <td>8.9</td>
       <td>1.02</td>
       <td>0.89</td>
+      <td>0.585502</td>
+      <td>0.510164</td>
       <td>NaN</td>
       <td>Pulse, Arrival, Time, Cuff-Less, Blood, Pressure, Monitoring, Diagnostic, Value, Hypertension, ECG+PPG, PAT, personalization, day, Internal, cuff, ECG+PPG, PAT, study, ML, regression, poon, model</td>
     </tr>
@@ -267,6 +281,8 @@
       <td>8.0</td>
       <td>1.55</td>
       <td>1.19</td>
+      <td>0.885883</td>
+      <td>0.684440</td>
       <td>NaN</td>
       <td>Pulse, Arrival, Time, Cuff-Less, Blood, Pressure, Monitoring, Diagnostic, Value, Hypertension, ECG+PPG, PAT, personalization, night, Internal, cuff, ECG+PPG, PAT, study, ML, regression, poon, model</td>
     </tr>
@@ -288,6 +304,8 @@
       <td>7.7</td>
       <td>1.27</td>
       <td>1.43</td>
+      <td>0.532959</td>
+      <td>0.600731</td>
       <td>0s</td>
       <td>Blood, Pressure, Estimation, Personalized, Autoregressive, Models, ECG+PPG, PAT, personalization, baseline, data, test, water, drinking, Internal, finometer, ECG+PPG, PAT, study, water, drinking, ML, ARX, model</td>
     </tr>
@@ -309,6 +327,8 @@
       <td>5.1</td>
       <td>1.73</td>
       <td>0.6</td>
+      <td>0.729554</td>
+      <td>0.252775</td>
       <td>varied</td>
       <td>blood, pressure, measurement, risk, evaluation, ECG+PPG, PAT, personalization, night, time, Internal, finapres, ECG+PPG, PAT, study, night, time, ML, regression</td>
     </tr>
@@ -330,6 +350,8 @@
       <td>nan</td>
       <td>1.03</td>
       <td>0.0</td>
+      <td>1.186094</td>
+      <td>0.000000</td>
       <td>NaN</td>
       <td>Body, Sensor, Network, Cuffless, Calibration, Estimation, Arterial, Blood, Pressure, ECG+PPG, PAT, level, split, Internal, cuff, exercise, ECG+PPG, PAT, study, model</td>
     </tr>
@@ -351,6 +373,8 @@
       <td>10.8</td>
       <td>0.98</td>
       <td>1.01</td>
+      <td>0.177336</td>
+      <td>0.183212</td>
       <td>NaN</td>
       <td>Novel, Method, Blood, Pressure, Estimation, ECG+PPG, level, split, MIMIC, catheterization, ECG+PPG, study, learning, CNN, ICU, patients</td>
     </tr>
@@ -372,6 +396,8 @@
       <td>10.39</td>
       <td>1.44</td>
       <td>0.95</td>
+      <td>0.261094</td>
+      <td>0.171918</td>
       <td>NaN</td>
       <td>Beat-to-Beat, Filtering, Model, Continuous, Accurate, Blood, Pressure, Estimation, ECG+PPG, PAT, time-domain, features, PIR, level, split, MIMIC, catheterization, ECG+PPG, PAT, time-domain, features, PIR, study, learning, ICU, patients</td>
     </tr>
@@ -393,6 +419,8 @@
       <td>10.63</td>
       <td>2.02</td>
       <td>1.64</td>
+      <td>1.271142</td>
+      <td>1.031781</td>
       <td>NaN</td>
       <td>Accelerometric, patch, probe, cuffless, blood, pressure, evaluation, pulse, velocity, Design, development, experimental, study, PPG+PPG, PTT, derivatives, APG, patch, probe, level, split, Internal, cuff, exercise, PPG+PPG, PTT, derivatives, APG, patch, probe, study, exercise, ML, OLS, BP=Aln, PTT, +B</td>
     </tr>
@@ -414,6 +442,8 @@
       <td>9.0</td>
       <td>1.11</td>
       <td>1.48</td>
+      <td>0.241083</td>
+      <td>0.320127</td>
       <td>NaN</td>
       <td>Accuracy, signs, measurements, smartwatch, health, device, validation, study, ECG+PPG, smartwatch, level, split, Internal, Cardiocap/5, ECG+PPG, smartwatch, study</td>
     </tr>
@@ -435,6 +465,8 @@
       <td>15.0</td>
       <td>5.62</td>
       <td>7.89</td>
+      <td>0.851066</td>
+      <td>1.195265</td>
       <td>NaN</td>
       <td>Accurate, Fiducial, Point, Detection, Using, Haar, Wavelet, Beat-by-Beat, Blood, Pressure, Estimation, ECG+PPG, features, level, split, Internal, cuff, ECG+PPG, features, study, ML, model, regression, feature, extraction</td>
     </tr>
@@ -456,6 +488,8 @@
       <td>9.8</td>
       <td>4.03</td>
       <td>4.45</td>
+      <td>2.311580</td>
+      <td>2.553427</td>
       <td>NaN</td>
       <td>Ambulatory, Blood, Pressure, Monitoring, System, Uncalibrated, Steps, Wrist, BCG+PPG, PTT, time, domain, features, level, split, cross, validation, Internal, cuff, BCG+PPG, PTT, time, domain, features, study, ML, MLR</td>
     </tr>
@@ -477,6 +511,8 @@
       <td>9.31</td>
       <td>2.47</td>
       <td>2.21</td>
+      <td>0.158028</td>
+      <td>0.141140</td>
       <td>NaN</td>
       <td>Blood, pressure, estimation, signal, features, PPG, HR, width, reflection, index, LASI, ratio, areas, crest, time, mNPV, level, split, cross, validation, MIMIC, catheterization, PPG, HR, width, reflection, index, LASI, ratio, areas, crest, time, mNPV, study, ML, feature, extraction, adaboost, Linear, Regression, Decision, Tree, Random, Forest, ICU, patients</td>
     </tr>
@@ -498,6 +534,8 @@
       <td>12.5</td>
       <td>3.19</td>
       <td>1.95</td>
+      <td>0.692414</td>
+      <td>0.422459</td>
       <td>NaN</td>
       <td>Cuffless, Blood, Pressure, Estimation, Population, Diverse, Range, Age, Blood, Pressure, biometrics+ECG+PPG, PAT, time-domain, features, derivatives, wavelet, features, level, split, validation, dataset, standards, Internal, cuff, biometrics+ECG+PPG, PAT, time-domain, features, derivatives, wavelet, features, study, ML, SVM</td>
     </tr>
@@ -519,6 +557,8 @@
       <td>11.92</td>
       <td>2.19</td>
       <td>1.93</td>
+      <td>1.310651</td>
+      <td>1.153830</td>
       <td>NaN</td>
       <td>Carotid, pulse, velocity, measurement, patch, probe, PPG+PPG, APG, PWV, level, split, Internal, cuff, PPG+PPG, APG, PWV, study, ML, regression</td>
     </tr>
@@ -540,6 +580,8 @@
       <td>7.45</td>
       <td>7.63</td>
       <td>5.73</td>
+      <td>5.754362</td>
+      <td>4.321300</td>
       <td>NaN</td>
       <td>CNN–LSTM, multitasking, learning, architecture, blood, pressure, estimation, difference, ECG, …, ECG+PPG, difference, ECG, PPG, waveform, level, split, MIMIC, catherterization, ECG+PPG, difference, ECG, PPG, waveform, study, learning, CNN-LSTM, ICU, patients</td>
     </tr>
@@ -561,6 +603,8 @@
       <td>nan</td>
       <td>1.64</td>
       <td>0.0</td>
+      <td>0.764387</td>
+      <td>0.000000</td>
       <td>NaN</td>
       <td>Blood, Pressure, Estimation, Two-Sensor, Measurement, Pulse, Transit, Time, piezo+PPG, PTT, level, split, Internal, cuff, piezo+PPG, PTT, study, ML, regression</td>
     </tr>
@@ -582,6 +626,8 @@
       <td>8.17</td>
       <td>1.96</td>
       <td>1.3</td>
+      <td>0.186048</td>
+      <td>0.123549</td>
       <td>NaN</td>
       <td>blood, pressure, measurement, signal, techniques, ECG, features, level, split, MIMIC, catheterization, ECG, features, study, learning, ResNet+LSTM, ICU, patients</td>
     </tr>
@@ -603,6 +649,8 @@
       <td>8.17</td>
       <td>3.36</td>
       <td>1.45</td>
+      <td>1.275101</td>
+      <td>0.552114</td>
       <td>NaN</td>
       <td>blood, pressure, measurement, signal, techniques, ECG, features, level, split, MIMIC+Internal, catheterization+cuff, MIMIC, ECG, features, study, learning, ResNet+LSTM, arrythmia, patients</td>
     </tr>
@@ -624,6 +672,8 @@
       <td>14.2</td>
       <td>2.4</td>
       <td>1.89</td>
+      <td>0.848590</td>
+      <td>0.670550</td>
       <td>NaN</td>
       <td>Monitoring, Blood, Pressure, Cuffless, Device, biometrics+pressure, waveform, features, level, split, Internal, catheterization, biometrics+pressure, waveform, features, study, volunteers, patients, line</td>
     </tr>
@@ -645,6 +695,8 @@
       <td>11.78</td>
       <td>2.66</td>
       <td>1.89</td>
+      <td>1.095022</td>
+      <td>0.780108</td>
       <td>NaN</td>
       <td>blood, pressure, regression, PPG, time-domain, features, level, split, MIMIC, catheterization, PPG, time-domain, features, study, ML, MLR, ICU, patients</td>
     </tr>
@@ -666,6 +718,8 @@
       <td>15.1</td>
       <td>3.98</td>
       <td>2.07</td>
+      <td>1.388787</td>
+      <td>0.719940</td>
       <td>NaN</td>
       <td>Crisp-BP, blood, pressure, measurement, PPG, APW, level, split, pressure, calibration, LOOCV, Internal+MIMIC, catheterization, cuff, hour, PPG, APW, study, learning, BLSTM, NN, model, features, RWTT, transfer, learning</td>
     </tr>
@@ -687,6 +741,8 @@
       <td>13.0</td>
       <td>2.49</td>
       <td>2.53</td>
+      <td>0.637586</td>
+      <td>0.648798</td>
       <td>NaN</td>
       <td>Blood, Pressure, Estimation, Using, Convolutional, Autoencoder, Feature, Extraction, ECG+PPG, level, split, CV, Internal, cuff, ECG+PPG, study, learning, auto-encoder, CNN</td>
     </tr>
@@ -708,6 +764,8 @@
       <td>10.17</td>
       <td>2.22</td>
       <td>2.07</td>
+      <td>0.470119</td>
+      <td>0.438793</td>
       <td>NaN</td>
       <td>Blood, Pressure, Measurement, Deep, Convolutional, Neural, Network, ECG+PPG, features, level, split, cross, validation, Internal, cuff, ECG+PPG, features, study, learning, CNN, VGG-16, convolutions</td>
     </tr>
@@ -729,6 +787,8 @@
       <td>11.11</td>
       <td>1.62</td>
       <td>2.11</td>
+      <td>0.756242</td>
+      <td>0.985190</td>
       <td>NaN</td>
       <td>blood, pressure, measurement, photoplethysmogram, signals, characteristics, biometrics+PPG, time-domain, features, level, split, PPG-BP, cuff, biometrics+PPG, time-domain, features, study, learning, ANN</td>
     </tr>
@@ -750,6 +810,8 @@
       <td>11.11</td>
       <td>1.44</td>
       <td>1.43</td>
+      <td>0.669434</td>
+      <td>0.665225</td>
       <td>NaN</td>
       <td>blood, pressure, measurement, photoplethysmogram, signals, characteristics, PPG, time-domain, features, level, split, PPG-BP, cuff, PPG, time-domain, features, study, learning, ANN</td>
     </tr>
@@ -771,6 +833,8 @@
       <td>9.4</td>
       <td>1.72</td>
       <td>1.57</td>
+      <td>0.527948</td>
+      <td>0.481817</td>
       <td>NaN</td>
       <td>Deep, Blood, Pressure, Estimation, Smart, Wristwatches, ECG+PPG, PAT, time-domain, features, PATt, PATf, PATb, level, split, Internal, cuff, times, ESH, standard, smartwatch, ECG+PPG, PAT, time-domain, features, PATt, PATf, PATb, study, days, users, breakfast, lunch, dinner, learning</td>
     </tr>
@@ -792,6 +856,8 @@
       <td>12.9</td>
       <td>1.48</td>
       <td>1.63</td>
+      <td>0.562827</td>
+      <td>0.620163</td>
       <td>NaN</td>
       <td>eBP, System, Frequent, Comfortable, Blood, Pressure, Monitoring, From, User, Ear, pressure+PPG, air, pump, level, split, Internal, cuff, pressure+PPG, air, pump, study, ML, estimation, systole, ratio</td>
     </tr>
@@ -813,6 +879,8 @@
       <td>6.26</td>
       <td>2.68</td>
       <td>3.48</td>
+      <td>4.927964</td>
+      <td>6.390021</td>
       <td>NaN</td>
       <td>blood, pressure, networks, photoplethysmography, waveforms, PPG, time-domain, features, level, split, Internal, cuff, PPG, time-domain, features, study, learning</td>
     </tr>
@@ -834,6 +902,8 @@
       <td>7.37</td>
       <td>1.2</td>
       <td>1.34</td>
+      <td>0.721738</td>
+      <td>0.802899</td>
       <td>NaN</td>
       <td>Feasibility, Noninvasive, Blood, Pressure, Measurement, Patch, Sensor, ECG+PCG+PPG, PAT, time-domain, features, level, split, subject, cross, validation, Internal, cuff, ECG+PCG+PPG, PAT, time-domain, features, study, breathing, handgrip, valsalva, ML, MLR</td>
     </tr>
@@ -855,6 +925,8 @@
       <td>11.0</td>
       <td>1.13</td>
       <td>1.14</td>
+      <td>0.922396</td>
+      <td>0.929352</td>
       <td>NaN</td>
       <td>Feature, Extraction, Parameter, Estimation, Vital, Signs, Patient, Monitoring, System, ECG+PPG, time-domain, features, wavelet, features, level, split, MIMIC, catheterization, ECG+PPG, time-domain, features, wavelet, features, study, ML, MLR, SVR, ICU, patients</td>
     </tr>
@@ -876,6 +948,8 @@
       <td>8.7</td>
       <td>1.48</td>
       <td>1.24</td>
+      <td>0.572253</td>
+      <td>0.481126</td>
       <td>NaN</td>
       <td>Blood, Pressure, Monitor, pressure, sensor, capacitive, tactile, sensor, array, bladder, contact, pressure, features, pressure, sweep, signal, level, split, Internal, cuff, pressure, sensor, capacitive, tactile, sensor, array, bladder, contact, pressure, features, pressure, sweep, signal, study, ML, lasso</td>
     </tr>
@@ -897,6 +971,8 @@
       <td>9.66</td>
       <td>1.08</td>
       <td>1.11</td>
+      <td>0.319485</td>
+      <td>0.329913</td>
       <td>NaN</td>
       <td>cuffless, blood, pressure, monitoring, photoplethysmography, technology, PPG, features, level, split, Internal, catheterization, PPG, features, study, learning, Deep, Belief, Network, hospital, patients</td>
     </tr>
@@ -918,6 +994,8 @@
       <td>18.84</td>
       <td>5.08</td>
       <td>4.87</td>
+      <td>0.646503</td>
+      <td>0.619025</td>
       <td>NaN</td>
       <td>Continuous, Blood, Pressure, Waveform, Estimation, Approach, Single, Photoplethysmography, PPG, time, domain, features, level, split, MIMIC, invasive, PPG, time, domain, features, study, learning, method, knowledge, distillation, transfer, learning</td>
     </tr>
@@ -939,6 +1017,8 @@
       <td>17.91</td>
       <td>4.23</td>
       <td>4.02</td>
+      <td>0.537969</td>
+      <td>0.511769</td>
       <td>NaN</td>
       <td>Continuous, Blood, Pressure, Waveform, Estimation, Approach, Single, Photoplethysmography, PPG, time, domain, features, level, split, Internal, Mindray, PPG, time, domain, features, study, learning, method, knowledge, distillation, transfer, learning</td>
     </tr>
@@ -960,6 +1040,8 @@
       <td>10.0</td>
       <td>3.17</td>
       <td>1.59</td>
+      <td>0.911372</td>
+      <td>0.455686</td>
       <td>NaN</td>
       <td>Measurement, blood, pressure, volume, plethysmography, blood, pressure, monitor, ECG+pressure+PPG, SBP2, Pes, Pd, Ad, contact, pressure, level, split, model, study, devices, Internal, catheterization, ECG+pressure+PPG, SBP2, Pes, Pd, Ad, contact, pressure, study, ML, MLR, hospital, patients</td>
     </tr>
@@ -981,6 +1063,8 @@
       <td>5.4</td>
       <td>2.05</td>
       <td>0.83</td>
+      <td>0.587835</td>
+      <td>0.238499</td>
       <td>NaN</td>
       <td>Measurement, blood, pressure, volume, plethysmography, blood, pressure, monitor, ECG+pressure+PPG, SBP2, Pes, Pd, Ad, contact, pressure, level, split, model, study, devices, Internal, catheterization, ECG+pressure+PPG, SBP2, Pes, Pd, Ad, contact, pressure, study, ML, MLR, hospital, patients</td>
     </tr>
@@ -1002,6 +1086,8 @@
       <td>11.7</td>
       <td>3.71</td>
       <td>1.92</td>
+      <td>3.020885</td>
+      <td>1.566331</td>
       <td>NaN</td>
       <td>blood, pressure, estimation, learning, model, biometrics+ECG+PPG, level, split, Internal, cuff, biometrics+ECG+PPG, study, learning, CNN+LSTM</td>
     </tr>
@@ -1023,6 +1109,8 @@
       <td>9.0</td>
       <td>4.35</td>
       <td>1.25</td>
+      <td>1.875413</td>
+      <td>0.539181</td>
       <td>NaN</td>
       <td>cuffless, blood, pressure, heart, rate, monitoring, impedance, cardiography, ICG, Augmentation, index, level, split, Internal, cuff, ICG, Augmentation, index, study, ML, regression</td>
     </tr>
@@ -1044,6 +1132,8 @@
       <td>7.0</td>
       <td>3.42</td>
       <td>1.71</td>
+      <td>2.579653</td>
+      <td>1.287407</td>
       <td>NaN</td>
       <td>cuffless, blood, pressure, heart, rate, monitoring, impedance, cardiography, ICG, Augmentation, index, level, split, Internal, cuff, ICG, Augmentation, index, study, ML, regression</td>
     </tr>
@@ -1065,6 +1155,8 @@
       <td>9.54</td>
       <td>1.1</td>
       <td>1.11</td>
+      <td>0.830004</td>
+      <td>0.836472</td>
       <td>NaN</td>
       <td>Novel, algorithms, parameters, estimation, term, monitoring, systems, PPG, level, split, MIMIC, catheterization, PPG, study, ML, Fuzzy, system, Multi-particle, swarm, optimization</td>
     </tr>
@@ -1086,6 +1178,8 @@
       <td>11.0</td>
       <td>1.51</td>
       <td>1.31</td>
+      <td>0.432678</td>
+      <td>0.375494</td>
       <td>NaN</td>
       <td>Novel, Statistical, Post, Processing, Blood, Pressure, Estimation, Smartphone, Photoplethysmogram, PPG, time-domain, features, level, split, sensor, subjects, train, test, datasets, Internal, cuff, PPG, time-domain, features, study, ML, regression, gradient, hospital, patients</td>
     </tr>
@@ -1107,6 +1201,8 @@
       <td>9.3</td>
       <td>1.66</td>
       <td>1.53</td>
+      <td>0.350576</td>
+      <td>0.322695</td>
       <td>NaN</td>
       <td>Prediction, Algorithms, Blood, Pressure, Pulse, Wave, Velocity, Using, Health, Checkup, Data, Men, Algorithm, Development, Validation, PPG+PPG, PWV, level, split, Internal, cuff, PPG+PPG, PWV, study, ML, MLR, years</td>
     </tr>
@@ -1128,6 +1224,8 @@
       <td>7.9</td>
       <td>1.36</td>
       <td>1.19</td>
+      <td>0.150152</td>
+      <td>0.131882</td>
       <td>NaN</td>
       <td>Prediction, Algorithms, Blood, Pressure, Pulse, Wave, Velocity, Using, Health, Checkup, Data, Men, Algorithm, Development, Validation, PPG+PPG, PWV, level, split, Internal, cuff, PPG+PPG, PWV, study, ML, MLR, years</td>
     </tr>
@@ -1149,6 +1247,8 @@
       <td>10.91</td>
       <td>2.48</td>
       <td>2.59</td>
+      <td>0.337988</td>
+      <td>0.351691</td>
       <td>NaN</td>
       <td>Blood, Pressure, ultrasound, level, split, Internal, cuff, ultrasound, study, model</td>
     </tr>
@@ -1170,6 +1270,8 @@
       <td>12.57</td>
       <td>1.54</td>
       <td>1.63</td>
+      <td>0.583927</td>
+      <td>0.619994</td>
       <td>NaN</td>
       <td>blood, pressure, monitoring, method, pressure+PPG, level, split, Internal, cuff, pressure+PPG, study, model, model, BP, equations</td>
     </tr>
@@ -1191,6 +1293,8 @@
       <td>8.76</td>
       <td>2.35</td>
       <td>0.96</td>
+      <td>0.760673</td>
+      <td>0.311788</td>
       <td>NaN</td>
       <td>SVR, blood, pressure, prediction, photoplethysmogram, PPG+PPG, PTT, time-domain, features, level, split, subject, cross, validation, Internal, cuff, PPG+PPG, PTT, time-domain, features, study, ML, SVR</td>
     </tr>
@@ -1212,6 +1316,8 @@
       <td>6.0</td>
       <td>0.95</td>
       <td>0.78</td>
+      <td>0.454709</td>
+      <td>0.375624</td>
       <td>30m</td>
       <td>Validation, acceptability, blood, pressure, monitoring, device, users, health, care, professionals, methods, PPG, Model, T2, TMART, Technologies, paper/google, search, level, split, hours, Internal, cuff, PPG, Model, T2, TMART, Technologies, paper/google, search, study</td>
     </tr>
@@ -1233,6 +1339,8 @@
       <td>6.0</td>
       <td>0.95</td>
       <td>0.78</td>
+      <td>0.454709</td>
+      <td>0.375624</td>
       <td>8h</td>
       <td>Validation, acceptability, blood, pressure, monitoring, device, users, health, care, professionals, methods, PPG, Model, T2, TMART, Technologies, paper/google, search, level, split, days, Internal, cuff, PPG, Model, T2, TMART, Technologies, paper/google, search, study</td>
     </tr>
@@ -1254,6 +1362,8 @@
       <td>8.59</td>
       <td>1.57</td>
       <td>1.09</td>
+      <td>0.732458</td>
+      <td>0.510405</td>
       <td>NaN</td>
       <td>Windkessel, Cuffless, Blood, Pressure, Estimation, Using, Continuous, Wave, Doppler, Ultrasound, System, ultrasound, time-domain, features, level, split, Internal, cuff, ultrasound, time-domain, features, study, exercise, ML+physiological, model, MLR+windkessel</td>
     </tr>
@@ -1275,6 +1385,8 @@
       <td>9.52</td>
       <td>1.64</td>
       <td>1.94</td>
+      <td>0.554063</td>
+      <td>0.656716</td>
       <td>NaN</td>
       <td>approach, blood, pressure, estimation, phonocardiogram, biometrics+PCG, Height, Weight, Sex, HR, time-domain, features, level, split, cross, validation, Internal, cuff, biometrics+PCG, Height, Weight, Sex, HR, time-domain, features, study, ML+deep, learning, classification, classes, regression</td>
     </tr>
@@ -1296,6 +1408,8 @@
       <td>11.11</td>
       <td>1.16</td>
       <td>1.06</td>
+      <td>0.362230</td>
+      <td>0.328861</td>
       <td>NaN</td>
       <td>Comparison, Different, Machine, Learning, Techniques, Cuffless, Estimation, Blood, Pressure, PPG, Signals, biometrics+PPG, time-domain, features, level, split, PPG-BP, cuff, biometrics+PPG, time-domain, features, study, ML, regression</td>
     </tr>
@@ -1317,6 +1431,8 @@
       <td>4.05</td>
       <td>1.42</td>
       <td>0.88</td>
+      <td>0.682468</td>
+      <td>0.423682</td>
       <td>varied</td>
       <td>Cuffless, Continuous, Blood, Pressure, Monitoring, Single, Chest-Worn, Device, PPG+SCG, PTT, amplitude, features, level, split, use, regression, coefficients, group, group, Internal, finometer, PPG+SCG, PTT, amplitude, features, study, exercise, model, Hughes, equation</td>
     </tr>
@@ -1338,6 +1454,8 @@
       <td>9.2</td>
       <td>1.34</td>
       <td>1.37</td>
+      <td>0.085453</td>
+      <td>0.087716</td>
       <td>NaN</td>
       <td>Cuffless, Blood, Pressure, Estimation, Algorithms, Continuous, Health-Care, Monitoring, ECG+PPG, PTT, time-domain, features, LASI, IPA, level, split, MIMIC, catheterization, ECG+PPG, PTT, time-domain, features, LASI, IPA, study, ML, RLR, decision, trees, SVM, AdaBoost, random, forests, ICU, patients</td>
     </tr>
@@ -1359,6 +1477,8 @@
       <td>13.2</td>
       <td>1.46</td>
       <td>1.48</td>
+      <td>1.099847</td>
+      <td>1.115862</td>
       <td>NaN</td>
       <td>HYPE, Blood, Pressure, Photoplethysmograms, Population, PPG, time-domain, features, features, level, split, cross, validation, EVAL, Stress, Test, cuff, PPG, time-domain, features, features, study, test, ML, Spectograms-Resnet18, gradient, boosting, machines</td>
     </tr>
@@ -1380,6 +1500,8 @@
       <td>9.2</td>
       <td>4.24</td>
       <td>3.45</td>
+      <td>0.151823</td>
+      <td>0.123371</td>
       <td>NaN</td>
       <td>MLP-BP, framework, cuffless, blood, pressure, measurement, PPG, ECG, signals, MLP-Mixer, networks, ECG+PPG, features, level, split, MIMIC, catheterization, ECG+PPG, features, study, learning, multi-filter, multi-channel, MLP-Mixer, ICU, patients</td>
     </tr>
@@ -1401,6 +1523,8 @@
       <td>9.2</td>
       <td>3.4</td>
       <td>2.89</td>
+      <td>1.245445</td>
+      <td>1.059757</td>
       <td>NaN</td>
       <td>MLP-BP, framework, cuffless, blood, pressure, measurement, PPG, ECG, signals, MLP-Mixer, networks, ECG+PPG, features, level, split, MIMIC+UoQ, catheterization, ECG+PPG, features, study, learning, multi-filter, multi-channel, MLP-Mixer, patients, UoQ</td>
     </tr>
@@ -1422,6 +1546,8 @@
       <td>11.76</td>
       <td>1.0</td>
       <td>1.02</td>
+      <td>1.844450</td>
+      <td>1.865947</td>
       <td>NaN</td>
       <td>information, fusion, blood, pressure, model, sensor, data, ECG, complexity, metrics, level, split, CHARIS, catheterization, ECG, complexity, metrics, study, ML, classifier-regression, fusion, random, forest, patients</td>
     </tr>
@@ -1443,6 +1569,8 @@
       <td>11.76</td>
       <td>1.93</td>
       <td>0.52</td>
+      <td>1.926871</td>
+      <td>0.515021</td>
       <td>NaN</td>
       <td>Blood, Pressure, Estimation, ECG, Using, Machine, Learning, Techniques, ECG, complexity, metrics, level, split, CHARIS, catheterization, ECG, complexity, metrics, study, ML, classifier-regression, fusion, random, forest, ICU, patients</td>
     </tr>
@@ -1464,6 +1592,8 @@
       <td>14.7</td>
       <td>2.7</td>
       <td>2.08</td>
+      <td>1.026610</td>
+      <td>0.789662</td>
       <td>NaN</td>
       <td>Pulse, arrival, time, surrogate, blood, pressure, ECG+PPG, PAT, HR, level, split, cross, validation, Internal, cuff, ECG+PPG, PAT, HR, study, infusion, phenylephrine, ML, regression, poon, model</td>
     </tr>
@@ -1485,6 +1615,8 @@
       <td>14.7</td>
       <td>2.56</td>
       <td>1.99</td>
+      <td>0.973410</td>
+      <td>0.755468</td>
       <td>NaN</td>
       <td>Pulse, arrival, time, surrogate, blood, pressure, ECG+ICG+PPG, PTT, PEP, PAT, level, split, cross, validation, Internal, cuff, ECG+ICG+PPG, PTT, PEP, PAT, study, infusion, phenylephrine, ML, regression, fung, model</td>
     </tr>
@@ -1506,6 +1638,8 @@
       <td>11.08</td>
       <td>1.62</td>
       <td>1.65</td>
+      <td>0.123359</td>
+      <td>0.125637</td>
       <td>NaN</td>
       <td>Study, cuffless, blood, pressure, estimation, method, parameters, ECG+PPG, PAT, time-domain, features, HRV, level, split, MIMIC+VitalDB, catheterization, ECG+PPG, PAT, time-domain, features, HRV, study, ML, random, forest+adaboost, ICU, patients</td>
     </tr>
@@ -1527,6 +1661,8 @@
       <td>13.5</td>
       <td>1.36</td>
       <td>1.3</td>
+      <td>0.296061</td>
+      <td>0.281650</td>
       <td>NaN</td>
       <td>accuracy, blood, pressure, measurement, smartwatch, health, device, ECG+PPG, EverLast, smartwatch, level, split, Internal, cuff, ECG+PPG, EverLast, smartwatch, study, hospital, patients</td>
     </tr>
@@ -1548,6 +1684,8 @@
       <td>11.11</td>
       <td>1.78</td>
       <td>1.68</td>
+      <td>0.829490</td>
+      <td>0.785167</td>
       <td>NaN</td>
       <td>influence, characteristics, blood, pressure, estimation, PPG, signals, biometrics+PPG, time-domain, features, level, split, PPG-BP, cuff, biometrics+PPG, time-domain, features, study, ML, SVM</td>
     </tr>
@@ -1569,6 +1707,8 @@
       <td>10.0</td>
       <td>4.08</td>
       <td>5.21</td>
+      <td>0.603719</td>
+      <td>0.770371</td>
       <td>NaN</td>
       <td>blood, pressure, monitoring, system, signal, PPG, time-domain, features, level, split, Internal, cuff, PPG, time-domain, features, study, ML, process, regression+SVM</td>
     </tr>
@@ -1590,6 +1730,8 @@
       <td>2.0</td>
       <td>0.32</td>
       <td>0.32</td>
+      <td>0.154479</td>
+      <td>0.154894</td>
       <td>NaN</td>
       <td>blood, pressure, individuals, networks, PPG, time-domain, features, entropy, features, level, split, data, subjects, Internal, cuff, PPG, time-domain, features, entropy, features, study, learning, LSTM</td>
     </tr>
@@ -1618,7 +1760,7 @@
 <p><br /></p>
 
 <h2> Exclude Table </h2>
-<table id="etable" border="1" class="dataframe">
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th>Title</th>

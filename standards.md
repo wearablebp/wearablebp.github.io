@@ -4,7 +4,7 @@ title: Standards
 permalink: /standards/
 ---
 
-(unfinished)
+<h2> (in progress) </h2>
 
 <h2> Comparison between AAMI/ANSI/ISO Standard and IEEE Standard </h2>
 
@@ -40,3 +40,5 @@ To estimate the ED that satisfies the AAMI/ANSI/ISO Standards, we use the PPG-BP
 * Have ≥5% of reference DBP readings ≤60 mmHg, ≥5% with ≥100 mmHg, and ≥20% with ≥85 mm Hg
 
 Currently, there are no publicly available datasets that satisfy these demographics. However, the PPG-BP satisfies the requirements if subsampled. To determine a subsample that satisfied the AAMI/ANSI/ISO Standards, we performed weighted sampling of subjects, where the weights were determined using Iterative Proportional Fitting (IPF) marginalized on the requirements. We repeat this process 1000 times and determine the minimum variance of the subsampled datasets. Then, we took the maximum standard deviation allowed by [4], 8mmHg, and computed the ED explained in <a href="{{site.baseurl}}/meta/">Meta</a>. This yielded a required SBP and DBP standard deviation of at least 19.34 mmHg and 11.67 mmHg respectively. The minimum ED for SBP and DBP was computed to be 2.42 and 1.46. The implementation can be found at ____.
+
+<!-- <h2> 95% Confidence Intervals for AAMI/ANSI/ISO Standards </h2> -->
