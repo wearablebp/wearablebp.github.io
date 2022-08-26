@@ -6,11 +6,6 @@ permalink: /meta/
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<br>
-
-
-
-
 <h2> Method </h2>
 
 <h4> Protocol and Registration, Information Sources, and Search </h4>
@@ -25,7 +20,7 @@ A single author performed extraction of predefined data parameters. For studies 
 
 <h4> Summary Statistics </h4>
 
-We propose an estimate to evaluate estimation accuracy for studies that perform subject level split, coined Explained Deviation ($$ED$$), used to compute the effectiveness of a device with estimation error parameterized by ($$\mu_\epsilon, \sigma_\epsilon$$) on a population parameterized by ($$\mu_{pop}, \sigma_{pop}$$), where $$\mu$$ represents the mean and $$\sigma$$ represents the standard deviation. The ED can be computed as $$ ED = \frac{\sigma_{pop}}{\sigma_\epsilon}$$. The higher the EV, the better the device performs. On the other hand, an ED of 1 indicates that the estimator performs no better than an estimator that predicts a constant value. This is equivalent to an F-test for ratio of two variances with equal sample size, the null hypothesis $$H_0: ED \leq 1$$, and the alternative hypothesis $$H_1: ED \gt 1$$. Furthermore, confidence intervals can be computed using the F-distribution by determining the probability $$P(\sqrt{F_{\alpha/2}(n-1, n-1)} ED_{est} < ED_{true} < \sqrt{F_{1-\alpha/2}(n-1, n-1)} ED_{est})  = 1-\alpha $$ where $$\alpha$$ is the level of significance, $$P$$ is the probability, $$F$$ is the F-distribution, and $$n$$ in the sample size. 
+We propose an estimate to evaluate estimation accuracy for studies that perform subject level split, coined Explained Deviation ($$ED$$), used to compute the effectiveness of a device with estimation error parameterized by ($$\mu_\epsilon, \sigma_\epsilon$$) on a population parameterized by ($$\mu_{pop}, \sigma_{pop}$$), where $$\mu$$ represents the mean and $$\sigma$$ represents the standard deviation. The ED can be computed as $$ ED = \frac{\sigma_{pop}}{\sigma_\epsilon}$$. The higher the EV, the better the device performs. On the other hand, an ED of 1 indicates that the estimator performs no better than an estimator that predicts a constant value. This is equivalent to an F-test for ratio of two variances with equal sample size, the null hypothesis $$H_0: ED \leq ED_{min}$$, and the alternative hypothesis $$H_1: ED \gt ED_{min}$$ where $$ED_{min}$$ is the computed minimum Explained Deviation that meets the standards. Furthermore, confidence intervals can be computed using the F-distribution by determining the probability $$P(\sqrt{F_{\alpha/2}(n-1, n-1)} ED_{est} < ED_{true} < \sqrt{F_{1-\alpha/2}(n-1, n-1)} ED_{est})  = 1-\alpha $$ where $$\alpha$$ is the level of significance, $$P$$ is the probability, $$F$$ is the F-distribution, and $$n$$ in the sample size. 
 
 Using the same formulation, we compute $$ED$$ for personalization. However, in this case, we must take the change in BP of each subject into account: $$ED = \frac{\sigma_{\Delta BP, err}}{\sigma_{\Delta BP}}$$, where $$\sigma_{\Delta BP, err}$$ is the change in BP prediction error of the study cohort and $$\sigma_{\Delta BP}$$ is the standard deviation of the BP changes of the study cohort.
 
@@ -49,24 +44,31 @@ We identified a total of 2510 articles from our database search and 29 articles 
 From Fig. ,for sensor data, we observe that the most common sensor data configuration used for BP estimation is photoplethysmography and photoplethysmography with electrocardiography. For algorithm, we observe that the most common class of algorithm used is classical machine learning, often in conjuntion with hand-crafted features. For subject characteristics, overall, we observe that there is a similar split between using healthy, diseased and a mix of healthy and diseased subjects in the study. However, it is notable that there were significantly less studies that used diseased subjects for personalization. For datasets used, we observe that an overwheming number of studies used databases collected internally that are not avaialble for the public and the most common publically available database used is Medical Information Mart for Intensive Care (MIMIC). For study characteristics, we observe that the majority of subject level split studies were observational. On the other hand, we observe that the personalization studies were split similarly between observational and interventional studies. For the quantitative metrics, notably, the standard devation of the BP distribution for SBP is larger than that for DBP and the standard deviation of the BP distribution of subject level split studies is greater than that of personalization studies.
 
 <h2> Meta-Analysis (in progress) </h2>
-
-Using our proposed metric to evaluate estimation accuracy, we plot the ED of SBP versus ED of DBP for subject level split and personalization studies. We indicate the size of points using the power of the study and also report important study information using a hover tool. Moreover, we delineate in green the minimum ED computed from the AAMI/ANSI/ISO Standards for SBP and DBP, which were 2.42 and 1.46 respectively. See <a href="{{site.baseurl}}/standards/">Standards</a> for more information about the calculation. <br> <br>
+Using our proposed metric to evaluate estimation accuracy, we plot the ED of SBP versus ED of DBP for subject level split and personalization studies. We indicate the size of points using the power of the study and also report important study information using a hover tool. Moreover, we delineate in green the minimum ED ($$ED_{min}$$), computed from the AAMI/ANSI/ISO Standards for SBP and DBP, which were 2.42 and 1.46 respectively. See <a href="{{site.baseurl}}/standards/">Standards</a> for more information about the calculation. 
 
 {% include scatter.html %} <br> 
 <center> <i> Fig. . A scatter plot of Explained Deviation for SBP versus Explained Deviation for DBP color coded by sensor device configuration. The size represent the power of the study. The tabs above allow to switch between Calibration Technique (subject level split or personalization). Hovering over the scatter points displays important parameter information related to the study. Clicking the legend allows to show or hide particular sensor data configurations. Finally, panning, zooming, tapping, resetting, and hovering tools are included on the right hand side of the legend. See <a href="{{site.baseurl}}/key/">Key</a> for a description of extracted parameters. </i> </center> <br>
 
-We observe that there are 20 subject level split studies and 0 personalization studies that exceed the minimum determined ED.
+<!-- {% include metadata_stats_meetspecs.html %}
+<center> <i> Fig. . Extracted parameter statistics of studies that exceed the minimum ED for both SBP and DBP. Using the tabs above allows to switch between different extracted parameter distributions. Moreover, for categorical statistics, hovering over the bars shows the number of entries and percentage composition of subject level split and personalization studies. See <a href="{{site.baseurl}}/key/">Key</a> for a description of extracted parameters. </i> </center> <br> -->
 
-{% include metadata_stats_meetspecs.html %}
+We observe that there are 20 subject level split studies and 0 personalization studies that report an $$ED$$ that exceed $$ED_{min}$$ for both SBP and DBP. Moreover, we further narrow the criteria to studies that exceed $$ED_{min}$$ with 95% confidence and exceed a power of 0.98. To do this, we recompute the 90% margin of error ($$MOE_{90}$$), since the margin of error is computed on both sides of the distribution, and compute $$ED_{min} - MOE_{90}$$ to get the lower bound of the 95% confidence interval of the study. For brevity, this is called Explained Deviation SBP/DBP Lower Bound in Fig. . This ensures that there is a 95% probability that the true mean of the computed $$ED$$ is above $$ED_{min}$$.
 
+{% include meet_specs_power_table.html %}
+
+From Fig. , we observe the only 6 studies (all performing subject level split) that exceed $$ED_{min}$$ with 95% confidence and a power of 0.98. The Sensor Data are evenly distiributed between ECG+PPG and PPG with one ECG+PPG study that also uses biometrics. Similarly, the algorithm used is evenly distributed between classical ML and deep learning methods. 
 
 <h4> Insight 1: Longitudinal personalization studies without sufficient BP variation demonstrate device estimation acccuracy no more than stable BP over test period </h4>
 
-It is notable that less than 10% of the personalization studies include information about the change in BP distribution. Even though there are studies that report the initial BP distribution of subjects, this is not sufficient, as some experiments do not allow sufficient variation in BP. As a consequence, allowing the intial calibrated BP values to be the estimator can lead to small errors. In a similar vein, the number of observational studies and interventional type studies for personalization studies were almost equal. However, observational studies may not allow sufficient BP variation, leading to lower ED. Due to the lack of longitudinal personalization studies that have high ED, we suspect that longitudinal studies demonstrate device estimation accuracy no more than stable BP over the test period. 
+It is notable that less than 10% of the personalization studies include information about the change in BP distribution. Even though there are studies that report the initial BP distribution of subjects, this is not sufficient, as some experiments do not allow sufficient variation in BP. As a consequence, allowing the intial calibrated BP values to be the estimator can lead to small errors. In a similar vein, the number of observational studies and interventional type studies for personalization studies were almost equal. However, observational studies may not allow sufficient BP variation, leading to lower $$ED$$. Due to the lack of longitudinal personalization studies that have high $$ED$$, we suspect that longitudinal studies demonstrate device estimation accuracy no more than stable BP over the test period. 
 
-<h4> Insight 2: No evidence to suggest Pulse Arrival Time is a strong indicator of BP change </h4>
+<h4> Insight 2: No evidence to suggest personalization is a robust calibration method </h4>
 
-Pulse Arrival Time (PAT) and Pulse Transit Time (PTT) are considered considered as well-established features, yet there are no studies that demonstrate an ED that are greater or equal to the computed ED of the requirements. In fact, all of the PAT/PTT studies cluster around the 1, with some that are below the error boundaries established by the standards. 
+lack of data for varying physiologies
+lack of well designed studies
+
+<h4> Insight 3: No evidence to suggest Pulse Arrival Time (PAT) or Pulse Transit Time (PTT) is a strong indicator of BP change </h4>
+PAT and Pulse Transit Time PTT are considered considered as well-established features, yet there are no studies that demonstrate an $$ED$$ that are greater or equal to $$ED_{min}$$. To elaborate, there are no studies that involve the use of PTT that reported the change in BP distribution. All of the PAT and PTT studies cluster around the 1, with some that are below the error boundaries established by the standards.
 
 
 {% include patptt_scatter.html %}
