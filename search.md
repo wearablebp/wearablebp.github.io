@@ -35,12 +35,12 @@ permalink: /search/
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.7/css/scroller.dataTables.min.css">
 
 <h2> Include Table </h2>
-{% include meta_table.html %}
+{% include include_table.html %}
 
 <script type="text/javascript">
 	$(".className").attr("style","");
 	$(document).ready(function() {
-	    var table = $('#mtable').DataTable({
+	    var table = $('#itable').DataTable({
 	    	dom: 'Bfrtip',
 	    	pageLength: 25,
 	        searchBuilder: true,
