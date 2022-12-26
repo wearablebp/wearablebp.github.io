@@ -4,7 +4,7 @@ title: Search
 permalink: /search/
 ---
 
-<font size="3.5">  We provide a table of results for all the articles included in the systematic review. Similarly, we provide a table of studies that were excluded from analysis with exclusion reasons. We embeded a search function that allows multiple keyword search by placing a " " in between keywords, a custom search builder that allows multiple conditional search, and an export tool that allows copying and downloading data in csv format. Moreover, clicking the "green +" button allows you to view all the extracted and computed information of the article. For a key of exclusion reasons, see <a href="{{site.baseurl}}/key/">Key</a>.
+<font size="4">  Here, we provide a table of results for all the articles included in the systematic review. Similarly, we provide a table of studies that were excluded from analysis with exclusion reasons. We embeded a search function that allows multiple keyword search by placing a " " in between keywords, a custom search builder that allows multiple conditional search, and an export tool that allows copying and downloading data in csv format. Moreover, clicking the "green +" button allows you to view all the extracted and computed information of the article. For a key of exclusion reasons, see <a href="{{site.baseurl}}/key/">Key</a>.
 </font>
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
@@ -47,7 +47,7 @@ permalink: /search/
 	        responsive: true,
 	        columnDefs: [{ responsivePriority: 1, targets: 0 }],
 	        buttons: ['copy', 'csv'],
-			order: [[2, 'desc']],
+			order: [[10, 'desc']],
 			scrollY: 600,
 	        scrollCollapse: false,
         	scroller: true

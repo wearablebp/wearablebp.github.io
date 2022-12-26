@@ -3,7 +3,7 @@ author:
   name: WearableBP
   email: wearablebp@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
- A Systematic Review and Meta-Analysis of Wearable BP papers.
+ A Review of Wearable Blood Pressure Monitoring Devices.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -50,16 +50,18 @@ minima:
 # - about.md
 
 # Build settings
-theme: minima
+# theme: minima
+theme: just-the-docs
 
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
 
 header_pages:
- - meta.md
  - search.md
+ - meta.md
  - standards.md
  - datasets.md
  - benchmarks.md
+ - methods.md
  - key.md
