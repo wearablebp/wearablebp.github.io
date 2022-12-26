@@ -2,6 +2,7 @@
 layout: page
 title: Search
 permalink: /search/
+nav_order: 1
 ---
 
 Here, we provide a table of results for all the articles included in the systematic review. Similarly, we provide a table of studies that were excluded from analysis with exclusion reasons. We embeded a search function that allows multiple keyword search by placing a " " in between keywords, a custom search builder that allows multiple conditional search, and an export tool that allows copying and downloading data in csv format. Moreover, clicking the "green +" button allows you to view all the extracted and computed information of the article. For a key of exclusion reasons, see <a href="{{site.baseurl}}/key/">Key</a>.

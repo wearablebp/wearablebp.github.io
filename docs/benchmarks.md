@@ -2,6 +2,7 @@
 layout: page
 title: Benchmarks
 permalink: /benchmarks/
+nav_order: 4
 ---
 
 {% include replicated_ed_scatter.html %}

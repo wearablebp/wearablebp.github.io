@@ -1,0 +1,54 @@
+I"<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<h2> Notable Similarities and Differences between AAMI/ANSI/ISO, IEEE, and BHS Standards </h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><a href="https://webstore.ansi.org/standards/aami/ansiaamiiso810602019">AAMI/ANSI/ISO</a></td>
+      <td><a href="https://ieeexplore.ieee.org/document/6882122">IEEE Standard</a> (<a href="https://ieeexplore.ieee.org/document/8859685">Amendment</a>)</td>
+      <td><a href="https://doi.org/10.1097/00004872-199007000-00004">BHS</a></td>
+    </tr>
+    <tr>
+      <td>Subject Level Split Procedure</td>
+      <td> <ul><li> Reference Cuff (Auscultation): 3 pairs of measurements for each subject</li><li> Arterial Line: mean SBP and DBP over a 30 s period </li></ul></td>
+      <td> <ul><li> Reference Cuff (Auscultation): 3 pairs of measurements for each subject</li><li> Arterial Line: mean of all beats over a 20 s period </li></ul></td>
+      <td> <ul><li> Reference Cuff (Auscultation): 5 phases based on deflation protocols and readings from two reference devices, including a device reliability test protocol for one month of use. </li><li> Arterial Line: not recommended </li></ul></td>
+    </tr>
+    <tr>
+      <td>Personalization Procedure (Test with BP change from calibration point)</td>
+      <td>Not specified</td>
+      <td> SBP changes: <ul><li> 13.6% with -30 to -15mmHg change </li><li> 34.1% with -15 to 0mmHg change </li><li> 34.1% with 0 to 15mmHg change </li><li> 13.6% with 15 to 30mmHg change </li></ul> DBP changes: <ul><li><li> 13.6% with -20 to -10mmHg change </li><li> 34.1% with -10 to 0mmHg change </li><li> 34.1% with 0 to 10mmHg change </li><li> 13.6% with 10 to 20mmHg change </li></ul> </td>
+      <td>Not specified</td>
+    </tr>
+    <tr>
+      <td>Number of Subjects Required</td>
+      <td>85</td>
+      <td> <ul><li> Phase 1: 20 </li><li> Phase 2: 65 </li></td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>Demographics (Adults/General Population)</td>
+      <td> <ul><li>Age: ≥12 years old</li><li> Sex: ≥30% males and ≥30% females </li><li> SBP: ≥5% with ≤100 mm Hg, ≥5% with ≥160 mmHg, ≥20% with ≥140 mmHg </li><li> DBP: ≥5% with ≤60 mmHg, ≥5% with ≥100 mmHg, ≥20% with ≥85 mmHg </li></ul></td>
+      <td><ul><li>Age: all subjects between 18 and 65 years old </li><li> Sex: equal number of male and female subjects (≥22 each) </li><li> SBP and DBP: equal distribution of <ul><li> Healthy (SBP&lt;120mmHg, DBP&lt;80mmHg) </li><li>Prehypertension (120≤SBP&lt;139, 80≤DBP&lt;90)</li><li> Stage 1 Hypertension (140≤SBP&lt;160, 90≤SBP&lt;100) </li><li> Stage 2 Hypertension (SBP≥160, DBP≥100)</li></ul> </td>
+      <td> <ul> <li> Age: distribution by chance </li><li>Sex: distribution by chance</li><li>SBP: SBP&lt;90mmHg (N=8), 90≤SBP&lt;130mmHg (N=20), 130≤SBP&lt;160mmHg (N=20), 160≤SBP&lt;180mmHg (N=20), SBP&gt;180mmHg (N=8)</li><li> DBP: DBP&lt;60mmHg (N=8), 60≤DBP&lt;80mmHg (N=20), 80≤DBP&lt;100mmHg (N=20), 100≤DBP&lt;110mmHg (N=20), DBP&gt;110mmHg (N=8)</li></ul> </td>
+    </tr>
+    <tr>
+      <td>Evaluation Metric</td>
+      <td>abs(Mean Difference) ± Standard Deviation</td>
+      <td>Mean Absolute Difference</td>
+      <td>Percentage of Absolute Differences binned by ≤5, ≤10, and ≤15mmHg in low (SBP&lt;130 and DBP&lt;80mmHg), medium (130≤SBP&lt;160 and 80≤DBP&lt;100), and high (SBP&gt;160 and DBP&gt;100) BP ranges</td>
+    </tr>
+    <tr>
+      <td>Evaluation Criteria</td>
+      <td>Accept/Reject based on criteria: <ul><li>Criterion 1: The differences in individual paired determinations of the device under investigation and the mean observer references should have a mean difference of ≤5mmHg and a standard deviation of ≤8mmHg. </li><li>Criterion 2: The maximum permissible standard deviation of the difference between averaged readings from the device under investigation for each subject and observer references should be less than a particular value specified in ANSI/AAMI/ISO 81060-2:2019 Section 5.2.4.1.2. For instance, a mean difference of 0mmHg should have a standard deviation value of <6.95mmHg. </li></ul></td>
+      <td>Grading: <ul><li>A: MAE≤5</li><li>B: 5&lt;MAE≤6</li><li>C: 6&lt;MAE≤7</li><li>D: MAE≥7</li></ul></td>
+      <td>Cumulative percentage of readings:  <ul><li>≤5mmHg: A (60%), B (50%), C (40%)</li><li>≤10mmHg: A (85%), B (75%), C (65%) </li><li>≤15mmHg: A (95%), B (90%), C (85%)</li></ul> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2> Relationship between Evaluation Metrics </h2>
+<p>The <a href="https://ieeexplore.ieee.org/document/6882122">IEEE Standard</a> and <a href="https://ieeexplore.ieee.org/document/8859685">Amendment</a> derives its criteria based on AAMI/ANSI/ISO standards and provides comparison between IEEE, AAMI/ANSI/ISO, and BHS. An informative figure can be found in Annex A.1 Figure A.2 of <a href="https://ieeexplore.ieee.org/document/6882122">IEEE Std 1708-2014</a> and Annex D.1 Figure D.1 of <a href="https://ieeexplore.ieee.org/document/8859685">IEEE Std 1708a-2019</a>.</p>
+:ET

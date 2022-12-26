@@ -2,6 +2,7 @@
 layout: page
 title: Meta
 permalink: /meta/
+nav_order: 2
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
