@@ -16,5 +16,6 @@ Welcome to the <b>wearablebp.github.io</b> ! This website accompanies our System
 	<li> <a href="{{site.baseurl}}/benchmarks/">Benchmarks</a>: open-contribution benchmark of BP estimation algorithms </li>
 	<li> <a href="{{site.baseurl}}/methods/">Methods</a>: methods used in systematic review </li>
 	<li> <a href="{{site.baseurl}}/standards/">Standards</a>: comparison between different Blood Pressure device standards </li>
+	<li> <a href="{{site.baseurl}}/code/">Code</a>: available third-party code </li>
 	<li> <a href="{{site.baseurl}}/key/">Key</a>: terminology and abbreviations used in parameter extraction of studies </li>
 </ul>
