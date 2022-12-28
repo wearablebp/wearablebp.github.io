@@ -31,7 +31,7 @@ nav_order: 3
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.7/css/scroller.dataTables.min.css">
 
 <h2> Publicly Available Datasets </h2>
-We provide a table of results for publicly available datasets. We embeded a search function that allows multiple keyword search by placing a " " in between keywords, a custom search builder that allows multiple conditional search, and an export tool that allows copying and downloading data in csv format. Moreover, clicking the "green +" button allows you to view additional extracted and computed information of the article. For a key of exclusion reasons, see <a href="{{site.baseurl}}/key/">Key</a>.
+We provide a table of results for publicly available datasets. We embeded a search function that allows multiple keyword search by placing a " " in between keywords, a custom search builder that allows multiple conditional search, and an export tool that allows copying and downloading data in csv format. Moreover, clicking the "green +" button allows you to view additional extracted and computed information of the article. For a key of exclusion reasons, see <a href="{{site.baseurl}}/key/">Key</a>. If you would like to add to this list, please fill out this [form](https://forms.gle/XeP3udcv72vfkrGM6).
 
 {% include dataset_table.html %}
 

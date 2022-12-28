@@ -15,7 +15,7 @@ Keywords "wearable", "blood pressure", "monitoring", "estimation", "systolic", "
 <h2> Eligibility Criteria </h2>
 1. Report a mean absolute error (MAE) or mean difference ± standard deviation of the error (ME) for SBP and DBP estimation
 2. Are written in the English language
-3. Claim to perform subject-level split or personalization
+3. Claim to perform subject split or personalization
 4. Do not temporally update models
 5. Perform experiments on human subjects
 6. Have number of test subjects greater than 1
@@ -25,7 +25,7 @@ Keywords "wearable", "blood pressure", "monitoring", "estimation", "systolic", "
 A single author performed an extraction of predefined data parameters. For studies that had multiple protocols and reported multiple results, multiple entries were made in the compiled database. The predefined data fields include: Key Devices and Measurements, Calibration Technique, Algorithm,	Dataset, Number of Test Subjects, Training Subject Characteristics, Testing Subject Characteristics, Study Characteristics (observational or interventional study), BP Distribution, Evaluation Metric, and Reported Result. For personalization articles, we report the Time between Calibration and Test. To estimate the SBP and DBP population standard deviation when the BP distribution was not provided in the code, we used (if available) figures that had an axis with Reference SBP or DBP values, specifically correlation plots (Reference vs Estimated) and error plots (Reference vs Error). The implementation can be found on [GitHub](https://github.com/wearablebp). Finally, for studies that were included in the analysis, we report the implementation availability and the dataset availability.
 
 <h2> Study selection </h2> 
-We identified a total of 2510 articles from our database search and 29 articles from other sources. For inclusion in this analysis. After adjusting for duplicates by code, 2180 remained. We inspected the full articles and excluded 2008 articles based on the inclusion criteria. Likewise, we included 173 unique articles and 67 additional studies (from articles that report multiple studies). From the 239 studies, we determined that 92 studies performed subject-level split and 147 studies performed personalization. Upon further examination, we identified the (change in) BP distribution of 59 and 10 studies for subject level split and personalization respectively. Ultimately, we included 69 studies in the meta-analysis (Fig. 1).
+We identified a total of 2510 articles from our database search and 29 articles from other sources. For inclusion in this analysis. After adjusting for duplicates by code, 2180 remained. We inspected the full articles and excluded 2008 articles based on the inclusion criteria. Likewise, we included 173 unique articles and 67 additional studies (from articles that report multiple studies). From the 239 studies, we determined that 92 studies performed subject-level split and 147 studies performed personalization. Upon further examination, we identified the (change in) BP distribution of 59 and 10 studies for subject split and personalization respectively. Ultimately, we included 69 studies in the meta-analysis (Fig. 1).
 
 <br>
 <div style="text-align: center"><img src="/images/graphviz.png" style="width: 100%"/></div>
