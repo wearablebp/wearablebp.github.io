@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Code
-permalink: /code/
+title: Third-party Code
+permalink: /thirdpartycode/
 nav_order: 6
 ---
 
@@ -30,12 +30,9 @@ nav_order: 6
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.7/css/scroller.dataTables.min.css">
 
-Please see the Wearable BP on [GitHub](https://github.com/wearablebp/) for code to reproduce Systematic Review results and visuals.
-
-<h2> Available Third-party Code </h2>
+<h2> Available Code </h2>
 
 We provide a table of code and dataset availability for all the articles included in the systematic review. We embeded a search function that allows multiple keyword search by placing a " " in between keywords, a custom search builder that allows multiple conditional search, and an export tool that allows copying and downloading data in csv format.
-<br>
 
 <h2> Available Code Search Methodology </h2>
 
@@ -51,9 +48,6 @@ We provide a table of code and dataset availability for all the articles include
 	<li> If caveats exist, insert note after "Unavailable" or "Available". </li>
 </ol>
 
-
-
-<br> 
 <font size="5"> Code Availability </font>
 
 {% include availability_table.html %}
