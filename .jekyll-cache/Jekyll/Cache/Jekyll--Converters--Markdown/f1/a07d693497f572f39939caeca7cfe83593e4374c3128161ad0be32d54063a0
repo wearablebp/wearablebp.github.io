@@ -1,0 +1,2602 @@
+I"K�<p>Here, we provide a table of results for all the articles included in the systematic review. Similarly, we provide a table of studies that were excluded from analysis with exclusion reasons. We embeded a search function that allows multiple keyword search by placing a “ “ in between keywords, a custom search builder that allows multiple conditional search, and an export tool that allows copying and downloading data in csv format. Moreover, clicking the “green +” button allows you to view all the extracted and computed information of the article. For a key of exclusion reasons, see <a href="/key/">Key</a>.</p>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/searchbuilder/1.3.4/js/dataTables.searchBuilder.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/searchbuilder/1.3.4/js/searchBuilder.bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/datetime/1.1.2/js/dataTables.dateTime.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/scroller/2.0.7/js/dataTables.scroller.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap.min.css" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/datetime/1.1.2/css/dataTables.dateTime.min.css" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/searchbuilder/1.3.4/css/searchBuilder.bootstrap.min.css" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.7/css/scroller.dataTables.min.css" />
+
+<h2> Studies Included in Systematic Review </h2>
+<table border="1" class="dataframe" id="itable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Title</th>
+      <th>Calibration Technique</th>
+      <th>Sensor Data</th>
+      <th>Algorithm</th>
+      <th>Dataset</th>
+      <th>Number of Test Subjects</th>
+      <th>Testing Subject Characteristics</th>
+      <th>Study Characteristics</th>
+      <th>SBP Distribution STD</th>
+      <th>DBP Distribution STD</th>
+      <th>Reported Result</th>
+      <th>SBP ED</th>
+      <th>DBP ED</th>
+      <th>SBP ED MOE</th>
+      <th>DBP ED MOE</th>
+      <th>Power</th>
+      <th>Original Model Implementation Availability</th>
+      <th>Exact Dataset/Pre-processing Code Availability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9721156/">A Comparison of Wearable Tonometry, Photoplethysmography, and Electrocardiography for Cuffless Measurement of Blood Pressure in an Ambulatory Setting (Mieloszyk et al., 2022)</a></td>
+      <td>personalization</td>
+      <td>accelerometer+ECG+PPG</td>
+      <td>classical ML</td>
+      <td>Aurora-BP</td>
+      <td>100</td>
+      <td>healthy+diseased</td>
+      <td>interventional study</td>
+      <td>10.30</td>
+      <td>8.12</td>
+      <td>0.361±8.94; 0.430±6.01</td>
+      <td>1.152125</td>
+      <td>1.351082</td>
+      <td>0.229758</td>
+      <td>0.269434</td>
+      <td>0.992614</td>
+      <td><a href="https://github.com/microsoft/aurorabp-sample-data">Available</a></td>
+      <td><a href="https://github.com/microsoft/aurorabp-sample-data">Available upon request</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9721156/">A Comparison of Wearable Tonometry, Photoplethysmography, and Electrocardiography for Cuffless Measurement of Blood Pressure in an Ambulatory Setting (Mieloszyk et al., 2022)</a></td>
+      <td>personalization</td>
+      <td>accelerometer+tonometry</td>
+      <td>classical ML</td>
+      <td>Aurora-BP</td>
+      <td>100</td>
+      <td>healthy+diseased</td>
+      <td>interventional study</td>
+      <td>10.30</td>
+      <td>8.12</td>
+      <td>0.855±8.66; 0.752±5.94</td>
+      <td>1.189376</td>
+      <td>1.367003</td>
+      <td>0.237187</td>
+      <td>0.272610</td>
+      <td>0.992614</td>
+      <td><a href="https://github.com/microsoft/aurorabp-sample-data">Available</a></td>
+      <td><a href="https://github.com/microsoft/aurorabp-sample-data">Available upon request</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9721156/">A Comparison of Wearable Tonometry, Photoplethysmography, and Electrocardiography for Cuffless Measurement of Blood Pressure in an Ambulatory Setting (Mieloszyk et al., 2022)</a></td>
+      <td>personalization</td>
+      <td>ECG</td>
+      <td>classical ML</td>
+      <td>Aurora-BP</td>
+      <td>100</td>
+      <td>healthy+diseased</td>
+      <td>interventional study</td>
+      <td>10.30</td>
+      <td>8.12</td>
+      <td>1.08±8.96; 1.32±5.94</td>
+      <td>1.149554</td>
+      <td>1.367003</td>
+      <td>0.229245</td>
+      <td>0.272610</td>
+      <td>0.992614</td>
+      <td><a href="https://github.com/microsoft/aurorabp-sample-data">Available</a></td>
+      <td><a href="https://github.com/microsoft/aurorabp-sample-data">Available upon request</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/bsn.2009.23">A h-Shirt-Based Body Sensor Network for Cuffless Calibration and Estimation of Arterial Blood Pressure (Gu et al., 2009)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>physiological model</td>
+      <td>Internal</td>
+      <td>6</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>13.00</td>
+      <td>NaN</td>
+      <td>-3.0±12.6</td>
+      <td>1.031746</td>
+      <td>NaN</td>
+      <td>1.186094</td>
+      <td>NaN</td>
+      <td>0.165480</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/8857373/">A Novel Method for Calibration-Based Cuff-Less Blood Pressure Estimation (Li et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>deep learning</td>
+      <td>MIMIC</td>
+      <td>120.8</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>15.70</td>
+      <td>10.80</td>
+      <td>-1.73±16.07; -0.892±10.696</td>
+      <td>0.976976</td>
+      <td>1.009723</td>
+      <td>0.176731</td>
+      <td>0.182655</td>
+      <td>0.997998</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/IJCNN48605.2020.9207294">A Probabilistic Beat-to-Beat Filtering Model for Continuous and Accurate Blood Pressure Estimation (Chen et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>deep learning</td>
+      <td>MIMIC</td>
+      <td>120</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>22.00</td>
+      <td>9.00</td>
+      <td>-4.73±19.89; 0.57±10.97</td>
+      <td>1.106083</td>
+      <td>0.820419</td>
+      <td>0.200771</td>
+      <td>0.148919</td>
+      <td>0.997893</td>
+      <td><a href="https://github.com/zehuachenImperial">Unavailable. Check github profile.</a></td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://iopscience.iop.org/article/10.1088/2057-1976/ab1a82/meta">Accelerometric patch probe for cuffless blood pressure evaluation from carotid local pulse wave velocity: Design, development, and in vivo experimental study (Arathy et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>PPG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>13</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>10.59</td>
+      <td>10.63</td>
+      <td>1.69±5.24; 0.98±6.48</td>
+      <td>2.020992</td>
+      <td>1.640432</td>
+      <td>1.271142</td>
+      <td>1.031781</td>
+      <td>0.333798</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://mhealth.jmir.org/2020/2/e16811">Accuracy of vital signs measurements by a smartwatch and a portable health device: validation study (Hahnen et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>proprietary</td>
+      <td>Internal</td>
+      <td>85</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>15.00</td>
+      <td>9.00</td>
+      <td>0±13.5; 0±6.1</td>
+      <td>1.111111</td>
+      <td>1.475410</td>
+      <td>0.241083</td>
+      <td>0.320127</td>
+      <td>0.981742</td>
+      <td>NaN</td>
+      <td><a href="https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:133082">Available upon request </a></td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/CISP-BMEI48845.2019.8966011">An Ambulatory Blood Pressure Monitoring System Based on the Uncalibrated Steps of the Wrist (Wu et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>BCG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>15</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>17.30</td>
+      <td>9.80</td>
+      <td>3.08±4.29; 1.52±2.20</td>
+      <td>4.032634</td>
+      <td>4.454545</td>
+      <td>2.311580</td>
+      <td>2.553427</td>
+      <td>0.379576</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9630063/">An investigation of the individualized, two-point calibration method for cuffless blood pressure estimation using pulse arrival time: an historical perspective using the … (Louka et al., 2021)</a></td>
+      <td>personalization</td>
+      <td>ECG+PPG</td>
+      <td>unclear</td>
+      <td>Internal</td>
+      <td>20</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>0±20.4; 1.1±21.1</td>
+      <td>0.147059</td>
+      <td>0.094787</td>
+      <td>0.070614</td>
+      <td>0.045514</td>
+      <td>0.486656</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/document/8938751/">Blood pressure estimation using photoplethysmogram signal and its morphological features (Hasanzadeh et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>classical ML</td>
+      <td>MIMIC</td>
+      <td>942</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>25.64</td>
+      <td>9.31</td>
+      <td>0.09±10.38; 0.23±4.22</td>
+      <td>2.470135</td>
+      <td>2.206161</td>
+      <td>0.158028</td>
+      <td>0.141140</td>
+      <td>1.000000</td>
+      <td><a href="https://github.com/navidhasanzadeh/BPPPG">Available</a></td>
+      <td><a href="https://github.com/navidhasanzadeh/BPPPG">Available. "Small Sample" uploaded to github. No pre-processing code.</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/8513156/">Carotid local pulse wave velocity measurement using dual-element accelerometric patch probe (Arathy et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>PPG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>14</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>15.64</td>
+      <td>11.92</td>
+      <td>3.04±7.15; 0.59±6.19</td>
+      <td>2.187413</td>
+      <td>1.925687</td>
+      <td>1.310651</td>
+      <td>1.153830</td>
+      <td>0.356870</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.nature.com/articles/s41598-021-92997-0">Combined deep CNN–LSTM network-based multitasking learning architecture for noninvasive continuous blood pressure estimation using difference in ECG … (Jeong et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>deep learning</td>
+      <td>MIMIC</td>
+      <td>10</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>12.21</td>
+      <td>7.45</td>
+      <td>0.0±1.6; 0.2±1.3</td>
+      <td>7.631250</td>
+      <td>5.730769</td>
+      <td>5.754362</td>
+      <td>4.321300</td>
+      <td>0.262760</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/ICET.2018.8603612">Continuous and Noninvasive Blood Pressure Estimation by Two-Sensor Measurement of Pulse Transit Time (Rasool et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>PPG+pressure sensor</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>21</td>
+      <td>unclear</td>
+      <td>observational study</td>
+      <td>8.62</td>
+      <td>NaN</td>
+      <td>0±5.26; 0±7.71</td>
+      <td>1.638783</td>
+      <td>NaN</td>
+      <td>0.764387</td>
+      <td>NaN</td>
+      <td>0.506639</td>
+      <td><a href="https://github.com/Barissdal">Unavailable. Check github profile.</a></td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S0933365719309674">Continuous blood pressure measurement from one-channel electrocardiogram signal using deep-learning techniques (Miao et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>ECG</td>
+      <td>deep learning</td>
+      <td>MIMIC</td>
+      <td>428</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>19.54</td>
+      <td>8.17</td>
+      <td>-0.11±9.99; 0.01±6.29</td>
+      <td>1.955956</td>
+      <td>1.298887</td>
+      <td>0.186048</td>
+      <td>0.123549</td>
+      <td>1.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S0933365719309674">Continuous blood pressure measurement from one-channel electrocardiogram signal using deep-learning techniques (Miao et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>ECG</td>
+      <td>deep learning</td>
+      <td>MIMIC+Internal</td>
+      <td>30</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>19.54</td>
+      <td>8.17</td>
+      <td>-0.22±5.82; -0.75±5.62</td>
+      <td>3.357388</td>
+      <td>1.453737</td>
+      <td>1.275101</td>
+      <td>0.552114</td>
+      <td>0.662917</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1093/ajh/hpac020">Continuous Monitoring of Blood Pressure Using a Wrist-Worn Cuffless Device (Sayer et al., 2022)</a></td>
+      <td>subject split</td>
+      <td>biometrics+pressure</td>
+      <td>proprietary</td>
+      <td>Internal</td>
+      <td>34</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>24.20</td>
+      <td>14.20</td>
+      <td>0.2±10.1; 0.9±7.5</td>
+      <td>2.396040</td>
+      <td>1.893333</td>
+      <td>0.848590</td>
+      <td>0.670550</td>
+      <td>0.718818</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9616476/">Continuous ppg-based blood pressure monitoring using multi-linear regression (Haddad et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>classical ML</td>
+      <td>MIMIC</td>
+      <td>26</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>21.48</td>
+      <td>11.78</td>
+      <td>0±8.08; 0±6.22</td>
+      <td>2.658416</td>
+      <td>1.893891</td>
+      <td>1.095022</td>
+      <td>0.780108</td>
+      <td>0.598752</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1145/3447993.3483241">Crisp-BP: continuous wrist PPG-based blood pressure measurement (Cao et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>pressure+multi-wavelength PPG</td>
+      <td>deep learning</td>
+      <td>Internal+MIMIC</td>
+      <td>35</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>20.07</td>
+      <td>11.81</td>
+      <td>0.86±6.55; 1.67±7.31</td>
+      <td>3.064122</td>
+      <td>1.615595</td>
+      <td>1.067929</td>
+      <td>0.563079</td>
+      <td>0.731556</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/8857304/">Cuff-less and Calibration-free Blood Pressure Estimation Using Convolutional Autoencoder with Unsupervised Feature Extraction (Zhang et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>deep learning</td>
+      <td>Internal</td>
+      <td>62</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>19.30</td>
+      <td>13.00</td>
+      <td>0±7.75; 0±5.13</td>
+      <td>2.490323</td>
+      <td>2.534113</td>
+      <td>0.637586</td>
+      <td>0.648798</td>
+      <td>0.932199</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/EMBC.2019.8856588">Cuff-less Blood Pressure Measurement Based on Deep Convolutional Neural Network (Liu et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>deep learning</td>
+      <td>Internal</td>
+      <td>89</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>15.29</td>
+      <td>10.17</td>
+      <td>-2.06±6.89; -4.66±4.91</td>
+      <td>2.219158</td>
+      <td>2.071283</td>
+      <td>0.470119</td>
+      <td>0.438793</td>
+      <td>0.985609</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1117/12.2502315">Cuff-less blood pressure measurement using fingertip photoplethysmogram signals and physiological characteristics (Yang et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>biometrics+PPG</td>
+      <td>deep learning</td>
+      <td>PPG-BP</td>
+      <td>21.9</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>20.38</td>
+      <td>11.11</td>
+      <td>0±12.57; 0±5.26</td>
+      <td>1.621321</td>
+      <td>2.112167</td>
+      <td>0.737743</td>
+      <td>0.961091</td>
+      <td>0.524187</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1117/12.2502315">Cuff-less blood pressure measurement using fingertip photoplethysmogram signals and physiological characteristics (Yang et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>deep learning</td>
+      <td>PPG-BP</td>
+      <td>21.9</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>20.38</td>
+      <td>11.11</td>
+      <td>0±14.20; 0±7.79</td>
+      <td>1.435211</td>
+      <td>1.426187</td>
+      <td>0.653058</td>
+      <td>0.648952</td>
+      <td>0.524187</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/tim.2019.2947103">Cuffless Deep Learning-Based Blood Pressure Estimation for Smart Wristwatches (Song et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>deep learning</td>
+      <td>Internal</td>
+      <td>44</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>10.30</td>
+      <td>9.40</td>
+      <td>-3.0±6.0; -1.5±6.0</td>
+      <td>1.716667</td>
+      <td>1.566667</td>
+      <td>0.527948</td>
+      <td>0.481817</td>
+      <td>0.826048</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1145/3300061.3345454">eBP: A Wearable System For Frequent and Comfortable Blood Pressure Monitoring From User's Ear (Bui et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>pressure+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>30</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>10.67</td>
+      <td>12.90</td>
+      <td>1.8±7.2; -3.1±7.9</td>
+      <td>1.481944</td>
+      <td>1.632911</td>
+      <td>0.562827</td>
+      <td>0.620163</td>
+      <td>0.662917</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/8589796/">Estimating blood pressure via artificial neural networks based on measured photoplethysmography waveforms (Priyanka et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>deep learning</td>
+      <td>Internal</td>
+      <td>4</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>10.46</td>
+      <td>6.26</td>
+      <td>0.17±3.9; 0.3±1.8</td>
+      <td>2.682051</td>
+      <td>3.477778</td>
+      <td>4.927964</td>
+      <td>6.390021</td>
+      <td>0.116565</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/EMBC.2018.8513211">Feasibility of Noninvasive Blood Pressure Measurement using a Chest-worn Patch Sensor (Selvaraj et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>ECG+PCG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>14</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>7.95</td>
+      <td>7.37</td>
+      <td>-0.2±6.6; 0.6±5.5</td>
+      <td>1.204545</td>
+      <td>1.340000</td>
+      <td>0.721738</td>
+      <td>0.802899</td>
+      <td>0.356870</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://gtusitecirculars.s3.amazonaws.com/uploads/PhDThesis_149997117002_TD_374601.pdf">Feature Extraction and Parameter Estimation of Vital Signs for Wearable Multi-Channel Patient Monitoring System (Arunbhai et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>classical ML</td>
+      <td>MIMIC</td>
+      <td>9</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>18.00</td>
+      <td>11.00</td>
+      <td>1.91±15.91; -0.637±9.652</td>
+      <td>1.131364</td>
+      <td>1.139660</td>
+      <td>0.922396</td>
+      <td>0.929160</td>
+      <td>0.238617</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/EMBC.2018.8513065">Finger-Wearable Blood Pressure Monitor (Narasimhan et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>pressure sensor</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>29</td>
+      <td>unclear</td>
+      <td>observational study</td>
+      <td>10.20</td>
+      <td>8.70</td>
+      <td>0.9±6.9; -3.2±7.0</td>
+      <td>1.478261</td>
+      <td>1.242857</td>
+      <td>0.572253</td>
+      <td>0.481126</td>
+      <td>0.647664</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1007/s00134-013-2964-2">Innovative continuous non-invasive cuffless blood pressure monitoring based on photoplethysmography technology (Ruiz-Rodríguez et al., 2013)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>deep learning</td>
+      <td>Internal</td>
+      <td>47</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>20.83</td>
+      <td>9.66</td>
+      <td>-2.98±19.35; -3.65±8.69</td>
+      <td>1.076486</td>
+      <td>1.111623</td>
+      <td>0.319485</td>
+      <td>0.329913</td>
+      <td>0.850380</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9795667">KD-Informer: Cuff-Less Continuous Blood Pressure Waveform Estimation Approach Based on Single Photoplethysmography (Ma et al., 2022)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>deep learning</td>
+      <td>MIMIC</td>
+      <td>241</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>30.15</td>
+      <td>18.84</td>
+      <td>0.02±5.93; 0.01±3.87</td>
+      <td>5.084317</td>
+      <td>4.868217</td>
+      <td>0.646503</td>
+      <td>0.619025</td>
+      <td>1.000000</td>
+      <td><a href="https://github.com/Ma-Chenbin/Pseudo-code-of-Algorithms-in-KD-Informer">Unavailable. Pseudo-code available</a></td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9795667">KD-Informer: Cuff-Less Continuous Blood Pressure Waveform Estimation Approach Based on Single Photoplethysmography (Ma et al., 2022)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>deep learning</td>
+      <td>Internal</td>
+      <td>241</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>26.40</td>
+      <td>17.91</td>
+      <td>0.013±6.237; 0.011±4.453</td>
+      <td>4.232804</td>
+      <td>4.022008</td>
+      <td>0.538228</td>
+      <td>0.511424</td>
+      <td>1.000000</td>
+      <td><a href="https://github.com/Ma-Chenbin/Pseudo-code-of-Algorithms-in-KD-Informer">Unavailable. Pseudo-code available</a></td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1038/ajh.2011.259">Measurement of central systolic blood pressure by pulse volume plethysmography with a noninvasive blood pressure monitor. (Sung et al., 2012)</a></td>
+      <td>subject split</td>
+      <td>ECG+PCG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>50</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>20.00</td>
+      <td>10.00</td>
+      <td>-2.1±6.3; 7.3±6.3</td>
+      <td>3.174603</td>
+      <td>1.587302</td>
+      <td>0.911372</td>
+      <td>0.455686</td>
+      <td>0.871659</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1038/ajh.2011.259">Measurement of central systolic blood pressure by pulse volume plethysmography with a noninvasive blood pressure monitor. (Sung et al., 2012)</a></td>
+      <td>subject split</td>
+      <td>ECG+PCG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>50</td>
+      <td>diseased</td>
+      <td>interventional study</td>
+      <td>12.90</td>
+      <td>5.40</td>
+      <td>0.4±6.3; 4.4±6.5</td>
+      <td>2.047619</td>
+      <td>0.830769</td>
+      <td>0.587835</td>
+      <td>0.238499</td>
+      <td>0.871659</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://link.springer.com/article/10.1007/s11082-020-02667-0">Non-invasive cuff-less blood pressure estimation using a hybrid deep learning model (Yang et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>biometrics+ECG+PPG</td>
+      <td>deep learning</td>
+      <td>Internal</td>
+      <td>9</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>17.60</td>
+      <td>11.70</td>
+      <td>3.23±4.75; 4.43±6.09</td>
+      <td>3.705263</td>
+      <td>1.921182</td>
+      <td>3.020885</td>
+      <td>1.566331</td>
+      <td>0.238617</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/j.imed.2021.11.001">Non-invasive cuffless blood pressure and heart rate monitoring using impedance cardiography (Ghosh et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>ICG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>24</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>20.00</td>
+      <td>9.00</td>
+      <td>2.33±4.60; 3.60±7.20</td>
+      <td>4.347826</td>
+      <td>1.250000</td>
+      <td>1.875413</td>
+      <td>0.539181</td>
+      <td>0.563490</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/j.imed.2021.11.001">Non-invasive cuffless blood pressure and heart rate monitoring using impedance cardiography (Ghosh et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>ICG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>10</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>13.00</td>
+      <td>7.00</td>
+      <td>1.79±3.80; 1.82±4.10</td>
+      <td>3.421053</td>
+      <td>1.707317</td>
+      <td>2.579653</td>
+      <td>1.287407</td>
+      <td>0.262760</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://opus.lib.uts.edu.au/bitstream/10453/30160/1/01Front.pdf">Novel algorithms for cardiovascular parameters' estimation for long term monitoring systems (Al-Jaafreh et al., 2009)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>classical ML</td>
+      <td>MIMIC</td>
+      <td>10</td>
+      <td>unclear</td>
+      <td>observational study</td>
+      <td>15.19</td>
+      <td>9.54</td>
+      <td>3.8±13.8; -5.0±8.6</td>
+      <td>1.100725</td>
+      <td>1.109302</td>
+      <td>0.830004</td>
+      <td>0.836472</td>
+      <td>0.262760</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1145/3144730.3144737">Novel Statistical Post Processing to Improve Blood Pressure Estimation from Smartphone Photoplethysmogram (Datta et al., 2017)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>50</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>20.00</td>
+      <td>11.00</td>
+      <td>2.5±13.27; -1.5±8.41</td>
+      <td>1.507159</td>
+      <td>1.307967</td>
+      <td>0.432678</td>
+      <td>0.375494</td>
+      <td>0.871659</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9447911/">Photoplethysmography fast upstroke time intervals can be useful features for cuff-less measurement of blood pressure changes in humans (Natarajan et al., 2021)</a></td>
+      <td>personalization</td>
+      <td>ECG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>32</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>10.20</td>
+      <td>6.40</td>
+      <td>2.1±8.9; 0.2±6.5</td>
+      <td>1.146067</td>
+      <td>0.984615</td>
+      <td>0.419813</td>
+      <td>0.360672</td>
+      <td>0.691874</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://medinform.jmir.org/2021/12/e29212">Prediction Algorithms for Blood Pressure Based on Pulse Wave Velocity Using Health Checkup Data in Healthy Korean Men: Algorithm Development and Validation (Park et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>PPG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>90.9</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>12.80</td>
+      <td>9.30</td>
+      <td>2.25±7.69; 3.05±6.07</td>
+      <td>1.664499</td>
+      <td>1.532125</td>
+      <td>0.348768</td>
+      <td>0.321032</td>
+      <td>0.987158</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://medinform.jmir.org/2021/12/e29212">Prediction Algorithms for Blood Pressure Based on Pulse Wave Velocity Using Health Checkup Data in Healthy Korean Men: Algorithm Development and Validation (Park et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>PPG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>317.7</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>13.20</td>
+      <td>7.90</td>
+      <td>1.33±9.73; 0.09±6.63</td>
+      <td>1.356629</td>
+      <td>1.191554</td>
+      <td>0.149985</td>
+      <td>0.131735</td>
+      <td>1.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.medtach.com/uploads/1/9/7/9/19798371/bpro_-_progress_on_the_development_of_the_mediwatch_ambulatory.pdf">Progress on the development of the MediWatch ambulatory blood pressure monitor and related devices (Ng et al., 2004)</a></td>
+      <td>personalization</td>
+      <td>tonometer</td>
+      <td>proprietary</td>
+      <td>Internal</td>
+      <td>15</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>3.33</td>
+      <td>1.83</td>
+      <td>0.1±4.1; 0.5±3.8</td>
+      <td>0.812195</td>
+      <td>0.481579</td>
+      <td>0.465565</td>
+      <td>0.276050</td>
+      <td>0.379576</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1007/s10916-016-0558-6">Pulse Arrival Time Based Cuff-Less and 24-H Wearable Blood Pressure Monitoring and its Diagnostic Value in Hypertension (Zheng et al., 2016)</a></td>
+      <td>personalization</td>
+      <td>ECG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>15</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>14.30</td>
+      <td>8.90</td>
+      <td>0.5±14.0; 1.2±10.0</td>
+      <td>1.021429</td>
+      <td>0.890000</td>
+      <td>0.585502</td>
+      <td>0.510164</td>
+      <td>0.379576</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1007/s10916-016-0558-6">Pulse Arrival Time Based Cuff-Less and 24-H Wearable Blood Pressure Monitoring and its Diagnostic Value in Hypertension (Zheng et al., 2016)</a></td>
+      <td>personalization</td>
+      <td>ECG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>15</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>10.20</td>
+      <td>8.00</td>
+      <td>-1.4±6.6; 0.4±6.7</td>
+      <td>1.545455</td>
+      <td>1.194030</td>
+      <td>0.885883</td>
+      <td>0.684440</td>
+      <td>0.379576</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://ojs.midem-drustvo.si/index.php/InfMIDEM/article/view/851">Real-time, Cuff-less and Non-invasive Blood Pressure Monitoring (Abolhasani et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>ultrasound</td>
+      <td>physiological model</td>
+      <td>Internal</td>
+      <td>211</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>11.28</td>
+      <td>10.91</td>
+      <td>-0.233±4.538; 0.118±4.218</td>
+      <td>2.485677</td>
+      <td>2.586534</td>
+      <td>0.338137</td>
+      <td>0.351857</td>
+      <td>1.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.science.org/doi/abs/10.1126/scitranslmed.aap8674">Smartphone-based blood pressure monitoring via the oscillometric finger-pressing method (Chandrasekhar et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>pressure+PPG</td>
+      <td>model</td>
+      <td>Internal</td>
+      <td>30</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>13.53</td>
+      <td>12.57</td>
+      <td>3.3±8.8; -5.6±7.7</td>
+      <td>1.537500</td>
+      <td>1.632468</td>
+      <td>0.583927</td>
+      <td>0.619994</td>
+      <td>0.662917</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S0010482519302690">SVR ensemble-based continuous blood pressure prediction using multi-channel photoplethysmogram (Fong et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>PPG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>40</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>15.43</td>
+      <td>8.76</td>
+      <td>0.171±6.57; 0.18±9.10</td>
+      <td>2.348554</td>
+      <td>0.962637</td>
+      <td>0.760673</td>
+      <td>0.311788</td>
+      <td>0.788306</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/EMBC44109.2020.9175635">Unobtrusive Blood Pressure Estimation using Personalized Autoregressive Models (Zheng et al., 2020)</a></td>
+      <td>personalization</td>
+      <td>ECG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>25</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>10.50</td>
+      <td>7.70</td>
+      <td>-6.3±8.3; -3.3±5.4</td>
+      <td>1.265060</td>
+      <td>1.425926</td>
+      <td>0.532959</td>
+      <td>0.600731</td>
+      <td>0.581387</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://search.proquest.com/openview/0c5eb2ca4b183897656dd65a15e36e0c/1?pq-origsite=gscholar&amp;cbl=18750">Unobtrusive cuff-less arterial blood pressure measurement and cardiovascular risk evaluation (Zheng et al., 2014)</a></td>
+      <td>personalization</td>
+      <td>ECG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>25</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>14.20</td>
+      <td>5.10</td>
+      <td>2.8±8.2; 3.3±8.5</td>
+      <td>1.731707</td>
+      <td>0.600000</td>
+      <td>0.729554</td>
+      <td>0.252775</td>
+      <td>0.581387</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://mhealth.jmir.org/2019/10/e14706/">Validation and acceptability of a cuffless wrist-worn wearable blood pressure monitoring device among users and health care professionals: mixed methods … (Islam et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>proprietary</td>
+      <td>Internal</td>
+      <td>20</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>10.00</td>
+      <td>6.00</td>
+      <td>0.08±10.56; 2.46±7.67</td>
+      <td>0.946970</td>
+      <td>0.782269</td>
+      <td>0.454709</td>
+      <td>0.375624</td>
+      <td>0.486656</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://mhealth.jmir.org/2019/10/e14706/">Validation and acceptability of a cuffless wrist-worn wearable blood pressure monitoring device among users and health care professionals: mixed methods … (Islam et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>proprietary</td>
+      <td>Internal</td>
+      <td>20</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>10.00</td>
+      <td>6.00</td>
+      <td>0.08±10.56; 2.46±7.67</td>
+      <td>0.946970</td>
+      <td>0.782269</td>
+      <td>0.454709</td>
+      <td>0.375624</td>
+      <td>0.486656</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/jsen.2020.2990648">Windkessel Model-Based Cuffless Blood Pressure Estimation Using Continuous Wave Doppler Ultrasound System (Jana et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>ultrasound</td>
+      <td>classical ML+physiological model</td>
+      <td>Internal</td>
+      <td>21</td>
+      <td>healthy+diseased</td>
+      <td>interventional study</td>
+      <td>14.29</td>
+      <td>8.59</td>
+      <td>-0.26±9.1; -0.08±7.85</td>
+      <td>1.570330</td>
+      <td>1.094268</td>
+      <td>0.732458</td>
+      <td>0.510405</td>
+      <td>0.506639</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1007/S13534-019-00113-Z">A new approach for blood pressure estimation based on phonocardiogram (Omari et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>biometrics+PCG</td>
+      <td>classical ML+deep learning</td>
+      <td>Internal</td>
+      <td>37</td>
+      <td>unclear</td>
+      <td>observational study</td>
+      <td>13.31</td>
+      <td>9.52</td>
+      <td>6.48; 3.91</td>
+      <td>1.638865</td>
+      <td>1.942675</td>
+      <td>0.553962</td>
+      <td>0.656655</td>
+      <td>0.755612</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.3390/s19153420">Blood Pressure Estimation from Photoplethysmogram Using a Spectro-Temporal Deep Neural Network (Slapničar et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>deep learning</td>
+      <td>MIMIC</td>
+      <td>510</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>34.80</td>
+      <td>18.40</td>
+      <td>15.41; 12.38</td>
+      <td>1.801842</td>
+      <td>1.185870</td>
+      <td>0.156906</td>
+      <td>0.103267</td>
+      <td>1.000000</td>
+      <td><a href="https://github.com/gslapnicar/bp-estimation-mimic3">Available</a></td>
+      <td><a href="https://github.com/gslapnicar/bp-estimation-mimic3">Available</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/hora49412.2020.9152602">Comparison of Different Machine Learning Techniques for the Cuffless Estimation of Blood Pressure using PPG Signals (Kilickaya et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>biometrics+PPG</td>
+      <td>classical ML</td>
+      <td>PPG-BP</td>
+      <td>43.8</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>20.38</td>
+      <td>11.11</td>
+      <td>13.98; 8.39</td>
+      <td>1.163154</td>
+      <td>1.056555</td>
+      <td>0.358603</td>
+      <td>0.325738</td>
+      <td>0.824310</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/access.2019.2942184">Cuffless and Continuous Blood Pressure Monitoring Using a Single Chest-Worn Device (Park et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>PPG+SCG</td>
+      <td>physiological model</td>
+      <td>Internal</td>
+      <td>20</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>12.28</td>
+      <td>4.05</td>
+      <td>6.89; 3.66</td>
+      <td>1.422064</td>
+      <td>0.882905</td>
+      <td>0.682836</td>
+      <td>0.423947</td>
+      <td>0.486656</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/tbme.2016.2580904">Cuffless Blood Pressure Estimation Algorithms for Continuous Health-Care Monitoring (Kachuee et al., 2017)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>classical ML</td>
+      <td>MIMIC</td>
+      <td>942</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>18.70</td>
+      <td>9.20</td>
+      <td>11.17; 5.35</td>
+      <td>1.335760</td>
+      <td>1.372063</td>
+      <td>0.085456</td>
+      <td>0.087778</td>
+      <td>1.000000</td>
+      <td><a href="https://github.com/mkachuee">Unavailable. Check github profile.</a></td>
+      <td><a href="https://archive-beta.ics.uci.edu/ml/datasets/cuff+less+blood+pressure+estimation">Available</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1101/2020.05.27.20107243">HYPE: Predicting Blood Pressure from Photoplethysmograms in a Hypertensive Population (Sasso et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>deep learning+classical ML</td>
+      <td>EVAL Stress Test</td>
+      <td>10</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>26.94</td>
+      <td>13.20</td>
+      <td>14.74; 7.12</td>
+      <td>1.458277</td>
+      <td>1.479224</td>
+      <td>1.099618</td>
+      <td>1.115413</td>
+      <td>0.262760</td>
+      <td><a href="https://github.com/arianesasso/aime-2020">Available</a></td>
+      <td><a href="https://github.com/arianesasso/aime-2020">Available</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S1746809421010016">MLP-BP: A novel framework for cuffless blood pressure measurement with PPG and ECG signals based on MLP-Mixer neural networks (Huang et al., 2022)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>deep learning</td>
+      <td>MIMIC</td>
+      <td>3000</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>18.70</td>
+      <td>9.20</td>
+      <td>3.52; 2.13</td>
+      <td>4.238762</td>
+      <td>3.446262</td>
+      <td>0.151766</td>
+      <td>0.123391</td>
+      <td>1.000000</td>
+      <td><a href="https://github.com/marshb/MLP-BP">Available</a></td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S1746809421010016">MLP-BP: A novel framework for cuffless blood pressure measurement with PPG and ECG signals based on MLP-Mixer neural networks (Huang et al., 2022)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>deep learning</td>
+      <td>MIMIC+UoQ</td>
+      <td>32</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>18.70</td>
+      <td>9.20</td>
+      <td>4.39; 2.54</td>
+      <td>3.398734</td>
+      <td>2.889976</td>
+      <td>1.244981</td>
+      <td>1.058620</td>
+      <td>0.691874</td>
+      <td><a href="https://github.com/marshb/MLP-BP">Available</a></td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S156625351830767X">Multi-level information fusion for learning a blood pressure predictive model using sensor data (Simjanoska et al., 2020)</a></td>
+      <td>subject split</td>
+      <td>ECG</td>
+      <td>classical ML</td>
+      <td>CHARIS</td>
+      <td>4.35</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>20.89</td>
+      <td>11.76</td>
+      <td>16.60; 9.24</td>
+      <td>1.004085</td>
+      <td>1.015489</td>
+      <td>1.647071</td>
+      <td>1.665779</td>
+      <td>0.125124</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.3390/s18041160">Non-Invasive Blood Pressure Estimation from ECG Using Machine Learning Techniques (Simjanoska et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>ECG</td>
+      <td>classical ML</td>
+      <td>CHARIS</td>
+      <td>7.65</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>20.89</td>
+      <td>11.76</td>
+      <td>8.64; 18.20</td>
+      <td>1.929144</td>
+      <td>0.515556</td>
+      <td>1.788002</td>
+      <td>0.477836</td>
+      <td>0.205793</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.nature.com/articles/s41598-021-01358-4">Pulse arrival time as a surrogate of blood pressure (Finnegan et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>30</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>18.30</td>
+      <td>14.70</td>
+      <td>5.4; 5.64</td>
+      <td>2.703942</td>
+      <td>2.079593</td>
+      <td>1.026929</td>
+      <td>0.789808</td>
+      <td>0.662917</td>
+      <td><a href="https://github.com/eoinf96/bp_est_ppg_ecg">Available</a></td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.nature.com/articles/s41598-021-01358-4">Pulse arrival time as a surrogate of blood pressure (Finnegan et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>ECG+ICG+PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>30</td>
+      <td>healthy</td>
+      <td>interventional study</td>
+      <td>18.30</td>
+      <td>14.70</td>
+      <td>5.7; 5.9</td>
+      <td>2.561629</td>
+      <td>1.987950</td>
+      <td>0.972880</td>
+      <td>0.755003</td>
+      <td>0.662917</td>
+      <td><a href="https://github.com/eoinf96/bp_est_ppg_ecg">Available</a></td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1088/1361-6579/abf889">Study of cuffless blood pressure estimation method based on multiple physiological parameters (Zhang et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>classical ML</td>
+      <td>MIMIC+VitalDB</td>
+      <td>667.4</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>20.38</td>
+      <td>11.08</td>
+      <td>10.03; 5.35</td>
+      <td>1.621225</td>
+      <td>1.652441</td>
+      <td>0.123314</td>
+      <td>0.125689</td>
+      <td>1.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.tandfonline.com/doi/abs/10.1080/21548331.2019.1656991">The accuracy of blood pressure measurement by a smartwatch and a portable health device (Helmond et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>ECG+PPG</td>
+      <td>proprietary</td>
+      <td>Internal</td>
+      <td>85</td>
+      <td>diseased</td>
+      <td>observational study</td>
+      <td>28.90</td>
+      <td>13.50</td>
+      <td>16.9; 8.3</td>
+      <td>1.364430</td>
+      <td>1.297764</td>
+      <td>0.296047</td>
+      <td>0.281582</td>
+      <td>0.981742</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9101868/">The influence of physiological characteristics on blood pressure estimation using only PPG signals (Sen et al., 2019)</a></td>
+      <td>subject split</td>
+      <td>biometrics+PPG</td>
+      <td>classical ML</td>
+      <td>PPG-BP</td>
+      <td>21.9</td>
+      <td>healthy+diseased</td>
+      <td>observational study</td>
+      <td>20.38</td>
+      <td>11.11</td>
+      <td>9.14; 5.27</td>
+      <td>1.779091</td>
+      <td>1.682068</td>
+      <td>0.809532</td>
+      <td>0.765384</td>
+      <td>0.524187</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.osapublishing.org/abstract.cfm?uri=boe-12-12-7732">Towards a portable-noninvasive blood pressure monitoring system utilizing the photoplethysmogram signal (Dagamseh et al., 2021)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>classical ML</td>
+      <td>Internal</td>
+      <td>179.2</td>
+      <td>unclear</td>
+      <td>observational study</td>
+      <td>24.00</td>
+      <td>10.00</td>
+      <td>4.69; 1.53</td>
+      <td>4.082991</td>
+      <td>5.214932</td>
+      <td>0.603576</td>
+      <td>0.770908</td>
+      <td>1.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.researchgate.net/profile/Nikolas-Mastellos/publication/325333417_Wrist-worn_blood_pressure_tracking_in_healthy_free-living_individuals_using_neural_networks/links/5b3a0979a6fdcc8506e79a2b/Wrist-worn-blood-pressure-tracking-in-healthy-free-living-individuals-using-neural-networks.pdf">Wrist-worn blood pressure tracking in healthy free-living individuals using neural networks (Radha et al., 2018)</a></td>
+      <td>subject split</td>
+      <td>PPG</td>
+      <td>deep learning</td>
+      <td>Internal</td>
+      <td>20</td>
+      <td>healthy</td>
+      <td>observational study</td>
+      <td>2.40</td>
+      <td>2.00</td>
+      <td>5.95; 4.95</td>
+      <td>0.321836</td>
+      <td>0.322378</td>
+      <td>0.154537</td>
+      <td>0.154797</td>
+      <td>0.486656</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="text/javascript">
+	$(".className").attr("style","");
+	$(document).ready(function() {
+	    var table = $('#itable').DataTable({
+	    	dom: 'Bfrtip',
+	    	pageLength: 25,
+	        searchBuilder: true,
+	        responsive: true,
+	        columnDefs: [{ responsivePriority: 1, targets: 0 }],
+			order: [[10, 'desc']],
+			scrollY: 600,
+	        scrollCollapse: false,
+        	scroller: true
+	    });
+	    table.searchBuilder.container().prependTo(table.table().container());
+	});
+</script>
+
+<p><br /></p>
+
+<h2> Studies not Included in Systematic Review </h2>
+<table border="1" class="dataframe" id="etable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Title</th>
+      <th>Authors</th>
+      <th>Exclude Reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1038/s41598-019-44348-3">Multimodal Wrist Biosensor for Wearable Cuff-less Blood Pressure Monitoring System 2019</a></td>
+      <td>Rachim et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/mbp.0b013e328332fd25">Home blood pressure measurement in prehypertension and untreated hypertension: comparison with ambulatory blood pressure monitoring and office blood pressure 2009</a></td>
+      <td>Zhuo et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199903000-00016">Trials of antihypertensive therapies in children 1999</a></td>
+      <td>Wells et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199903000-00013">White-coat hypertension in adults and children 1999</a></td>
+      <td>Verdecchia et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1093/med/9780199600830.003.0131">Blood pressure monitoring in the ICU 2016</a></td>
+      <td>Romagnoli et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.4070/kcj.2021.0405">The Advent of Cuffless Mobile Device Blood Pressure Measurement: Remaining Challenges and Pitfalls 2022</a></td>
+      <td>Lee et al.</td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200506000-00006">Effect of examination stress on the alteration of blood pressure in young normotensives 2005</a></td>
+      <td>Pramanik et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/embc.2017.8037558">Low group delay signal conditioning for wearable central blood pressure monitoring device 2017</a></td>
+      <td>Fierro et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.4108/icst.pervasivehealth2009.5872">A wearable inductor channel design for blood pressure monitoring system in daily life 2009</a></td>
+      <td>Lee et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/mbp.0000000000000596">Sampling rate influences measures of blood pressure variability in ambulatory blood pressure monitoring 2022</a></td>
+      <td>Goel et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.3410/f.734876310.793555759">Faculty Opinions recommendation of Pulse Pressure, Cardiovascular Events, and Intensive Blood-Pressure Lowering in the Systolic Blood Pressure Intervention Trial (SPRINT). 2019</a></td>
+      <td>Reboldi et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1111/j.1939-1676.2006.tb00710.x">Echocardiographic Estimation of Systemic Systolic Blood Pressure in Dogs with Mild Mitral Regurgitation 2006</a></td>
+      <td>Tou et al.</td>
+      <td>no experiment on humans</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/embc.2014.6943970">Separate estimation of long- and short-term systolic blood pressure variability from photoplethysmograph 2014</a></td>
+      <td>Kondo et al.</td>
+      <td>irrelevant; BP variability with subject split</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200204000-00004">Uncontrolled early morning blood pressure in medicated patients: the ACAMPA study 2002</a></td>
+      <td>Redón et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200208000-00004">The correlation between isolated interventricular septal hypertrophy and 24-h ambulatory blood pressure monitoring in apparently healthy air crew 2002</a></td>
+      <td>Harpaz et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200210000-00002">Use of radial arterial tonometric continuous blood pressure measurement in cardiovascular reactivity studies 2002</a></td>
+      <td>Nelesen et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/mbp.0000000000000585">Interrupted sleep by ambulatory blood pressure monitoring does not affect blood pressure 2022</a></td>
+      <td>Geng et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200104000-00001">Cardiovascular risk and therapeutic intervention for the early morning surge in blood pressure and heart rate 2001</a></td>
+      <td>White et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/6555424/">A Neural Network-based method for continuous blood pressure estimation from a PPG signal 2013</a></td>
+      <td>Kurylyak et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200504000-00005">Blood pressure dipping is reproducible in clinical practice 2005</a></td>
+      <td>Ben-Dov et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199900460-00010">Prognostic value of 24-hour blood pressure in pregnancy 1999</a></td>
+      <td>Bellomo et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199906000-00014">Ambulatory blood pressure as a predictor of target organ disease and outcome in the hypertensive patient 1999</a></td>
+      <td>White et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199902001-00004">How well does ambulatory blood pressure predict target-organ disease and clinical outcome in patients with hypertension? 1999</a></td>
+      <td>White et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200008000-00005">Results of antihypertensive treatment by primary and secondary care physicians as assessed by ambulatory blood pressure monitoring 2000</a></td>
+      <td>Pannarale et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/cic.2000.898494">A strategy for determination of systolic, mean and diastolic blood pressures from oscillometric pulse profiles 2002</a></td>
+      <td>Moraes et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1203/00006450-199704001-00114">Systolic and diastolic function of pressure-overloaded right atria of children: Insights from right atrial pressure-area loops. 93 1997</a></td>
+      <td>Banerjee et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/j.sleep.2017.11.250">Cuff-less blood pressure estimation system enables continuous monitoring during sleep. How do we believe that estimation values? 2017</a></td>
+      <td>Eda et al.</td>
+      <td>irrelevant; abstract</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.53347/rid-25519">Fetal MCA systolic/diastolic ratio 2013</a></td>
+      <td>Skandhan et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/01.hjh.0000501232.99910.05">PS 15-24 A REVIEW OF CUFFLESS BLOOD PRESSURE MEASURING DEVICES POTENTIAL FOR USE IN ROUTINE CLINICAL PRACTICE 2016</a></td>
+      <td>Islam et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1038/hr.2009.36">Time-released garlic powder tablets lower systolic and diastolic blood pressure in men with mild and moderate arterial hypertension 2009</a></td>
+      <td>Sobenin et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1111/jch.13580">Optimal diastolic blood pressure range in intensive systolic targets: Resolving the controversy between observational and intention‐to‐treat analyses 2019</a></td>
+      <td>Georgianos et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.4070/kcj.2002.32.4.293">Pulse Pressure and Systolic Blood Pressure 2002</a></td>
+      <td>Lee et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.2165/00151642-200714030-00042">Hypertension and Spurious Systolic Hypertension in Youth 2007</a></td>
+      <td>Salvi et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1080/080370598437222">Isolated Systolic Hypertension: an Important Cardiovascular Risk Factor 1998</a></td>
+      <td>HIMMELMANN et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/s0895-7061(99)80593-7">Utility of ambulatory blood pressure monitoring in the isolated systolic hypertension of the elderly 1999</a></td>
+      <td>MONIZZI et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/s1058-9813(00)00052-7">Pressure–volume relationships in pediatric systolic and diastolic heart failure 2000</a></td>
+      <td>Cassidy et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/hjh.0000000000001419">Favourable impact of statin use on diastolic blood pressure levels 2017</a></td>
+      <td>Tocci et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200008000-00001">White coat hypertension in children 2000</a></td>
+      <td>Sorof et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200102000-00003">Prevalence of blood pressure cuff sizes in a referral practice of 430 consecutive adult hypertensives 2001</a></td>
+      <td>Graves et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200206000-00003">Effect of recorded home blood pressure measurements on the staging of hypertensive patients 2002</a></td>
+      <td>Jain et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1007/978-3-319-05500-8_10">Blood Pressure Estimation System by Wearable Electrocardiograph 2014</a></td>
+      <td>Fujimoto et al.</td>
+      <td>record split without personalization; correlation</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200302000-00007">Non-invasive beat-to-beat blood pressure monitoring: new developments 2003</a></td>
+      <td>Parati et al.</td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1161/circulationaha.108.830042">Influence of Systolic and Diastolic Blood Pressure on the Risk of Incident Atrial Fibrillation in Women 2009</a></td>
+      <td>Conen et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/01.hjh.0000379291.58624.6d">SYSTOLIC AND DIASTOLIC BLOOD PRESSURE AND THEIR INTERACTION AFTER MYOCARDIAL INFARCTION AND LONG TERM MORTALITY: PP.22.365 2010</a></td>
+      <td>Berton et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1161/jaha.120.021006">Solar Activity Is Associated With Diastolic and Systolic Blood Pressure in Elderly Adults 2021</a></td>
+      <td>Wang et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00004872-198712000-00006">Evidence in Humans for a Postsynaptic Interaction Between Noradrenaline and Angiotensin II with Regard to Systolic but not Diastolic Blood Pressure 1987</a></td>
+      <td>Struthers et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/01.hjh.0000571144.37859.b3">THE IMPACT OF SYSTOLIC AND DIASTOLIC BLOOD PRESSURE VARIABILITY ON MORTALITY IS MODIFIED BY AGEING. DATA FROM THE DUBLIN OUTCOME STUDY 2019</a></td>
+      <td>Bilo et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200404000-00008">Reply 2004</a></td>
+      <td>Graves et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1159/000106680">Evolution of Left Atrial Systolic and Diastolic Functions in Different Stages of Hypertension: Distinct Effects of Blood Pressure Control 2007</a></td>
+      <td>Tsai et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1177/17474930211043364">Consistency of associations of systolic and diastolic blood pressure with white matter hyperintensities: A meta-analysis 2021</a></td>
+      <td>Wilkinson et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/01.hjh.0000573708.79605.5f">GREATER VARIABILITY IN DIASTOLIC- THAN SYSTOLIC AMBULATORY BLOOD PRESSURE IS ASSOCIATED WITH HIGH RISK FOR CARDIOVASCULAR MORTALITY WITHIN 5 YEARS IN SUBJECTS OVER 50 YEARS OF AGE 2019</a></td>
+      <td>Gavish et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/01.mbp.0000200477.41916.d5">Blood Pressure Monitoring enters its second decade of publication 2006</a></td>
+      <td>White et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200108000-00002">The case for a hybrid sphygmomanometer 2001</a></td>
+      <td>Pickering et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200005001-00001">The chronotherapeutics of hypertension 2000</a></td>
+      <td>Meredith et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200504000-00003">Inaccuracy of wrist-cuff oscillometric blood pressure devices: an arm position artefact? 2005</a></td>
+      <td>Mourad et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/j.ophtha.2019.12.021">Re: Kwon et al.: Baseline systolic versus diastolic blood pressure dip and subsequent visual field progression in normal-tension glaucoma (Ophthalmology. 2019;126:967–979) 2020</a></td>
+      <td>Gupta et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1152/ajpheart.1982.242.1.h127">Noninvasive measurement of systolic and diastolic blood pressure in swine 1982</a></td>
+      <td>Hodgkin et al.</td>
+      <td>no experiment on humans</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/s0895-7061(01)01795-2">Systolic, not diastolic blood pressure is a significant determinant of left ventricular mass regression in newly diagnosed black hypertensive patients, irrespective of initial anti-hypertensive agent 2001</a></td>
+      <td>Sareli et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.5958/j.0973-5674.7.2.009">Comparison of effects of Isometric Contraction of Various Durations on Systolic and Diastolic Blood Pressure 2013</a></td>
+      <td>Kashyap et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/hjh.0b013e32830b894a">The KCNMB1 Glu65Lys polymorphism associates with reduced systolic and diastolic blood pressure in the Inter99 study of 5729 Danes 2008</a></td>
+      <td>Nielsen et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.2991/ahsr.k.210115.009">Effects of Serum Cystatin C Levels on Increased Systolic and Diastolic Blood Pressure in the Elderly With Normal Renal Function 2021</a></td>
+      <td>Marfianti et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1002/cpt.2130">Characterizing Effects of Antidiabetic Drugs on Heart Rate, Systolic and Diastolic Blood Pressure 2020</a></td>
+      <td>Maringwa et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/j.amjhyper.2005.03.430">Impaired night time reduction in blood pressure is associated with cardiac hypertrophy, increased natriuretic hormone levels and left ventricular systolic and diastolic dysfunction 2005</a></td>
+      <td>NYSTROM et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1161/hyp.70.suppl_1.p191">Abstract P191: Improved Systolic and Diastolic Blood Pressure After Enhanced External Counterpulsation Therapy Combined With a Lifestyle Modification Program 2017</a></td>
+      <td>Bharmal et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199905000-00007">Task force VI 1999</a></td>
+      <td>White et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200204000-00003">Diurnal blood pressure patterns in long-term care settings 2002</a></td>
+      <td>Ice et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200412000-00002">Blood pressure measurement and the guidelines: a proposed new algorithm for the diagnosis of hypertension 2004</a></td>
+      <td>Myers et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199912000-00007">Task force VI: Self-monitoring of the blood pressure 1999</a></td>
+      <td>White et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200005001-00002">Factors affecting circadian variability 2000</a></td>
+      <td>Giles et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200112000-00015">Early morning surge in blood pressure 2001</a></td>
+      <td>Shimada et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200412000-00001">What??s new in blood pressure measurement? A workshop of the European Society of Hypertension 2004</a></td>
+      <td>O??Brien et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199904000-00010">Ambulatory blood pressure during diseases of the kidney 1999</a></td>
+      <td>Redon et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200302000-00004">Demise of the mercury sphygmomanometer and the dawning of a new era in blood pressure measurement 2003</a></td>
+      <td>OʼBrien et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/issmdbs.2006.360098">Modeling of Pulse Transit Time under the Effects of Hydrostatic Pressure for Cuffless Blood Pressure Measurements 2006</a></td>
+      <td>Poon et al.</td>
+      <td>irrelevant; PAT and BP relationship with hydrostatic pressure</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1113/jphysiol.1951.sp004527">The effect of pentobarbitone anaesthesia on the resting level of the systolic blood pressure and on the responses of the systolic blood pressure, in atropinized bitches, to sympathomimetic amines 1951</a></td>
+      <td>Lockett et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/s0002-9149(02)03239-3">Comparative prognostic value of systolic, diastolic, and pulse pressure 2003</a></td>
+      <td>Papademetriou et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.26226/morressier.58e389add462b80292385551">ASSOCIATION OF SYSTOLIC BLOOD PRESSURE WITH PROGRESSION OF SYMPTOMATIC INTRACRANIAL ATHEROSCLEROTIC STENOSIS 2017</a></td>
+      <td>Park et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00017285-199911000-00004">SYSTOLIC BLOOD PRESSURE 1999</a></td>
+      <td>&NA; et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/iciea.2008.4582705">The relationship between different pulse wave velocity and systolic/diastolic pressure 2008</a></td>
+      <td>Chen et al.</td>
+      <td>no reported MAE/ME; no experiment</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.4149/bll_2021_111">Central systolic blood pressure (cSBP) to brachial systolic blood pressure (brachSBP) ratio reproducibility during antihypertensive therapy 2021</a></td>
+      <td>Bulas et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.12792/jiiae.5.136">Validity of Detection of Driver's Surprised State Based on Systolic Blood Pressure 2017</a></td>
+      <td>Arakawa et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.3410/f.738629666.793578375">Faculty Opinions recommendation of Outcomes of intensive systolic blood pressure reduction in patients with intracerebral hemorrhage and excessively high initial systolic blood pressure: post hoc analysis of a randomized clinical trial. 2020</a></td>
+      <td>Semplicini et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1088/0967-3334/37/12/2154">Systolic blood pressure estimation using PPG and ECG during physical exercise 2016</a></td>
+      <td>Sun et al.</td>
+      <td>did not report both SBP and DBP results</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1093/eurjpc/zwab097">Blood pressure control—focusing on middle-aged women with elevated diastolic blood pressure 2021</a></td>
+      <td>Rauch et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200502000-00009">Do SpaceLabs ambulatory non-invasive blood pressure recorders measure blood pressure consistently over several years use? 2005</a></td>
+      <td>Amoore et al.</td>
+      <td>arm cuff</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/s0140-6736(61)91747-0">DIASTOLIC BLOOD-PRESSURE 1961</a></td>
+      <td>Whittaker et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/s0735-1097(19)33780-5">REMOTE MONITORING OF BLOOD PRESSURE IN T2D POPULATION DECREASES SYSTOLIC BLOOD PRESSURE AT 6 WEEKS: A PILOT STUDY 2019</a></td>
+      <td>Shah et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/embc46164.2021.9629936">Blood pressure-independent neurogenic effect on conductance and resistance vessels: a consideration for cuffless blood pressure measurement? 2021</a></td>
+      <td>Cox et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.2196/10089">Blood Pressure Measurement Validation Off the Cuff? Comment on “A New Cuffless Device for Measuring Blood Pressure: A Real-Life Validation Study” 2018</a></td>
+      <td>Helmond et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/indcon.2013.6726085">A wearable device for monitoring galvanic skin response to accurately predict changes in blood pressure indexes and cardiovascular dynamics 2013</a></td>
+      <td>Subramanya et al.</td>
+      <td>record split without personalization; correlation</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/apwcs.2010.31">Application of Multi-target Pose Estimation in Wearable Monitoring System 2010</a></td>
+      <td>Li et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/mbp.0b013e32834944e9">Effect of valsartan, hydrochlorothiazide, and their combination on 24-h ambulatory blood pressure response in elderly patients with systolic hypertension 2011</a></td>
+      <td>Duprez et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1587/transcom.2020hmi0002">Cuffless Blood Pressure Monitors: Principles, Standards and Approval for Medical Use 2021</a></td>
+      <td>TAMURA et al.</td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/issmdbs.2008.4575023">A novel parameter from PPG dicrotic notch for estimation of systolic blood pressure using pulse transit time 2008</a></td>
+      <td>Gu et al.</td>
+      <td>did not report both SBP and DBP results</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/tbme.2018.2797239">Ballistocardiogram-Based Approach to Cuffless Blood Pressure Monitoring: Proof of Concept and Potential Challenges 2018</a></td>
+      <td>Kim et al.</td>
+      <td>record split without personalization; correlation</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1161/hypertensionaha.120.14650">Out-of-Office Blood Pressure Monitoring: A Comparison of Ambulatory Blood Pressure Monitoring and Home (Self) Monitoring Of Blood Pressure 2020</a></td>
+      <td>Townsend et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/01.mbp.0000172713.28029.84">Accuracy of oscillometric blood pressure monitoring with concurrent auscultatory blood pressure in hemodialysis patients 2005</a></td>
+      <td>Semret et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200308000-00001">Blood pressure measurement in hypertension research. A workshop of the European Society of Hypertension 2003</a></td>
+      <td>O??Brien et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200102000-00006">Effect of altering vasoactivity on the measurement of finger blood pressure 2001</a></td>
+      <td>Jagomägi et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/j.gheart.2014.03.1690">PM337 Relationship of age and underweight with systolic and diastolic blood pressure, pulse pressure and heart rate among blacks schoolchildren in Central Africa Country 2014</a></td>
+      <td>Mbolla et al.</td>
+      <td>not wearable; biometrics</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1111/j.1747-0803.2011.00578.x">Noninvasive Estimation of Diastolic Pulmonary Artery Pressure by Doppler Analysis of Tricuspid Regurgitation Velocity in Pediatric Patients 2011</a></td>
+      <td>Angtuaco et al.</td>
+      <td>irrelevant; pulmonary artery pressure</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200010000-00006">Comparison between casual blood pressure and ambulatory blood pressure monitoring parameters in healthy and hypertensive adolescents 2000</a></td>
+      <td>Koch et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199903000-00018">Overview of the history of pediatric blood pressure assessment and hypertension 1999</a></td>
+      <td>Labarthe et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200106000-00005">Rapid oscillometric blood pressure measurement compared to conventional oscillometric measurement 2001</a></td>
+      <td>Yarows et al.</td>
+      <td>oscillometry</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200504000-00009">A survey of validated automated home blood pressure monitors available for the Internet shopper 2005</a></td>
+      <td>Graves et al.</td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199906000-00018">Overview of the history of pediatric blood pressure assessment and hypertension: an epidemiologic perspective 1999</a></td>
+      <td>Labarthe et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1007/978-3-662-05685-1_25">Ambulatory monitoring of blood pressure: the importance of blood pressure during work 1984</a></td>
+      <td>Pickering et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1161/hypertensionaha.117.10177">Effect of Lowering Diastolic Pressure in Patients With and Without Cardiovascular Disease 2018</a></td>
+      <td>Khan et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/mbp.0000000000000434">The Silver Anniversary of Blood Pressure Monitoring 2020</a></td>
+      <td>White et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adom.202002206">Self‐Assembled Wavy Optical Microfiber for Stretchable Wearable Sensor 2021</a></td>
+      <td>Zhu et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200204000-00009">The Year in Hypertension 2001 2002</a></td>
+      <td>Mansoor et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1385/1-59259-004-7:191">Prognostic Value of Ambulatory Blood Pressure Monitoring 2003</a></td>
+      <td>Verdecchia et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/6950039/">Smartphone based continuous monitoring system for home-bound elders and patients 2014</a></td>
+      <td>Megalingam et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/5508417/">Instruments and methods for calibration of oscillometric blood pressure measurement devices 2010</a></td>
+      <td>Balestrieri et al.</td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1007/978-3-662-05685-1_14">Aerospace applications of ambulatory blood pressure monitoring 1984</a></td>
+      <td>Thornton et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.researchsquare.com/article/rs-1040431/latest.pdf">The Accuracy of Blood Pressure Monitoring Using the Senbiosys Ring: A Study on Patients Undergoing Coronary Angiography and Patients in the Intensive … 2021</a></td>
+      <td>Haddad et al.</td>
+      <td>record split without personalization; zero-mean calibration</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/s0002-9149(02)02884-9">Comparison of usefulness of systolic, diastolic, and mean blood pressure and pulse pressure as predictors of cardiovascular death in patients ≥60 years of age (The Dubbo Study) 2002</a></td>
+      <td>Palaniappan et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/7109154/">Oscillometric blood pressure estimation: past, present, and future 2015</a></td>
+      <td>Forouzanfar et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US6740045B2/en">Central blood pressure waveform estimation device and peripheral blood pressure waveform detection device 2004</a></td>
+      <td>Amano et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/4575012/">An integrated wrist-worn routine monitoring system for the elderly using BSN 2008</a></td>
+      <td>Xu et al.</td>
+      <td>irrelevant; no results</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/ae.2016.7577254">Determination of systolic, mean and diastolic blood pressures with Dual cuff system is based on physiology 2016</a></td>
+      <td>Jilek et al.</td>
+      <td>arm cuff; oscillometry</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200212000-00009">Acknowledgment of reviewers for Volume 13 2002</a></td>
+      <td>&NA; et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US20060084878A1/en">Personal computer-based vital signs monitor 2006</a></td>
+      <td>Banet et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199906000-00019">Conclusion 1999</a></td>
+      <td>Portman et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US20200196881A1/en">Methods, devices and machine readable programs for cuff-less blood pressure measurement 2020</a></td>
+      <td>Zemel et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.koreascience.or.kr/article/JAKO201925454134121.page">Analysis of the convergence algorithm model for estimating systolic and diastolic blood pressure based on two photoplethysmography 2019</a></td>
+      <td>Kim et al.</td>
+      <td>not in english</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/6078433/">A smart health monitoring chair for nonintrusive measurement of biological signals 2011</a></td>
+      <td>Baek et al.</td>
+      <td>record split without personalization; regression</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200404000-00007">Letters to the Editor 2004</a></td>
+      <td>Bakx et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://mhealth.jmir.org/2017/7/e91/">Continuous monitoring of vital signs using wearable devices on the general ward: pilot study 2017</a></td>
+      <td>Weenk et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.nature.com/articles/s41598-021-82124-4">Synthetic photoplethysmography (PPG) of the radial artery through parallelized Monte Carlo and its correlation to body mass index (BMI) 2021</a></td>
+      <td>Boonya-Ananta et al.</td>
+      <td>irrelevant; simulation</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US20190110702A1/en">A Method Of Deriving Systolic Blood Pressure And/Or Diastolic Blood Pressure Of A Subject 2019</a></td>
+      <td>Thaveeprungsriporn et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/mbc.0000000000000004">Early morning hypertension 2013</a></td>
+      <td>Hoshide et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199912000-00002">Task Force I: Methodological aspects 1999</a></td>
+      <td>&NA; et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US10722125B2/en">Blood pressure signal acquisition using a pressure sensor array 2020</a></td>
+      <td>Tal et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1026&amp;context=confirm2019">Blood Pressure Estimation from Electrocardiogram and Photoplethysmography Signals Using Continuous Wavelet Transform and Convolutional Neural Network. 2019</a></td>
+      <td>Mansouri et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200312000-00002">Validation of a two-axis accelerometer for monitoring patient activity during blood pressure or ECG holter monitoring 2003</a></td>
+      <td>Wetzler et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.ahajournals.org/doi/abs/10.1161/CIRCOUTCOMES.119.006115">The PCORnet Blood Pressure Control Laboratory: a platform for surveillance and efficient trials 2020</a></td>
+      <td>Pletcher et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1109/cacs.2016.7973917">Effects of pulse transit time and physiological differences on wearable device based blood pressure estimation 2016</a></td>
+      <td>Hsiao et al.</td>
+      <td>record split without personalization; correlation</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US20140343377A1/en">Portable device for measuring blood pressure and method thereof 2014</a></td>
+      <td>Cho et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.researchgate.net/profile/Abu-Mitul/publication/259151652_Development_of_a_Noninvasive_Continuous_Blood_Pressure_Measurement_and_Monitoring_System/links/00b7d52a1463b29547000000/Development-of-a-Noninvasive-Continuous-Blood-Pressure-Measurement-and-Monitoring-System.pdf">Development of a noninvasive continuous blood pressure measurement and monitoring system 2012</a></td>
+      <td>Rashid et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1159/000211210">Variation in Systolic and Diastolic Pressure with Changes in Age and Weight 1963</a></td>
+      <td>Das et al.</td>
+      <td>not wearable; biometrics</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9558767/">A Benchmark Study of Machine Learning for Analysis of Signal Feature Extraction Techniques for Blood Pressure Estimation Using Photoplethysmography (PPG) 2021</a></td>
+      <td>Maqsood et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200005001-00007">Use of ambulatory blood pressure monitoring to evaluate the selective angiotensin II receptor antagonist, telmisartan, and other antihypertensive drugs 2000</a></td>
+      <td>Neutel et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200312000-00008">Ambulatory blood pressure monitoring: is the daytime period enough for making clinical decisions? 2003</a></td>
+      <td>Su??rez et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://search.proquest.com/openview/14cd87503a9bad4f42c3e135c141ca00/1?pq-origsite=gscholar&amp;cbl=2026366&amp;diss=y">Innovative Technologies in Hypertension Control a Telemonitored Cuff-Less Blood Pressure Device 2020</a></td>
+      <td>Xufre et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/7493307/">Blood pressure estimation using video plethysmography 2016</a></td>
+      <td>Secerbegovic et al.</td>
+      <td>did not report both SBP and DBP results</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200312000-00005">Primary care physician beliefs regarding usefulness of self-monitoring of blood pressure 2003</a></td>
+      <td>Cheng et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200204000-00001">Ambulatory monitoring of blood pressure in growth hormone-deficient adults 2002</a></td>
+      <td>Conceição et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S0924424721000431">Development of electrical transduction based wearable tactile sensors for human vital signs monitor: Fundamentals, methodologies and applications 2021</a></td>
+      <td>Kumar et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199912002-00005">What are the approaches for evaluating antihypertensive treatment by 24 h ambulatory blood pressure monitoring? 1999</a></td>
+      <td>Neutel et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200306000-00001">A practical approach to persistent elevation of blood pressure in the hypertension clinic 2003</a></td>
+      <td>Mansoor et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-med-050919-031534">Wearable devices to monitor and reduce the risk of cardiovascular disease: Evidence and opportunities 2021</a></td>
+      <td>Mizuno et al.</td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/8805016/">A new measurement system to boost the IoMT for the blood pressure monitoring 2019</a></td>
+      <td>Lamonaca et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200010000-00008">A simulation-based evaluation of nine oscillometric blood pressure monitors for self-measurement 2000</a></td>
+      <td>Ng et al.</td>
+      <td>arm cuff</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.hindawi.com/journals/cmmm/2013/598196/">Mobile personal health system for ambulatory blood pressure monitoring 2013</a></td>
+      <td>Mena et al.</td>
+      <td>arm cuff</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200404000-00004">Wrist blood pressure overestimates blood pressure measured at the upper arm 2004</a></td>
+      <td>Palatini et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199904010-00008">Modification of blood-pressure-measuring devices and the protocol of the British Hypertension Society 1999</a></td>
+      <td>OʼBrien et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9720662/">Wearable Pulse Wave Sensor and Interface for Real-Time Dynamic Blood Pressure Monitoring 2021</a></td>
+      <td>Li et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199902000-00003">Is usual measurement of blood pressure meaningful? 1999</a></td>
+      <td>Campbell et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US11160461B2/en">Blood pressure measurement using a wearable device 2021</a></td>
+      <td>Lange et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US20050228244A1/en">Small-scale, vital-signs monitoring device, system and method 2005</a></td>
+      <td>Banet et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1080/080370598437484">Effects of Amlodipine and Lisinopril on Left Ventricular Mass and Diastolic Function in Previously Untreated Patients with Mild to Moderate Diastolic Hypertension 1998</a></td>
+      <td>BELTMAN et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/6701568/">Estimation of blood pressure levels from reflective photoplethysmograph using smart phones 2013</a></td>
+      <td>Visvanathan et al.</td>
+      <td>duplicate</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1088/1757-899x/452/4/042018">Research of Real Time and Wearable Blood Pressure Monitoring System 2018</a></td>
+      <td>Wang et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US9750464B2/en">System and method for blood pressure estimation 2017</a></td>
+      <td>Casale et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1159/000524113">Cuffless Measurement of Blood Pressure: Not Good Enough for Diagnosis and Treatment of Hypertension 2022</a></td>
+      <td>Cheng et al.</td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><a href="https://link.springer.com/article/10.1007/s10439-009-9882-z">Towards using photo-plethysmogram amplitude to measure blood pressure during sleep 2010</a></td>
+      <td>Chua et al.</td>
+      <td>record split without personalization; correlation</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S0167931719302886">A tactile sensing array integrated with tension sensor for continuously monitoring blood pulse waves 2019</a></td>
+      <td>Huang et al.</td>
+      <td>record split without personalization; correlation</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1007/978-3-030-39903-0_497">Systolic Blood Pressure (SBP) 2020</a></td>
+      <td>Ginty et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.mdpi.com/1083524">Continuous blood pressure estimation using exclusively photopletysmography by LSTM-based signal-to-signal translation 2021</a></td>
+      <td>Harfiya et al.</td>
+      <td>duplicate</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.26226/morressier.59a3e8b5d462b8028d89470b">Effects of systolic blood pressure on brain integrity in multiple sclerosis 2017</a></td>
+      <td>Farez et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9443447/">Photoplethysmography-based blood pressure estimation using deep learning 2020</a></td>
+      <td>Wang et al.</td>
+      <td>duplicate</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US5309916A/en">Blood pressure measuring device and method 1994</a></td>
+      <td>Hatschek et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/8857439/">Non-invasive, continuous, pulse pressure monitoring method 2019</a></td>
+      <td>Kuwahara et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=0BUwEAAAQBAJ&amp;oi=fnd&amp;pg=PA123&amp;dq=wearable+blood+pressure+monitoring+estimation+systolic+diastolic+cuffless&amp;ots=kJPNzpZh6m&amp;sig=QRBvsBrWojxBF0FZhspAoswcPe0">Blood Pressure Monitoring Using Photoplethysmogram and Electrocardiogram Signals 2021</a></td>
+      <td>Esmaelpoor et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1136/jech.24.4.201">Correlation of weight-height index with diastolic and with systolic blood pressure. 1970</a></td>
+      <td>Sive et al.</td>
+      <td>not wearable; weight and height index</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/8531733/">A wearable sensor for arterial stiffness monitoring based on machine learning algorithms 2018</a></td>
+      <td>Miao et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.3390/s110706760">Collaborative Processing of Wearable and Ambient Sensor System for Blood Pressure Monitoring 2011</a></td>
+      <td>Nakamura et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1111/dom.14377/v3/decision1">Decision letter for "Dapagliflozin Reduces Systolic Blood Pressure and Modulates Vasoactive Factors" 2021</a></td>
+      <td>Donnelly et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US20160270668A1/en">Systems and apparatuses for monitoring blood pressure in real time 2016</a></td>
+      <td>Gil et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9512680/">Development of a Wrist Sphygmomanometer with an Active Soft Mechanism 2021</a></td>
+      <td>Yoshimura et al.</td>
+      <td>oscillometry</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1042/cs0910045">Ambulatory Monitoring of Blood Pressure Disturbs Sleep and Raises Systolic Pressure at Night in Patients Suspected of Suffering from Sleep-Disordered Breathing 1996</a></td>
+      <td>Heude et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.scirp.org/journal/paperinformation.aspx?paperid=90835">Wearable wireless body area nodes for remote physiological signal monitoring system 2019</a></td>
+      <td>Srinivasa et al.</td>
+      <td>duplicate</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.degruyter.com/document/doi/10.1515/bmt-2020-0209/html">Surrogate based continuous noninvasive blood pressure measurement 2021</a></td>
+      <td>Pielmus et al.</td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/mbp.0b013e328360fb19">Tonometric devices for central aortic systolic pressure measurements in patients with type 1 diabetes 2013</a></td>
+      <td>Theilade et al.</td>
+      <td>review; tonometry</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.mdpi.com/475702">A non-invasive continuous blood pressure estimation approach based on machine learning 2019</a></td>
+      <td>Chen et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200310000-00003">Factors associated with probability of patient rejecting a repeat 24???h ambulatory blood pressure monitoring, despite recommendation by the physician 2003</a></td>
+      <td>Elliot et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200010000-00009">Watch that vein 2000</a></td>
+      <td>Marra et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9646921/">Toward Robust Blood Pressure Estimation from Pulse Wave Velocity Measured by Photoplethysmography Sensors 2021</a></td>
+      <td>Byfield et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adma.201700975">Flexible organic/inorganic hybrid near‐infrared photoplethysmogram sensor for cardiovascular monitoring 2017</a></td>
+      <td>Xu et al.</td>
+      <td>irrelevant; hardware development; no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200512000-00012">A note of thanks to referees 2005</a></td>
+      <td>&NA; et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9305544/">Blood pressure estimation based on synchronous ECG and PPG recording 2020</a></td>
+      <td>Podaru et al.</td>
+      <td>record split without personalization; fit all data</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199905000-00002">Task Force I 1999</a></td>
+      <td>&NA; et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/01.mbp.0000345097.98445.16">Blood Pressure Monitoring enters its 14th year 2009</a></td>
+      <td>White et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US9636023B2/en">Portable rapid vital sign apparatus and method 2017</a></td>
+      <td>Geesbreght et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200308000-00008">Significance of blood pressure self-measurement as compared with office blood pressure measurement and ambulatory 24-hour blood pressure measurement in pharmacological studies 2003</a></td>
+      <td>Mengden et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://repository.pknu.ac.kr:8443/handle/2021.oak/23508">Wearable Biosensor with Machine Learning and Visible Light Communication for Smart Healthcare 2019</a></td>
+      <td>Rachim et al.</td>
+      <td>no reported MAE/ME; RMSE</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1080/10803548.2018.1510608">The effect of occupational noise exposure on systolic blood pressure, diastolic blood pressure and salivary cortisol level among automotive assembly workers 2018</a></td>
+      <td>Yaghoubi et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.mdpi.com/796604">The potential role of sensors, wearables and telehealth in the remote management of diabetes-related foot disease 2020</a></td>
+      <td>Golledge et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S0010482520304947">A review of wearable and unobtrusive sensing technologies for chronic disease management 2021</a></td>
+      <td>Guo et al.</td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1159/000499867">Levels of Systolic and Diastolic Blood Pressure and Their Relation to Incident Metabolic Syndrome 2019</a></td>
+      <td>Jung et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200006000-00004">Arterial hypertension in children and adolescents after surgical repair of aortic coarctation defined by ambulatory blood pressure monitoring 2000</a></td>
+      <td>Bald et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://jamanetwork.com/journals/jama/article-abstract/376454">The performance of a digital blood pressure monitoring device 1989</a></td>
+      <td>Watkins-Pitchford et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US6443906B1/en">Method and device for monitoring blood pressure 2002</a></td>
+      <td>Ting et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/mbp.0000000000000102">The 20th year of Blood Pressure Monitoring 2015</a></td>
+      <td>White et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.jacc.org/doi/abs/10.1016/j.jacc.2008.03.031">Central but not brachial blood pressure predicts cardiovascular events in an unselected geriatric population: the ICARe Dicomano Study 2008</a></td>
+      <td>Pini et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-199904000-00002">Ambulatory blood pressure monitoring of chronically dialyzed pediatric patients 1999</a></td>
+      <td>Koch et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US10531797B2/en">Wearable blood pressure monitoring system 2020</a></td>
+      <td>Knickerbocker et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.mdpi.com/894112">Vital signs prediction and early warning score calculation based on continuous monitoring of hospitalised patients using wearable technology 2020</a></td>
+      <td>Amer et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/5687003/">A wearable vital signs monitoring system for pervasive healthcare 2010</a></td>
+      <td>Xu et al.</td>
+      <td>no reported MAE/ME</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/8353132/">A continuous noninvasive arterial pressure (CNAP) approach for health 4.0 systems 2018</a></td>
+      <td>Sannino et al.</td>
+      <td>record split without personalization</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1016/0002-8703(65)90063-3">The relationship of pulse pressure and diastolic pressure to systolic pressure in healthy subjects, 20–94 years of age 1965</a></td>
+      <td>Master et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1080/07420528.2020.1819114">On-shift naps are associated with systolic and diastolic blood pressure level among night working nursing professionals 2020</a></td>
+      <td>Rotenberg et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://irrelevant; patents.google.com/irrelevant; patent/US10517489B2/en">Wrist worn accelerometer for pulse transit time (PTT) measurements of blood pressure 2019</a></td>
+      <td>Narasimhan et al.</td>
+      <td>irrelevant; patent</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.worldscientific.com/doi/abs/10.1142/S0219519417500440">A novel continuous and noninvasive measurement for blood pressure based on photoplethysmography 2017</a></td>
+      <td>Li et al.</td>
+      <td>duplicate</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200108000-00009">Assessment of blood pressure early morning rise 2001</a></td>
+      <td>Redón et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://dspace.mit.edu/handle/1721.1/38705">Reconstructing the blood pressure waveform using a wearable photoplethysmograph sensor and hydrostatic pressure variations measured by accelerometers 2007</a></td>
+      <td>Marinković et al.</td>
+      <td>no reported MAE/ME; transforms PPG to ABP using model</td>
+    </tr>
+    <tr>
+      <td><a href="http://dx.doi.org/10.1097/00126097-200006000-00003">Validation of the CAS Medical Systems, Inc. OscilloMitt, hand-blood-pressure cuff 2000</a></td>
+      <td>Alpert et al.</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td><a href="https://doi.org/10.1007/s11432-018-9719-9">A digital signal processor (DSP)-based system for embedded continuous-time cuffless blood pressure monitoring usi
+
+<script type="text/javascript">
+	$(".className").attr("style","");
+	$(document).ready(function() {
+	    var table = $('#etable').DataTable({
+	    	dom: 'Bfrtip',
+	    	pageLength: 25,
+	        searchBuilder: true,
+	        responsive: true,
+			scrollY: 600,
+	        scrollCollapse: false,
+        	scroller: true
+	    });
+	    table.searchBuilder.container().prependTo(table.table().container());
+	});
+</script>
+</a></td></tr></tbody></table>
+:ET
