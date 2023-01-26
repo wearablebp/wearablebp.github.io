@@ -115,7 +115,7 @@
   },"19": {
     "doc": "Meta-Analysis",
     "title": "Meta-Analysis",
-    "content": "While other review papers have used common metrics such as mean absolute error (MAE) and percent error, these cannot be applied due to the large heterogeneity in datasets, devices, and algorithms used in each study. For example, a study with a dataset with small BP distribution may yield better results, as there is less variation that the model needs to explain. Here, we provide a brief summary of the statistics to account for heterogeneity in dataset distributions and calibration technique between studies and provide analysis with interactive visuals. For specific details related to methodology, see Methods and our paper. Please see the Wearable BP on GitHub for code to reproduce Systematic Review results and visuals. To access the raw data used in our systematic review, please fill out this form. ",
+    "content": "There is large heterogeneity in datasets, devices, and algorithms used in each study. For example, a study with a dataset with small BP distribution may yield better results, as there is less variation that the model needs to explain. Here, we provide a brief summary of the statistics to account for heterogeneity in dataset distributions and calibration technique between studies and provide analysis with interactive visuals. For specific details related to methodology, see Methods and our paper. Please see the Wearable BP on GitHub for code to reproduce Systematic Review results and visuals. To access the raw data used in our systematic review, please fill out this form. ",
     "url": "/meta/",
     "relUrl": "/meta/"
   },"20": {
