@@ -34,7 +34,6 @@ Currently, there are no publicly available datasets that satisfy these demograph
 Using our proposed metric to evaluate estimation accuracy, we plot the ED of SBP versus ED of DBP for subject split and personalization studies. We indicate the size of points using the power of the study and also report important study information using a hover tool. Moreover, we delineate in green the minimum ED ($$ED_{min}$$), computed from the AAMI/ANSI/ISO Standards for SBP and DBP, which were 2.17 and 1.39 respectively.
 
 {% include scatter.html %}
-<center> <i> Fig. 4. Scatter plots of DBP Explained Deviation versus SBP Explained Deviation for subject split (left) and personalization (right). The points are color-coded by sensor device configuration. The size represents the power of the study. We report the slope, its confidence interval ([0.025, 0.975]), and its corresponding p-value (* indicates significant: p<0.05) in legend inside the subplot. The green region bounds the minimum required Explained Deviations estimated from ANSI/AAMI/ISO 81060-2:2019. Hovering over the scatter points displays important parameter information related to the study. Clicking the legend allows to show or hide particular sensor data configurations. Finally, panning, zooming, tapping, resetting, and hovering tools are included on the right hand side of the legend. See <a href="{{site.baseurl}}/key/">Key</a> for a description of extracted parameters. </i> </center>
 
 <h2> Supplementary 1: Explained Deviation Confidence Interval </h2>
 
