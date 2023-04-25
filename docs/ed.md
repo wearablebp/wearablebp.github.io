@@ -42,7 +42,7 @@ Assume:
 2. $$n_2$$ independent samples from a normally distributed population with variance $$\sigma_2^2$$
 \end{enumerate}
 
-Given sample variance $$s_1^2$ and $s_2^2$$, we can write $$\frac{(n_1 - 1)s_1^2}{\sigma_1} \sim \chi_{n_1-1}^2$$ and $$\frac{(n_2 - 1)s_2^2}{\sigma_2} \sim \chi_{n_2-1}^2$$ The ratio of these two distributions is an F-distribution and can be written in the form: 
+Given sample variance $$s_1^2$$ and $$s_2^2$$, we can write $$\frac{(n_1 - 1)s_1^2}{\sigma_1} \sim \chi_{n_1-1}^2$$ and $$\frac{(n_2 - 1)s_2^2}{\sigma_2} \sim \chi_{n_2-1}^2$$ The ratio of these two distributions is an F-distribution and can be written in the form: 
 
 $$F=\frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2}$$
 
