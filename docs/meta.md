@@ -9,6 +9,10 @@ nav_order: 2
 
 There is large heterogeneity in datasets, devices, and algorithms used in each study. For example, a study with a dataset with small BP distribution may yield better results, as there is less variation that the model needs to explain. Here, we provide a brief summary of the statistics to account for heterogeneity in dataset distributions and calibration technique between studies and provide analysis with interactive visuals. For specific details related to methodology, see <a href="{{site.baseurl}}/methods/">Methods</a> and our [paper](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10). Please see the Wearable BP on [GitHub](https://github.com/wearablebp/) for code to reproduce Systematic Review results and visuals. To access the raw data used in our systematic review, please fill out this [form](https://forms.gle/3g2yTkPNVmJFB2it6).
 
+<h2> Calibration Technique </h2>
+
+First, to properly compare and contrast data, we stratify studies by the calibration technique \ref{fig:calibration}. We identified three different calibration techniques, which we coin subject split, personalization, and record split without personalization. Subject split involves using different subjects for the training and testing sets. A representative example of this is if 100 subjects are in the dataset, 50 subjects are used for training, and the other 50 subjects are used for testing. Personalization allows subject data (a record) in both training and testing sets, and the subject data is split temporally. In other words, the training data is selected as the first portion of the record, the testing data is selected as the latter portion of the record, and the training and testing data do not overlap. For example, if a record for a single subject is one month long, data from the first day is used for training and the rest is used for testing. This is used when the generalization ability of the model across the population of interest is unsatisfactory, so an individual-level model is fitted and recalibrated at arbitrary intervals due to physiological changes that may render the model inaccurate. Finally, there are studies that do not fall into these two categories, which involve having overlapping or non-temporally split data in the training and testing set from the same subjects, thereby introducing data leakage. Examples of this are having randomly sampled segments from a subject in both training sets and test sets and fitting a model to all data to find correlations. We coin this as record split without personalization. In practice, this type of calibration is not realizable because we cannot perform training on the testing data or data from the future. Therefore, these studies were excluded from our analysis.
+
 <h2> Metadata Statistics </h2>
 
 To understand the distribution of extracted parameters for the studies included in our Systematic Review, we visualize the distribution of the different study parameters. For categorical statistics, hovering over the bars shows the number of entries and percentage composition of subject split and personalization studies in all categories. See <a href="{{site.baseurl}}/key/">Key</a> for a description of extracted parameters.
@@ -43,9 +47,11 @@ To understand the distribution of extracted parameters for the studies included 
 
 <h3> Importance of accounting for BP Distribution in evaluation: BP Distribution is a confounding factor in BP Error </h3>
 
-To determine whether the BP distribution affects the error we plot the standard deviation of the errors against the standard deviation of the BP distributions. We find that lower error is harder to achieve for larger BP distributions. Therefore, we must take BP distribution into account in analysis. The relationship is insignificant in personalization. We suspect this is due to insufficient number of studies.
+To determine whether the BP distribution affects the error we plot the standard deviation of the errors against the standard deviation of the BP distributions.
 
 {% include scatter_std_err.html %}
+
+We find a significant relationship for both SBP and DBP. Studies with small distributions tend to have lower errors. Therefore, we must take BP distribution into account in analysis.
 
 <h3> How time between calibration and test varies with error </h3>
 
@@ -53,7 +59,7 @@ To determine whether the accuracy of the personalization changes over time, we r
 
 {% include scatter_time.html %}
 
-There is no significant relationship between the accuracy of personalization studies and ∆t. However, it is interesting to note that visually, there is a faint increasing trend.
+We find a significant relationship for both SBP and DBP, indicating that, overall, device accuracies wane over time.
 
 <h2> Supplementary: Power Analysis </h2>
 
