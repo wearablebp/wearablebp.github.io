@@ -7,7 +7,7 @@ nav_order: 6
 
 <h2> Benchmarking </h2>
 
-To improve the validity, integrity, and accuracy of BP estimation algorithm, we introduce and referee the first open-contribution BP estimation benchmark. This benchmark will ensure that the results reported in BP studies are valid (produce statistically significant results across different datasets), reproducible (provide code, data, experimental protocols, and device details), and accurate (high ED). We list the results of the open-contribution benchmark below in the form of SBP ED / DBP ED to compare across studies with different datasets:
+To improve the validity, integrity, and accuracy of BP estimation algorithm, we introduce and referee the first open-contribution BP estimation benchmark. This benchmark will ensure that the results reported in BP studies are valid (produce statistically significant results across different datasets), reproducible (provide code, data, experimental protocols, and device details), and accurate (high ED). We list the results of the open-contribution benchmark below in the form of SBP ED : DBP ED to compare across studies with different datasets:
 
 {% include benchmark_table.html %}
 
