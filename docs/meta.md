@@ -11,9 +11,7 @@ There is large heterogeneity in datasets, devices, and algorithms used in each s
 
 <h2> Calibration Technique </h2>
 
-<br>
-<div style="text-align: center"><img src="/images/calibration.png" style="width: 100%"/></div>
-<br>
+<div style="text-align: left"><img src="/images/calibration.png" style="width: 70%"/></div>
 
 First, to properly compare and contrast data, we stratify studies by the calibration technique. We identified three different calibration techniques, which we coin subject split, personalization, and record split without personalization. Subject split involves using different subjects for the training and testing sets. A representative example of this is if 100 subjects are in the dataset, 50 subjects are used for training, and the other 50 subjects are used for testing. Personalization allows subject data (a record) in both training and testing sets, and the subject data is split temporally. In other words, the training data is selected as the first portion of the record, the testing data is selected as the latter portion of the record, and the training and testing data do not overlap. For example, if a record for a single subject is one month long, data from the first day is used for training and the rest is used for testing. This is used when the generalization ability of the model across the population of interest is unsatisfactory, so an individual-level model is fitted and recalibrated at arbitrary intervals due to physiological changes that may render the model inaccurate. Finally, there are studies that do not fall into these two categories, which involve having overlapping or non-temporally split data in the training and testing set from the same subjects, thereby introducing data leakage. Examples of this are having randomly sampled segments from a subject in both training sets and test sets and fitting a model to all data to find correlations. We coin this as record split without personalization. In practice, this type of calibration is not realizable because we cannot perform training on the testing data or data from the future. Therefore, these studies were excluded from our analysis.
 
