@@ -13,11 +13,11 @@ Here, we provide motivating examples of, details of, and insight from the adopte
 
 <h4> Case Study 1: Small dataset distribution and low error meets error requirements from standard. </h4>
 
-<img src="case1.png">
+![case1](/_includes/case1.png)
 
 <h4> Case Study 2: Low accuracy does not mean accurate device. We must condition on BP distribution. </h4>
 
-<img src="case2.png">
+![case2](/_includes/case2.png)
 
 If we consider only the accuracies, study 1 will be the more "accurate" device. However, if we were provided with the BP distribution, we see that study 2 has the better device because it "explains" the data better.
 
