@@ -25,7 +25,9 @@ If we consider only the accuracies, study 1 will be the more "accurate" device. 
 
 To account for heterogeneity between studies, we condition our performance metric based on the BP distribution by adopting an interpretable statistic coined Explained Deviation (ED):
 
-$$ED = \frac{\sigma_{pop}}{\sigma_\epsilon}$$ for subject split studies and
+$$ED = \frac{\sigma_{pop}}{\sigma_\epsilon}$$ for subject split studies 
+
+and
 
 $$ED = \frac{\sigma_{\Delta}}{\sigma_{\Delta, \epsilon}}$$ for personalization studies
 
