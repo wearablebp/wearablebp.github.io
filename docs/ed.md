@@ -7,7 +7,11 @@ nav_order: 3
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-Here, we provide motivating examples of, details of, and insight from the adopted statistic used in our paper, Explained Deviation (ED).
+Here, we provide details of and insight from the adopted statistic used in our paper, Explained Deviation (ED).
+
+<h2> Motivating Examples </h2>
+
+First we provide some motivating examples.
 
 <h3> Case Study 1: We can get low accuracy that meets the error requirements specified in the standards if we use a small dataset. </h3>
 
@@ -19,7 +23,7 @@ Here, we provide motivating examples of, details of, and insight from the adopte
 
 If we consider only the accuracies, study 1 will be the more "accurate" device. However, if we were provided with the BP distribution, we see that study 2 has the better device because it "explains" the data better.
 
-<h3> Explained Deviation </h3>
+<h2> Explained Deviation </h2>
 
 To account for heterogeneity between studies, we condition our performance metric based on the BP distribution by adopting an interpretable statistic coined Explained Deviation (ED):
 
@@ -39,16 +43,16 @@ $$\sigma_{\Delta}$$ is the standard deviation of the change in BP distribution o
 
 $$\sigma_{\Delta, \epsilon}$$ is the standard deviation of the change in BP estimation errors of the whole dataset
 
-We can compute confidence intervals and perform hypothesis testing (See Appendix 1 below). We also compute $$ED_{min}$$, the estimated minimum ED required to meet the AAMI/ANSI/ISO 81060-2:2019 standards (See Appendix 2 below). $ED_{min}$$ for SBP and DBP were 2.17 and 1.39.
+We can compute confidence intervals and perform hypothesis testing (See Appendix 1 below). We also compute $$$ED_{min}$$, the estimated minimum ED required to meet the AAMI/ANSI/ISO 81060-2:2019 standards (See Appendix 2 below). $ED_{min}$$ for SBP and DBP were 2.17 and 1.39.
 
 Next we report several insights:
 
-<h3> Distribution of SBP and DBP Explained Deviations: SBP has larger proportion of studies that have higher Explained Deviation. </h3>
+<h2> Distribution of SBP and DBP Explained Deviations: SBP has larger proportion of studies that have higher Explained Deviation. </h2>
 {% include SBP_ED_stats.html %}
 
 {% include DBP_ED_stats.html %}
 
-<h3> How DBP Explained Deviation varies with SBP Explained Deviation </h3>
+<h2> How DBP Explained Deviation varies with SBP Explained Deviation </h2>
 
 We plot the ED of SBP versus ED of DBP for subject split and personalization studies. The size of the points are inversely proportional to the marigin of error. We delineate in green the minimum ED ($$ED_{min}$$). Notice that even though many studies report low error, they have an ED of around 1.
 
@@ -73,7 +77,7 @@ Simplifying the expression using the identity $$F_{1-\alpha/2}(n_1-1, n_2-1) = \
 
 $$P(\sqrt{F_{\alpha/2}(n-1, n-1)} ED_{est} \leq ED_{true} \leq \sqrt{F_{1-\alpha/2}(n-1, n-1)} ED_{est}) = 1-\alpha$$
 
-<h3> Appendix 2: Estimating required Explained Deviation from AAMI/ANSI/ISO 81060-2:2019 </h3>
+<h2> Appendix 2: Estimating required Explained Deviation from AAMI/ANSI/ISO 81060-2:2019 </h2>
 
 The AAMI/ANSI/ISO Standard specifies that a device that for the general population should:
 
