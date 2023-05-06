@@ -7,6 +7,8 @@ nav_order: 3
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+> "We can get 100% accuracy when estimating the BP distribution of dead people"
+
 Here, we provide details of and insight from the adopted statistic used in our paper, Explained Deviation (ED).
 
 <h2> Motivating Examples </h2>
