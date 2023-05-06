@@ -7,11 +7,8 @@ nav_order: 7
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<br>
 <div style="text-align: center"><img src="/images/graphviz.png" style="width: 100%"/></div>
-<br>
 <center> <i> Summary of the review process. N indicates the number of records and n indicates the number of studies. Some articles report multiple studies. </i> </center>
-<br>
 
 To improve transparency of our analysis, we provide detailed information about the systematic review process. See the Wearable BP on [GitHub](https://github.com/wearablebp/) for code to reproduce Systematic Review results and visuals. To access the raw data used in our systematic review, please fill out this [form](https://forms.gle/3g2yTkPNVmJFB2it6).
 

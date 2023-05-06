@@ -65,7 +65,7 @@ Given sample variance $$s_1^2$$ and $$s_2^2$$, we can write $$\frac{(n_1 - 1)s_1
 $$F=\frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2}$$
 
 
-The $1-\alpha$ confidence interval can be written as:
+The $$1-\alpha$$ confidence interval can be written as:
 
 $$P(F_{\alpha/2}(n_1-1, n_2-1) \leq \frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2} \leq F_{1-\alpha/2}(n_1-1, n_2-1)) = 1-\alpha$$ 
 
