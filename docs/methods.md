@@ -7,7 +7,13 @@ nav_order: 7
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-To improve transparency of our analysis, we provide detailed information about the systematic review process.
+<br>
+<div style="text-align: center"><img src="/images/graphviz.png" style="width: 100%"/></div>
+<br>
+<center> <i> Summary of the review process. N indicates the number of records and n indicates the number of studies. Some articles report multiple studies. </i> </center>
+<br>
+
+To improve transparency of our analysis, we provide detailed information about the systematic review process. See the Wearable BP on [GitHub](https://github.com/wearablebp/) for code to reproduce Systematic Review results and visuals. To access the raw data used in our systematic review, please fill out this [form](https://forms.gle/3g2yTkPNVmJFB2it6).
 
 <h2> Protocol and Registration, Information Sources, and Search </h2>
 Keywords "wearable", "blood pressure", "monitoring", "estimation", "systolic", "diastolic", and "cuffless" were entered into the search tool [Publish or Perish](https://harzing.com/resources/publish-or-perish) on 5/10/2022 which retrieves and analyzes academic citations from external data sources, including Crossref, Google Scholar, PubMed, Scopus, and Semantic Scholar. The Maximum number of results was specified as 1000 and the articles were specified in the time frame of 1979-2022. Additional studies were included from Google Scholar alerts of "blood pressure device" and from article references.
@@ -26,10 +32,4 @@ A single author performed an extraction of predefined data parameters. For studi
 
 <h2> Study selection </h2> 
 We identified a total of 2510 articles from our database search and 29 articles from other sources. For inclusion in this analysis. After adjusting for duplicates by code, 2180 remained. We inspected the full articles and excluded 2008 articles based on the inclusion criteria. Likewise, we included 173 unique articles and 67 additional studies (from articles that report multiple studies). From the 239 studies, we determined that 92 studies performed subject-level split and 147 studies performed personalization. Upon further examination, we identified the (change in) BP distribution of 59 and 10 studies for subject split and personalization respectively. Ultimately, we included 69 studies in the meta-analysis (Fig. 1).
-
-<br>
-<div style="text-align: center"><img src="/images/graphviz.png" style="width: 100%"/></div>
-<br>
-<center> <i> Fig 1. Summary of the review process. N indicates the number of records and n indicates the number of studies. Some articles report multiple studies. </i> </center>
-<br>
 
