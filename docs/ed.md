@@ -15,7 +15,7 @@ Here, we provide details of and insight from the adopted statistic used in our p
 
 First we provide some motivating examples.
 
-<h3> Case Study 1: We can get low accuracy that meets the error requirements specified in the standards if we use a small dataset. </h3>
+<h3> Case Study 1: We can get low accuracy that meets the error requirements specified in the standards if we use a dataset with small BP distribution. </h3>
 
 <div style="text-align: left"><img src="/images/case1.png" style="width: 60%"/></div>
 
@@ -45,7 +45,7 @@ $$\sigma_{\Delta}$$ is the standard deviation of the change in BP distribution o
 
 $$\sigma_{\Delta, \epsilon}$$ is the standard deviation of the change in BP estimation errors of the whole dataset
 
-We can compute confidence intervals and perform hypothesis testing (See Appendix 1 below). We also compute $$$ED_{min}$$, the estimated minimum ED required to meet the AAMI/ANSI/ISO 81060-2:2019 standards (See Appendix 2 below). $ED_{min}$$ for SBP and DBP were 2.17 and 1.39.
+We can compute confidence intervals and perform hypothesis testing (See Appendix 1 below). We also compute $$$ED_{min}$$, the estimated minimum ED required to meet the AAMI/ANSI/ISO 81060-2:2019 standards (See Appendix 2 below). $$ED_{min}$$ for SBP and DBP were 2.17 and 1.39.
 
 Next we report several insights:
 
