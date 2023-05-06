@@ -11,13 +11,17 @@ Here, we provide motivating examples of, details of, and insight from the adopte
 
 <h3> Motivating examples </h3>
 
-<h4> Case Study 1: Small dataset distribution and low error meets error requirements from standard. </h4>
+<h4> Case Study 1: We can get low accuracy that meets the error requirements specified in the standards if we use a small dataset. </h4>
 
-![case1](/_includes/case1.png)
+<br>
+<div style="text-align: center"><img src="/images/case1.png" style="width: 100%"/></div>
+<br>
 
 <h4> Case Study 2: Low accuracy does not mean accurate device. We must condition on BP distribution. </h4>
 
-![case2](/_includes/case2.png)
+<br>
+<div style="text-align: center"><img src="/images/case2.png" style="width: 100%"/></div>
+<br>
 
 If we consider only the accuracies, study 1 will be the more "accurate" device. However, if we were provided with the BP distribution, we see that study 2 has the better device because it "explains" the data better.
 
