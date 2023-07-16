@@ -57,7 +57,7 @@ We find a significant relationship for both SBP and DBP. Studies with small dist
 
 <h3> How time between calibration and test varies with error </h3>
 
-To determine whether the accuracy of the personalization changes over time, we regress the error on the time between calibration and test (∆t). For this, the time increments were binned into seconds (∆t=[0, 1)), minutes (∆t=[1, 2)), hours (∆t=[2, 3)), days (∆t=[3, 4)), and months (∆t=[4, 5)). Based on the number of intervals between each bin, we assign each ∆t to a value in the interval. For example, 2 weeks (14 days) will have a value of 3+14/30=3.47 because there are approximately 30 days in each month.
+To determine whether the accuracy of the personalization changes over time, we regress the error on the time between calibration and test (∆t). We plot time on the log (base-10) seconds scale
 
 {% include scatter_time.html %}
 
