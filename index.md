@@ -7,7 +7,7 @@ classes: wide
 datatable: true
 ---
 
-Welcome to the <b>wearablebp.github.io</b> ! This website accompanies our timely review on [Wearable Blood Pressure Monitoring and Study Design)](https://www.nature.com/natbiomedeng/). The goal of this website is to allow researchers to understand the state of Wearable BP. Here, you can find:
+Welcome to the <b>wearablebp.github.io</b> ! This website accompanies our timely review on [Wearable Blood Pressure Monitoring and Study Design](https://www.nature.com/natbiomedeng/). The goal of this website is to allow researchers to understand the state of Wearable BP. Here, you can find:
 
 <ul>
 	<li> <a href="{{site.baseurl}}/bib/">Bibliography</a>: search tool for studies included and excluded in systematic review </li>
