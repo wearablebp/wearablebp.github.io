@@ -1,16 +1,3 @@
-              function embed_document(root) {
-              const docs_json = document.getElementById('3538').textContent;
-              const render_items = [{"docid":"92d474d5-ee16-464c-a068-b877faa02074","root_ids":["1548"],"roots":{"1548":"7ccddfbd-ea5d-4e79-ab7d-51218597aeb2"}}];
-              root.Bokeh.embed.embed_items(docs_json, render_items);
-              }
-              if (root.Bokeh !== undefined) {
-                embed_document(root);
-              } else {
-                let attempts = 0;
-                const timer = setInterval(function(root) {
-                  if (root.Bokeh !== undefined) {
-                    clearInterval(timer);
-                    embed_document(root);
                   } else {
                     attempts++;
                     if (attempts > 100) {
