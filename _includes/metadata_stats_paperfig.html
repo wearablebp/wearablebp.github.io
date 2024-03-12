@@ -1,11 +1,3 @@
-              if (root.Bokeh !== undefined) {
-                embed_document(root);
-              } else {
-                let attempts = 0;
-                const timer = setInterval(function(root) {
-                  if (root.Bokeh !== undefined) {
-                    clearInterval(timer);
-                    embed_document(root);
                   } else {
                     attempts++;
                     if (attempts > 100) {
