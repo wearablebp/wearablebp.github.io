@@ -66,16 +66,16 @@ Assume:
 
 Given sample variance $$s_1^2$$ and $$s_2^2$$, we can write $$\frac{(n_1 - 1)s_1^2}{\sigma_1} \sim \chi_{n_1-1}^2$$ and $$\frac{(n_2 - 1)s_2^2}{\sigma_2} \sim \chi_{n_2-1}^2$$ The ratio of these two distributions is an F-distribution and can be written in the form: 
 
-$$F=\frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2}$$
+$$F~\frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2}$$
 
 
 The $$1-\alpha$$ confidence interval can be written as:
 
-$$P(F_{\alpha/2}(n_1-1, n_2-1) \leq \frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2} \leq F_{1-\alpha/2}(n_1-1, n_2-1)) = 1-\alpha$$ 
+$$P(F_{1-\alpha/2}(n_1-1, n_2-1) \leq \frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2} \leq F_{\alpha/2}(n_1-1, n_2-1)) = 1-\alpha$$ 
 
-Simplifying the expression using the identity $$F_{1-\alpha/2}(n_1-1, n_2-1) = \frac{1}{F_{\alpha/2}(n_2-1, n_1-1)}$$, and substituting $$\frac{s_1}{s_2}=ED_{est}$$ and $$\frac{\sigma_1}{\sigma_2}=ED_{true}$$ gives: 
+Substituting $$\frac{s_1}{s_2}=ED_{est}$$ and $$\frac{\sigma_1}{\sigma_2}=ED_{true}$$ gives: 
 
-$$P(\sqrt{F_{\alpha/2}(n-1, n-1)} ED_{est} \leq ED_{true} \leq \sqrt{F_{1-\alpha/2}(n-1, n-1)} ED_{est}) = 1-\alpha$$
+$$P(\sqrt{F_{1-\alpha/2}(n-1, n-1)} ED_{est} \leq ED_{true} \leq \sqrt{F_{\alpha/2}(n-1, n-1)} ED_{est}) = 1-\alpha$$
 
 <h2> Appendix 2: Estimating required Explained Deviation from AAMI/ANSI/ISO 81060-2:2019 </h2>
 

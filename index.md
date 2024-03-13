@@ -7,7 +7,7 @@ classes: wide
 datatable: true
 ---
 
-Welcome to the <b>wearablebp.github.io</b> ! This website accompanies our timely review on [Wearable Blood Pressure Monitoring and Study Design](https://www.nature.com/natbiomedeng/). The goal of this website is to allow researchers to understand the state of Wearable BP. Here, you can find:
+Welcome to the <b>wearablebp.github.io</b> ! This website accompanies our timely review on [Wearable Blood Pressure Monitoring and Study Design](https://repository.rice.edu/items/dc23828a-80aa-41b9-95c9-554ddf6bea96). The goal of this website is to allow researchers to understand the state of Wearable BP. Here, you can find:
 
 <ul>
 	<li> <a href="{{site.baseurl}}/bib/">Bibliography</a>: search tool for studies included and excluded in systematic review </li>
@@ -20,3 +20,11 @@ Welcome to the <b>wearablebp.github.io</b> ! This website accompanies our timely
 	<li> <a href="{{site.baseurl}}/standards/">Standards</a>: comparison between different Blood Pressure device standards </li>
 	<li> <a href="{{site.baseurl}}/key/">Key</a>: terminology and abbreviations used in parameter extraction of studies </li>
 </ul>
+
+<h2> Main Takeaways:</h2>
+1. Low error ≠ Good device
+2. Different calibration techniques warrant different evaluation
+3. Recruit diverse participants for evaluation
+
+<h2> Citation: </h2>
+Cheung, Matt. "Wearable Blood Pressure Monitoring Devices and Study Design." Diss., 2023. Rice University, https://repository.rice.edu/items/dc23828a-80aa-41b9-95c9-554ddf6bea96.
