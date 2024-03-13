@@ -7,7 +7,8 @@ classes: wide
 datatable: true
 ---
 
-Welcome to the <b>wearablebp.github.io</b> ! This website accompanies our timely review on [Wearable Blood Pressure Monitoring and Study Design](https://repository.rice.edu/items/dc23828a-80aa-41b9-95c9-554ddf6bea96). The goal of this website is to allow researchers to understand the state of Wearable BP. Here, you can find:
+<h2> Welcome to the <b>wearablebp.github.io</b>!</h2> 
+This website accompanies our review on [Wearable Blood Pressure Monitoring and Study Design](https://repository.rice.edu/items/dc23828a-80aa-41b9-95c9-554ddf6bea96). The goal of this website is to allow researchers to understand the state of Wearable BP. Here, you can find:
 
 <ul>
 	<li> <a href="{{site.baseurl}}/bib/">Bibliography</a>: search tool for studies included and excluded in systematic review </li>
