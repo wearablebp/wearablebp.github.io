@@ -1,0 +1,25 @@
+I"	<h2> Welcome to <b>wearablebp.github.io</b>!</h2>
+<p>This website accompanies our review “Wearable Blood Pressure Monitoring Devices: Understanding Heterogeneity in Design and Evaluation” (under review). The goal of this website is to allow researchers to understand the state of Wearable BP and to better identify promising research directions. Here, you can find:</p>
+
+<ul>
+	<li> <a href="/bib/">Bibliography</a>: search tool for studies included and excluded in systematic review </li>
+	<li> <a href="/meta/">Meta-Analysis Results</a>: results from the systematic review of Wearable BP studies </li>
+	<li> <a href="/ed/">Explained Deviation</a>: description of ED statistic, ED distribution of studies included in systematic review, and results from meta-analysis </li>
+	<li> <a href="/datasets/">Datasets</a>: details of publicly available BP Estimation datasets </li>
+	<li> <a href="/algos/">Algorithms</a>: search tool for available third-party code and datasets for all the articles included in the systematic review </li>
+	<li> <a href="/benchmarks/">Benchmarks</a>: results of open-contribution benchmarking efforts and submission forms to contribute to the benchmark </li>
+	<li> <a href="/methods/">Systematic Review Method</a>: information about protocol and registration, information sources, eligibility criteria, data collection process, data items, and study selection  </li>
+	<li> <a href="/standards/">Standards</a>: comparison between different Blood Pressure device standards </li>
+	<li> <a href="/key/">Key</a>: terminology and abbreviations used in parameter extraction of studies </li>
+</ul>
+
+<h2> Citation </h2>
+
+<p>Cheung, Matt Y. et al. “Wearable Blood Pressure Monitoring Devices: Understanding Heterogeneity in Design and Evaluation” (2024), Under Review</p>
+
+<p>Cheung, Matt. “Wearable Blood Pressure Monitoring Devices and Study Design.” Diss., 2023. Rice University, https://repository.rice.edu/items/dc23828a-80aa-41b9-95c9-554ddf6bea96.</p>
+
+<h2> Collaboration </h2>
+
+<p>There’s much more work to be done in this space. The future for cuffless BP looks bright, and there’s a lot of momentum. We want to be sure that we can better identify promising research directions and ensure our time and efforts are fruitful. If you’re interested in collaborating, please connect with us.</p>
+:ET

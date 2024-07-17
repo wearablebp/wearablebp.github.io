@@ -1,0 +1,70 @@
+I"<<h2> Benchmarking </h2>
+
+<p>To improve the validity, integrity, and accuracy of BP estimation algorithm, we introduce and referee the first open-contribution BP estimation benchmark. This benchmark will ensure that the results reported in BP studies are valid (produce statistically significant results across different datasets), reproducible (provide code, data, experimental protocols, and device details), and accurate (high ED). We list the results of the open-contribution benchmark below in the form of SBP ED : DBP ED to compare across studies with different datasets:</p>
+
+<table border="1" class="dataframe" id="btable">
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Estimator</th>
+      <th colspan="2" halign="left">MIMIC</th>
+      <th>PPG-BP</th>
+      <th>VitalDB</th>
+    </tr>
+    <tr>
+      <th>Filter</th>
+      <th></th>
+      <th><a href="https://ieeexplore.ieee.org/document/7491263">Kachuee et al., (2017)</a></th>
+      <th><a href="https://ieeexplore.ieee.org/document/8938751">Hasandazeh et al., (2019)</a></th>
+      <th><a href="https://www.nature.com/articles/sdata201820">Liang et al., (2018)</a></th>
+      <th><a href="https://iopscience.iop.org/article/10.1088/1361-6579/abf889">Zhang et al., (2021)</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><a href="http://dx.doi.org/10.1364/boe.444535">Dagamseh et al., (2021)</a></td>
+      <td>1.0:0.99</td>
+      <td>1.4:1.47</td>
+      <td>1.09:0.97</td>
+      <td>1.06:1.04</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><a href="https://ieeexplore.ieee.org/document/8938751">Hasandazeh et al., (2019)</a></td>
+      <td>1.05:1.02</td>
+      <td>1.45:1.4</td>
+      <td>1.13:1.0</td>
+      <td>1.05:1.08</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><a href="https://www.nature.com/articles/s41598-021-92997-0">Jeong et al., (2021)</a></td>
+      <td>1.0:1.0</td>
+      <td>nan:nan</td>
+      <td>nan:nan</td>
+      <td>1.06:1.03</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><a href="https://www.sciencedirect.com/science/article/abs/pii/S1746809421010016">Huang et al., (2022)</a></td>
+      <td>1.0:1.0</td>
+      <td>nan:nan</td>
+      <td>nan:nan</td>
+      <td>1.05:1.08</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Although the benchmarks only cover PPG, as wearable sensors become cheaper and more ubiquitous, they will be expanded to include them.</p>
+
+<h2> Open Contribution</h2>
+
+<p>In addition to the implemented benchmarks, we provide an opportunity to contribute to this table by providing an update form for researchers to improve upon existing benchmarks and add new benchmarks. Every benchmark reported on our website will follow strict guidelines on sharing code and reporting results. We provide examples and templates for feature extraction machine learning pipelines, deep learning pipelines, and data visualization scripts to allow for more transparent reporting and streamlined testing. This code can be found on in our WearableBP <a href="https://wearablebp.github.io">GitHub</a>. Finally, although the benchmarks only cover PPG, as wearable sensors become cheaper and more ubiquitous, they will be expanded to include them.</p>
+
+<p>Forms to contribute to our benchmarks:</p>
+<ol>
+  <li><a href="https://forms.gle/XeP3udcv72vfkrGM6">Submit a Dataset</a></li>
+  <li><a href="https://forms.gle/YG19pWmvvradVVaS8">Submit an algorithm</a></li>
+</ol>
+:ET

@@ -30,7 +30,7 @@ nav_order: 5
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.7/css/scroller.dataTables.min.css">
 
-<h2> Available Code </h2>
+<h2> Publicly Available Code </h2>
 
 We provide a table of code and dataset availability for all the articles included in the systematic review. We embeded a search function that allows multiple keyword search by placing a " " in between keywords, a custom search builder that allows multiple conditional search, and an export tool that allows copying and downloading data in csv format.
 

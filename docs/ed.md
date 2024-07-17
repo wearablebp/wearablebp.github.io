@@ -7,25 +7,11 @@ nav_order: 3
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-Here, we provide details of and insight from the adopted statistic used in our paper, Explained Deviation (ED).
-
-<h2> Motivating Examples </h2>
-
-First we provide some motivating examples.
-
-<h3> Case Study 1: We can get low accuracy that meets the error requirements specified in the standards if we use a dataset with small BP distribution. </h3>
-
-<div style="text-align: left"><img src="/images/case1.png" style="width: 60%"/></div>
-
-<h3> Case Study 2: Low accuracy does not mean accurate device. We must condition on BP distribution. </h3>
-
-<div style="text-align: left"><img src="/images/case2.png" style="width: 60%"/></div>
-
-If we consider only the accuracies, study 1 will be the more "accurate" device. However, if we were provided with the BP distribution, we see that study 2 has the better device because it "explains" the data better.
+Here, we provide details of and insight from the measure used in our paper, Explained Deviation (ED).
 
 <h2> Explained Deviation </h2>
 
-To account for heterogeneity between studies, we condition our performance metric based on the BP distribution by adopting an interpretable statistic coined Explained Deviation (ED):
+To account for heterogeneity in calibration technique and BP distribution between studies, introduce a measure called "Explained Deviation" or $$ED$$, which normalizes the errors by the BP distribution.
 
 $$ED = \frac{\sigma_{pop}}{\sigma_{pop, \epsilon}}$$ for subject split studies 
 
@@ -43,7 +29,11 @@ $$\sigma_{\Delta}$$ is the standard deviation of the change in BP distribution o
 
 $$\sigma_{\Delta, \epsilon}$$ is the standard deviation of the change in BP estimation errors of the whole dataset
 
-We can compute confidence intervals and perform hypothesis testing (See Appendix 1 below). We also compute $$$ED_{min}$$, the estimated minimum ED required to meet the AAMI/ANSI/ISO 81060-2:2019 standards (See Appendix 2 below). $$ED_{min}$$ for SBP and DBP were 2.17 and 1.39.
+We show several motivating cases:
+
+<div style="text-align: left"><img src="/images/ed_slide.png" style="width: 100%"/></div>
+
+We can compute confidence intervals and perform hypothesis testing since ED is related to the F-distribution. We also compute $$ED_{min}$$, the estimated minimum ED required to meet the AAMI/ANSI/ISO 81060-2:2019 standards. $$ED_{min}$$ for SBP and DBP were 2.17 and 1.39.
 
 Next we report several insights:
 
@@ -71,9 +61,9 @@ $$F~\frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2}$$
 
 The $$1-\alpha$$ confidence interval can be written as:
 
-$$P(F_{1-\alpha/2}(n_1-1, n_2-1) \leq \frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2} \leq F_{\alpha/2}(n_1-1, n_2-1)) = 1-\alpha$$ 
+$$P(F_{\alpha/2}(n_1-1, n_2-1) \leq \frac{s_1^2/\sigma_1^2}{s_2^2/\sigma_2^2} \leq F_{1-\alpha/2}(n_1-1, n_2-1)) = 1-\alpha$$ 
 
-Substituting $$\frac{s_1}{s_2}=ED_{est}$$ and $$\frac{\sigma_1}{\sigma_2}=ED_{true}$$ gives: 
+Substituting $$\frac{s_1}{s_2}=ED_{est}$$, $$\frac{\sigma_1}{\sigma_2}=ED_{true}$$, and $$n_1=n_2=n$$ gives: 
 
 $$P(\sqrt{F_{1-\alpha/2}(n-1, n-1)} ED_{est} \leq ED_{true} \leq \sqrt{F_{\alpha/2}(n-1, n-1)} ED_{est}) = 1-\alpha$$
 
