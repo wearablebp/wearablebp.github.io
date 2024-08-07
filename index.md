@@ -8,7 +8,7 @@ datatable: true
 ---
 
 <h2> Welcome to <b>wearablebp.github.io</b>!</h2> 
-This website accompanies our review [Wearable Blood Pressure Monitoring Devices: Understanding Heterogeneity in Design and Evaluation](https://wearablebp.github.io/assets/WearableBP_IEEETBME_accepted.pdf) (accepted, IEEE TBME). The goal of this website is to allow researchers to understand the state of Wearable BP and to better identify promising research directions. Here, you can find:
+This website accompanies our review "Wearable Blood Pressure Monitoring Devices: Understanding Heterogeneity in Design and Evaluation" [[IEEE Xplore]](https://ieeexplore.ieee.org/document/10623798)[[Alt source]](https://wearablebp.github.io/assets/WearableBP_IEEETBME_accepted.pdf) (accepted, IEEE TBME). The goal of this website is to allow researchers to understand the state of Wearable BP and to better identify promising research directions. Here, you can find:
 
 <ul>
 	<li> <a href="{{site.baseurl}}/bib/">Bibliography</a>: search tool for studies included and excluded in systematic review </li>
@@ -24,9 +24,7 @@ This website accompanies our review [Wearable Blood Pressure Monitoring Devices:
 
 <h2> Citation </h2>
 
-Cheung, Matt Y. et al. “Wearable Blood Pressure Monitoring Devices: Understanding Heterogeneity in Design and Evaluation” IEEE transactions on biomedical engineering (accepted)
-
-Cheung, Matt. "Wearable Blood Pressure Monitoring Devices and Study Design." Diss., 2023. Rice University, https://repository.rice.edu/items/dc23828a-80aa-41b9-95c9-554ddf6bea96.
+Cheung, Matt Y. et al. “Wearable Blood Pressure Monitoring Devices: Understanding Heterogeneity in Design and Evaluation” IEEE transactions on biomedical engineering (2024), doi:10.1109/TBME.2024.3434344
 
 <h2> Collaboration </h2>
 
